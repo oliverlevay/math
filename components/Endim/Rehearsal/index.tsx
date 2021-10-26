@@ -172,6 +172,16 @@ const Rehearsal = () => {
         <SolutionTip>Applicera trigonometriska ettan</SolutionTip>
         <Latex>$b^2+c^2-2bc\cos\alpha$</Latex>
       </Assignment>
+
+      <Assignment title='69. Hur definieras vinkelmåttet radian?' id='69'>
+        <Latex>{'1 rad $=\\dfrac{360\\degree}{2\\pi}$'}</Latex>
+        <Divider />
+        <Latex>En hel cirkel: $2\pi$</Latex>
+        <br />
+        <Latex>En halv cirkel: $\pi$</Latex>
+        <br />
+        <Latex>{'En fjärdedels cirkel: $\\frac{\\pi}{2}$'}</Latex>
+      </Assignment>
     </Container>
   );
 };
