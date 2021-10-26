@@ -38,7 +38,7 @@ export default function Home() {
             öppen källkod
           </a>{' '}
           och finns på Github. Om du har en bättre lösning eller förklaring kan
-          du komma med ett pull request :)
+          du komma med ett pull request :
           <br />
           <br />
           De flesta lösningarna är inspirerade av Christines lösningar, stort

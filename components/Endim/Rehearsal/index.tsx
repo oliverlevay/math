@@ -12,7 +12,6 @@ import CosinussatsenTriangel1 from './components/figures/CosinussatsenTriangel1'
 import CosinussatsenTriangel2 from './components/figures/CosinussatsenTriangel2';
 
 const Container = styled.div`
-  padding-bottom: 30rem;
   ${TABLET_BP} {
     margin-top: 1rem;
   }
