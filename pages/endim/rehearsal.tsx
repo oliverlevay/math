@@ -30,15 +30,27 @@ export default function Home() {
           <br />
           Jag kan inte garantera att lösningarna är korrekt eller lätta att
           förstå. Men jag har gjort mitt bästa. Detta projekt har{' '}
-          <a href='https://github.com/oliverlevay/math'>öppen källkod</a> och
-          finns på Github. Om du har en bättre lösning eller förklaring kan du
-          komma med ett pull request :)
+          <a
+            href='https://github.com/oliverlevay/math'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            öppen källkod
+          </a>{' '}
+          och finns på Github. Om du har en bättre lösning eller förklaring kan
+          du komma med ett pull request :)
           <br />
           <br />
           De flesta lösningarna är inspirerade av Christines lösningar, stort
           tack! PDF till lösningarna finns{' '}
-          <a href='/assets/Svar-till-instuderingsfrågor-Endim-B1-1.pdf'>här</a>.
-          En del av lösningarna har slarvfel och det är lite svårt att läsa,
+          <a
+            href='/assets/Svar-till-instuderingsfrågor-Endim-B1-1.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            här
+          </a>
+          . En del av lösningarna har slarvfel och det är lite svårt att läsa,
           därför bestämde jag mig för att göra om dem i LaTeX. Håll musen över
           eller klicka på en ruta för att få se lösningen.
         </Information>
