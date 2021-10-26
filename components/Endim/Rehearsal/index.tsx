@@ -1,12 +1,12 @@
-import { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 import AreaSatsenTriangle1 from './components/figures/AreaSatsenTriangel1';
 import AreaSatsenTriangel2 from './components/figures/AreaSatsenTriangel2';
 import SinusSatsenTriangel from './components/figures/SinussatsenTriangel';
-import { colors } from 'lib/colors';
 import { TABLET_BP } from 'lib/breakpoints';
+import Spoiler from 'components/Spoiler';
 
 const Container = styled.div`
   ${TABLET_BP} {
@@ -28,31 +28,6 @@ const FiguresContainer = styled.div`
   display: flex;
   margin: 1rem 0;
 `;
-
-const Assignment = styled.div`
-  position: relative;
-  margin-bottom: 2rem;
-`;
-
-const SpoilerBlock = styled.div`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: ${process.env.NODE_ENV === 'development'
-    ? 'transparent'
-    : colors.almond};
-  :hover {
-    background-color: transparent;
-  }
-  z-index: 1;
-`;
-
-const Spoiler: FC = ({ children }) => (
-  <Assignment>
-    <SpoilerBlock></SpoilerBlock>
-    {children}
-  </Assignment>
-);
 
 const Rehearsal = () => {
   return (
