@@ -10,7 +10,6 @@ import { TABLET_BP } from 'lib/breakpoints';
 const Container = styled.div`
   display: flex;
   width: 100%;
-  padding-bottom: 50rem;
 `;
 
 const Content = styled.div`
