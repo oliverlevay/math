@@ -1,10 +1,32 @@
-import styled from 'styled-components'
+import Link from 'next/link';
+import EndimLogo from 'components/CourseLogo/EndimLogo';
+import styled from 'styled-components';
+import { Title } from 'components';
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+`;
+
+const CourseList = styled.div``;
+
+const CourseContainer = styled.div``;
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <Container>
+      <Title>Välj en kurs</Title>
+      <CourseList>
+        <CourseContainer>
+          <Link href='/endim' passHref>
+            <a>
+              <EndimLogo />
+            </a>
+          </Link>
+        </CourseContainer>
+      </CourseList>
+    </Container>
+  );
 }
