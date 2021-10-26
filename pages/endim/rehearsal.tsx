@@ -30,9 +30,9 @@ export default function Home() {
           <br />
           Jag kan inte garantera att lösningarna är korrekt eller lätta att
           förstå. Men jag har gjort mitt bästa. Detta projekt har{' '}
-          <a href='github-länk'>öppen källkod</a> och finns på Github. Om du har
-          en bättre lösning eller förklaring kan du komma med ett pull request
-          :)
+          <a href='https://github.com/oliverlevay/math'>öppen källkod</a> och
+          finns på Github. Om du har en bättre lösning eller förklaring kan du
+          komma med ett pull request :)
           <br />
           <br />
           De flesta lösningarna är inspirerade av Christines lösningar, stort
