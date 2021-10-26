@@ -21,7 +21,7 @@ export default function Home() {
       <CourseList>
         <CourseContainer>
           <Link href='/endim' passHref>
-            <a>
+            <a style={{ textDecoration: 'none' }}>
               <EndimLogo />
             </a>
           </Link>
