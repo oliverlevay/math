@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 import { colors } from 'lib/colors';
 
 const GlobalStyle = createGlobalStyle`
@@ -8,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
     color: ${colors.blackCoffee};
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    overflow-y: scroll;
+
   }
   box-sizing: border-box;
 `;
@@ -15,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        {' '}
+        <title>Sakur Math</title>
+      </Head>
       <GlobalStyle />
       <Component {...pageProps} />
     </>
