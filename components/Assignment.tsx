@@ -22,7 +22,6 @@ const Assignment: FC<Props> = ({ title, id, children }) => {
   const router = useRouter();
   const { id: selectedId } = router.query;
   const [expanded, setExpanded] = useState(false);
-  console.log(router.query);
   useEffect(() => {
     if (id === selectedId) {
       setExpanded(true);

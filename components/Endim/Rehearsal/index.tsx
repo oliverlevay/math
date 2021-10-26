@@ -29,7 +29,6 @@ const ChapterHeader = styled.h2`
 const SolutionTip = styled.div`
   margin-top: 0.5em;
   margin-bottom: 0.25rem;
-  margin-left: 0.5rem;
 `;
 
 const Divider = styled.div`
@@ -136,8 +135,7 @@ const Rehearsal = () => {
         <br />
         <Latex>$x=c\cos(180\degree-\alpha)=-c\cos\alpha$</Latex>
         <Divider />
-        Pythagoras sats ger:
-        <Divider />
+        <SolutionTip>Pythagoras sats ger:</SolutionTip>
         <Latex>$a^2=h^2+(b+x)^2=$</Latex>
         <SolutionTip>
           <Latex>Byt ut $x$ och $h$</Latex>
@@ -160,8 +158,7 @@ const Rehearsal = () => {
         <br />
         <Latex>$x=c\cos\alpha$</Latex>
         <Divider />
-        Pythagoras sats ger:
-        <Divider />
+        <SolutionTip>Pythagoras sats ger:</SolutionTip>
         <Latex>$a^2=h^2+(b-x)^2=$</Latex>
         <SolutionTip>
           <Latex>Byt ut $x$ och $h$</Latex>
