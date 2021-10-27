@@ -73,6 +73,7 @@ const TopBar = styled.div`
 
 const menus = {
   endimB1: {
+    title: 'Endimensionell Analys',
     items: [
       {
         label: 'Hem',
@@ -100,11 +101,11 @@ type Props = {
 
 const Layout: FC<Props> = ({ children, course }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const menu = menus[course];
   const MenuItems: FC = () => {
     return (
       <>
-        {menus[course].items.map((item) => (
+        {menu.items.map((item) => (
           <MenuItem id={item.route} onClick={() => setMenuOpen(false)}>
             <Link href={item.route}>{item.label}</Link>
           </MenuItem>
@@ -116,7 +117,7 @@ const Layout: FC<Props> = ({ children, course }) => {
   return (
     <Container>
       <TopBar>
-        <h2>Endimensionell Analys</h2>
+        <h2>{menu.title}</h2>
       </TopBar>
       <MobileMenu>
         <BurgerMenuStylesProvider>

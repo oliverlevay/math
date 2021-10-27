@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Layout from 'layout/endim';
 import { Title } from 'components';
 import Rehearsal from 'components/Endim/Rehearsal';
+import { links } from 'lib/links';
 
 const Container = styled.div`
   display: flex;
@@ -30,11 +31,7 @@ export default function Home() {
           <br />
           Jag kan inte garantera att lösningarna är korrekt eller lätta att
           förstå. Men jag har gjort mitt bästa. Detta projekt har{' '}
-          <a
-            href='https://github.com/oliverlevay/math'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.github} target='_blank' rel='noopener noreferrer'>
             öppen källkod
           </a>{' '}
           och finns på Github. Om du har en bättre lösning eller förklaring kan
@@ -51,8 +48,9 @@ export default function Home() {
             här
           </a>
           . En del av lösningarna har slarvfel och det är lite svårt att läsa,
-          därför bestämde jag mig för att göra om dem i LaTeX. Håll musen över
-          eller klicka på en ruta för att få se lösningen.
+          därför bestämde jag mig för att göra om dem i LaTeX. Tryck på en
+          uppgift för att se lösningen. Försök gärna först själv och se
+          lösningen om du fastnar eller vill kontrollera att du har gjort rätt.
         </Information>
         <Rehearsal />
       </Container>
