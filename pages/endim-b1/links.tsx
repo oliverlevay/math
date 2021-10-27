@@ -45,8 +45,13 @@ export default function Home() {
         />
         <LinkComponent
           label='Emil Wihlanders otroliga PDF som innehåller tydliga lösningar fram till och med kapitel 5:'
-          linkText='Hämta'
+          linkText='Visa PDF'
           link='https://docs.google.com/viewer?url=https://raw.githubusercontent.com/emilwihlander/Endim/master/Endimensionell_analys.pdf'
+        />
+        <LinkComponent
+          label='Obligatorisk länk till'
+          linkText='Emils GitHub repo'
+          link='https://github.com/emilwihlander/Endim'
         />
         <h2>Verktyg:</h2>
         <LinkComponent
