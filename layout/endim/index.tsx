@@ -19,7 +19,7 @@ const Content = styled.div`
   padding-top: 6rem;
   ${TABLET_BP} {
     padding-top: 0;
-    padding-left: 20.75rem;
+    padding-left: 20rem;
     padding-right: 2rem;
   }
 `;
@@ -48,6 +48,12 @@ const DesktopMenu = styled.div`
   display: none;
   ${TABLET_BP} {
     display: block;
+    position: fixed;
+    background-color: ${colors.blackCoffee};
+    padding: 2.5rem 1.5rem 0px;
+    font-size: 1.15rem;
+    height: 100%;
+    z-index: 10;
   }
 `;
 
@@ -65,14 +71,52 @@ const TopBar = styled.div`
   }
 `;
 
-const Layout: FC = ({ children }) => {
+const menus = {
+  endimB1: {
+    items: [
+      {
+        label: 'Hem',
+        route: routes.home,
+      },
+      {
+        label: 'Endim B1',
+        route: routes.endim.home,
+      },
+      {
+        label: 'Länkar',
+        route: routes.endim.links,
+      },
+      {
+        label: 'Instuderingsfrågor',
+        route: routes.endim.rehearsal,
+      },
+    ],
+  },
+};
+
+type Props = {
+  course: 'endimB1';
+};
+
+const Layout: FC<Props> = ({ children, course }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const MenuItems: FC = () => {
+    return (
+      <>
+        {menus[course].items.map((item) => (
+          <MenuItem id={item.route} onClick={() => setMenuOpen(false)}>
+            <Link href={item.route}>{item.label}</Link>
+          </MenuItem>
+        ))}
+      </>
+    );
+  };
+
   return (
     <Container>
       <TopBar>
-        <Link href={routes.home}>
-          <h2>Endimensionell Analys</h2>
-        </Link>
+        <h2>Endimensionell Analys</h2>
       </TopBar>
       <MobileMenu>
         <BurgerMenuStylesProvider>
@@ -81,32 +125,12 @@ const Layout: FC = ({ children }) => {
             onStateChange={(state) => setMenuOpen(state.isOpen)}
             isOpen={menuOpen}
           >
-            <MenuItem id='endim' onClick={() => setMenuOpen(false)}>
-              <Link href={routes.endim.home}>Hem</Link>
-            </MenuItem>
-            <MenuItem id='links' onClick={() => setMenuOpen(false)}>
-              <Link href={routes.endim.links}>Länkar</Link>
-            </MenuItem>
-            <MenuItem id='rehearsal' onClick={() => setMenuOpen(false)}>
-              <Link href={routes.endim.rehearsal}>Instuderingsfrågor</Link>
-            </MenuItem>
+            <MenuItems />
           </Menu>
         </BurgerMenuStylesProvider>
       </MobileMenu>
       <DesktopMenu>
-        <BurgerMenuStylesProvider>
-          <Menu isOpen={true} noOverlay disableCloseOnEsc noTransition>
-            <MenuItem id='endim' onClick={() => setMenuOpen(false)}>
-              <Link href={routes.endim.home}>Hem</Link>
-            </MenuItem>
-            <MenuItem id='links' onClick={() => setMenuOpen(false)}>
-              <Link href={routes.endim.links}>Länkar</Link>
-            </MenuItem>
-            <MenuItem id='rehearsal' onClick={() => setMenuOpen(false)}>
-              <Link href={routes.endim.rehearsal}>Instuderingsfrågor</Link>
-            </MenuItem>
-          </Menu>
-        </BurgerMenuStylesProvider>
+        <MenuItems />
       </DesktopMenu>
       <Content>{children}</Content>
     </Container>

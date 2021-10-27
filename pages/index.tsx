@@ -2,6 +2,7 @@ import Link from 'next/link';
 import EndimLogo from 'components/CourseLogo/EndimLogo';
 import styled from 'styled-components';
 import { Title } from 'components';
+import { routes } from 'lib/routes';
 
 const Container = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ export default function Home() {
       <Title>Välj en kurs</Title>
       <CourseList>
         <CourseContainer>
-          <Link href='/endim' passHref>
+          <Link href={routes.endim.home} passHref>
             <a style={{ textDecoration: 'none' }}>
               <EndimLogo />
             </a>

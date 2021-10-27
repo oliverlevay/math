@@ -13,7 +13,7 @@ const Information = styled.p``;
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout course='endimB1'>
       <Container>
         <Title>Instuderingsfrågor</Title>
         <Information>

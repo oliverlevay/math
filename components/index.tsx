@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const Title = styled.h1`
   color: ${colors.blackCoffee};
-  font-size: 32px;
+  font-size: 28px;
   ${TABLET_BP} {
     font-size: 50px;
   }

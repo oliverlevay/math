@@ -68,7 +68,7 @@ const EndimLogo = () => {
       </Sidebar>
 
       <CopyContainer>
-        <CourseTitle>Endimensionell Analys</CourseTitle>
+        <CourseTitle>Endimensionell Analys B1</CourseTitle>
         <CourseAuthors>Jonas Månsson & Patrik Nordbeck</CourseAuthors>
       </CopyContainer>
     </Container>

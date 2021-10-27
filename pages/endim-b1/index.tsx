@@ -12,9 +12,9 @@ const Information = styled.p``;
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout course='endimB1'>
       <Container>
-        <Title>Endimensionell analys</Title>
+        <Title>Endimensionell analys B1</Title>
         <Information>Hej! Vad kul att du har hittat hit.</Information>
         <Information>
           Här kan du hitta värdefulla länkar, lösningar och andra projekt när du

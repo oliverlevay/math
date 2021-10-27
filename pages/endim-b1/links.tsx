@@ -21,7 +21,7 @@ const LinkComponent = ({ label, link }: { label: string; link: string }) => (
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout course='endimB1'>
       <Container>
         <Title>Länkar</Title>
         <LinkComponent
