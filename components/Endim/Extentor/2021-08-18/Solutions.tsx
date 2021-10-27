@@ -13,10 +13,12 @@ const Solutions = () => {
   return (
     <Container>
       <p>
-        INGA HJALPMEDEL. Lösningarna skall vara försedda med ordentliga
+        INGA HJÄLPMEDEL. Lösningarna skall vara försedda med ordentliga
         motiveringar. Lämna tydliga svar. Varje uppgift kan som mest ge 3 poäng.
       </p>
       <h3>Godkänt del</h3>
+      För att bli godkänd krävs dels högst en uppgift med 0 poäng av dessa sex
+      uppgifter, dels minst 9 poäng av 18 möjliga.
       <h4>Uppgift 1.</h4>
       <p>
         Till denna uppgift krävs endast svar. Eventuella lösningar kommer ej att
@@ -71,6 +73,12 @@ const Solutions = () => {
         x+2<0${ltx.iss}x<-2${breakLine}
         1-x<0${ltx.iss}x>1${newLine}
         \\text{Svar: } -2<x<1
+        $`}</Latex>
+      </Assignment>
+      <Assignment title='$f)$ Lös ekvationen $\ln(1-x)-\ln(x+3)=\ln1$' id='1e'>
+        <Latex>{`$
+        \\ln(1-x)-\\ln(x+3)=\\ln1${ltx.iss}\\ln(1-x)-\\ln(x+3)=0${ltx.iss}${breakLine}
+        \\ln(1-x)=\\ln(x+3)${ltx.iss}1-x=x+3${ltx.iss}x=-1
         $`}</Latex>
       </Assignment>
     </Container>
