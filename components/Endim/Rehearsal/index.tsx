@@ -15,6 +15,7 @@ import Sine from './components/figures/Sine';
 import Cosine from './components/figures/Cosine';
 import Tan from './components/figures/Tan';
 import Cot from './components/figures/Cot';
+import { ltx } from 'lib/latexHelpers';
 
 const Container = styled.div`
   ${TABLET_BP} {
@@ -43,6 +44,13 @@ const Divider = styled.div`
 const FiguresContainer = styled.div`
   display: flex;
   margin: 1rem 0;
+`;
+
+const DecreaseMobileFont = styled.div`
+  font-size: 0.875rem;
+  ${TABLET_BP} {
+    font-size: 1rem;
+  }
 `;
 
 const Rehearsal = () => {
@@ -284,6 +292,170 @@ const Rehearsal = () => {
         </Latex>
         <br />
         <Latex>$=\sin x \cos y+\cos x \sin y$ #</Latex>
+      </Assignment>
+
+      <Assignment
+        title='73. Redogör för hjälpvinkelmetoden vid behandling av uttryck av formen $a \sin \omega x + b \cos \omega x.$'
+        id='73'
+      >
+        <b>Hjälpvinkelmetoden</b> är ett sätt att skriva om en kombination av
+        cosinus- och sinusvågor som en enda cosinus- eller sinusvåg. Detta
+        enligt sats 8.7:
+        <Divider />
+        <Latex>
+          {
+            '$a\\sin(\\omega x)+b\\cos(\\omega x)=\\sqrt{a^2+b^2}\\sin(\\omega x+\\varphi)$'
+          }
+        </Latex>
+        <br />
+        <Latex>
+          {
+            'där $\\varphi$ uppfyller $\\cos \\varphi=\\dfrac{a}{\\sqrt{a^2+b^2}}$ , $\\sin \\varphi=\\dfrac{b}{\\sqrt{a^2+b^2}}$'
+          }
+        </Latex>
+        <br />
+        <Latex>
+          {
+            '$\\sqrt{a^2+b^2}$ kallas amplitud, $\\varphi$ kallas fasförskjutning och $\\omega$ vinkelfrekvens'
+          }
+        </Latex>
+      </Assignment>
+
+      <Assignment
+        title='74. Givet radien i en cirkel, skriv upp formler för dess omkrets respektive area.'
+        id='74'
+      >
+        <Latex>En cirkel med radien $r$ har</Latex>
+        <b> omkretsen </b>
+        <Latex>$\pi r^2$ respektive</Latex>
+        <b> arean </b>
+        <Latex>$2\pi r$</Latex>
+      </Assignment>
+
+      <Assignment
+        title='75. Ange sambandet mellan båglängd, vinkel och radie för en cirkelsektor, dels då vinkeln mäts i grader, dels i radianer.'
+        id='75'
+      >
+        <Latex>
+          Sambandet mellan båglängd $b$, vinkel $\alpha$ och radie $r$ för en
+          cirkelsektor är
+        </Latex>
+        <br />
+        <Latex>
+          {
+            '$b=\\dfrac{\\alpha}{360\\degree}\\cdot2\\pi r=\\alpha r$ (om $a$ är i rad)'
+          }
+        </Latex>
+      </Assignment>
+
+      <Assignment
+        title='76. Givet radien och båglängden för en cirkelsektor, ange dess area.'
+        id='76'
+      >
+        <Latex>{'$\\dfrac{\\alpha}{360\\degree}\\pi r^2$'}</Latex>
+      </Assignment>
+
+      <ChapterHeader>Kapitel 8.5</ChapterHeader>
+
+      <Assignment
+        title='77. Definiera funktionerna $\arcsin x$, $\arccos x$ och $\arctan x$. Ange deras definitions- och värdemängder'
+        id='77'
+      >
+        <Latex>
+          {`Arcusfunktionerna är inversfunktioner till de trigonometreiska funktionerna. 
+            Eftersom dessa inte är injektiva i hela $\\mathbb{R}$ så är arcus-funktionerna bara definerade på intervall:`}
+        </Latex>
+        <br />
+        <Latex>
+          $y=\sin x\iff x = \arcsin y$ , $-\frac\pi2\leq x \leq \frac\pi2$
+        </Latex>
+        <br />
+        <Latex>$y=\cos x\iff x = \arccos y$ , $0 \leq x \leq \pi$</Latex>
+        <br />
+        <Latex>
+          $y=\tan x\iff x = \arctan y$ , $-\frac\pi2\leq x \leq \frac\pi2$
+        </Latex>
+        <br />
+        <Latex>$y=\cot x\iff x = arccot y$ , $0 \leq x \leq \pi$</Latex>
+        <br />
+      </Assignment>
+
+      <Assignment
+        title='78. Rita graferna till funktionerna arcsin x, arccos x och arctan x.'
+        id='78'
+      >
+        Hänvisar till{' '}
+        <a
+          href='https://www.geogebra.org/calculator'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          GeoGebra
+        </a>{' '}
+        för grafritning.
+      </Assignment>
+
+      <ChapterHeader>Kapitel 9</ChapterHeader>
+
+      <Assignment
+        id='79'
+        title='79. Låt $α > 0$ och $a > 1$. Arrangera funktionerna $x^\alpha$, $\ln x$ och $a^x$ storleksordning för stora värden på $x$. Precisera svaret i form av gränsvärden då $x \rightarrow \infin$.'
+      >
+        <Latex>
+          Då $\alpha &gt; 0$ och $a &gt; 1$ gäller $a^x&gt;x^\alpha&gt;\ln x$ då
+          $x\rightarrow\infin$ eftersom det enligt sats 9.3 gäller:
+        </Latex>
+        <Divider />
+        <Latex>{`$${ltx.limInf}\\dfrac{a^x}{x^a}=\\infin$ och $${ltx.limInf}\\dfrac{x^a}{\\ln x}=\\infin$`}</Latex>
+        <Divider />
+        Detta betyder helt enkelt att exponentialfunktioner växer fortare än
+        polynom, som växer fortare än logaritmer.
+      </Assignment>
+
+      <Assignment title='80. Definiera talet $e$.' id='80'>
+        <Latex>{`$e=${ltx.limInf}(1+\\frac1x)^x$`}</Latex>
+      </Assignment>
+
+      <Assignment
+        title='81. Definiera innebörden av uttrycket ”funktionen f är kontinuerlig i punkten a”.'
+        id='81'
+      >
+        <Latex>{`Funktionen $f$ är kontinuerlig i punkten $a$ om $${ltx.limA}f(x)=f(a)$`}</Latex>
+        <Divider />
+        <Latex>
+          {`Till exempel funktionen $f(x)=\\dfrac1x$ är inte kontinuerlig i punkten
+          $x=0$ eftersom $${ltx.lim0}f(x)\\neq f(0)$ då $f(0)$ är odefinerad`}
+        </Latex>
+      </Assignment>
+
+      <Assignment
+        title='82. Ange några egenskaper hos kontinuerliga funktioner på slutna, begränsade intervall.'
+        id='82'
+      >
+        De antar alla värden mellan sina ändpunkter minst en gång (sats 9.8) och
+        de antar ett största och minsta värde på intervallet (sats 9.9)
+      </Assignment>
+
+      <Assignment
+        title={`83. Lär dig standardgränsvärdena nummer (9.19) till (9.25) på sida 194 i läroboken. Utgående från de två gränsvärdena 
+      $\\newline(\\dfrac{e^x-1}{x})\\rightarrow$ då $x\\rightarrow\\plusmn\\infin$ , 
+      och $\\dfrac{a^x}{x^a}\\rightarrow\\infin$ då $x\\rightarrow\\infin\\newline$
+      lär dig härleda (9.20), (9.23), (9.24) och (9.25).`}
+        id='83'
+      >
+        <b>Standardgränsvärderna:</b>
+        <Divider />
+        <DecreaseMobileFont>
+          <Latex>{`$\\begin{matrix*}[l]
+                  ${ltx.limInf}\\dfrac{a^x}{x^a}=\\infin & (a>0, a>1), & (9.19) \\\\
+                  ${ltx.limInf}\\dfrac{x^a}{^a\\log x}=\\infin & (a>0, a>1), & (9.20)\\\\
+                  ${ltx.limPlMnInf}(1+\\dfrac1x)^x=e, && (9.21)\\\\
+                  ${ltx.lim0}\\dfrac{\\sin x}{x}=1, && (9.22)\\\\
+                  ${ltx.lim0}\\dfrac{\\ln(1+x)}{x}=1, && (9.23)\\\\
+                  ${ltx.lim0}\\dfrac{e^x-1}{x}=1, && (9.24)\\\\
+                  ${ltx.lim0Pl}x^a \\ln x=0 & (a>0) & (9.25),
+                  \\end{matrix*}$`}</Latex>
+        </DecreaseMobileFont>
       </Assignment>
     </Container>
   );
