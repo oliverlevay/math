@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
-import Link from 'next/link';
 import Layout from 'layout';
 import { Title } from 'components';
 import TextField from '@mui/material/TextField';
@@ -14,8 +13,6 @@ const Container = styled.div`
   flex-direction: column;
   width: 100%;
 `;
-
-const ButtonContainer = styled.div``;
 
 const Divider = styled.div`
   margin-top: 1rem;
