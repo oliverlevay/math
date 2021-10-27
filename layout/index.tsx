@@ -91,6 +91,10 @@ const menus = {
         label: 'Instuderingsfrågor',
         route: routes.endim.rehearsal,
       },
+      {
+        label: 'Ny lösning',
+        route: routes.endim.newSolution,
+      },
     ],
   },
 };

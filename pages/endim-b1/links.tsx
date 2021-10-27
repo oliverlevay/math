@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Layout from 'layout/endim';
+import Layout from 'layout';
 import { Title } from 'components';
 
 const Container = styled.div`
@@ -27,7 +27,7 @@ const LinkComponent = ({
   </Information>
 );
 
-export default function Home() {
+export default function Links() {
   return (
     <Layout course='endimB1'>
       <Container>

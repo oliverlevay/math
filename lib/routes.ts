@@ -8,5 +8,8 @@ export const routes = {
     get rehearsal() {
       return this.home + '/rehearsal';
     },
+    get newSolution() {
+      return this.home + '/new-solution';
+    },
   },
 };

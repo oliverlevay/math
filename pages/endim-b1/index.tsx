@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import Layout from 'layout/endim';
+import Layout from 'layout';
 import { Title } from 'components';
 import { routes } from 'lib/routes';
 import { links } from 'lib/links';

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Layout from 'layout/endim';
+import Layout from 'layout';
 import { Title } from 'components';
 import Rehearsal from 'components/Endim/Rehearsal';
 import { links } from 'lib/links';
@@ -12,7 +12,7 @@ const Container = styled.div`
 
 const Information = styled.p``;
 
-export default function Home() {
+export default function RehearsalPage() {
   return (
     <Layout course='endimB1'>
       <Container>
