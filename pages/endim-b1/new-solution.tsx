@@ -95,6 +95,7 @@ export default function NewSolution() {
           style={{ backgroundColor: 'white' }}
           minRows={5}
           inputRef={inputRef}
+          defaultValue={text}
           onChange={(event) => setText(event.target.value)}
           onSelect={() => {
             setSelectionStart(inputRef?.current?.selectionStart || 0);
