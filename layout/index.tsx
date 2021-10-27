@@ -110,7 +110,11 @@ const Layout: FC<Props> = ({ children, course }) => {
     return (
       <>
         {menu.items.map((item) => (
-          <MenuItem id={item.route} onClick={() => setMenuOpen(false)}>
+          <MenuItem
+            id={item.route}
+            onClick={() => setMenuOpen(false)}
+            key={item.label}
+          >
             <Link href={item.route}>{item.label}</Link>
           </MenuItem>
         ))}

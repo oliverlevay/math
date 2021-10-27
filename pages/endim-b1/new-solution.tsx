@@ -22,15 +22,18 @@ const Divider = styled.div`
   margin-left: 1rem;
 `;
 
-const convertLtxHelpers = Object.values(ltx).map((ltxHelper) => ({
+const convertLtxHelpers: { label: string; string: string }[] = Object.values(
+  ltx
+).map((ltxHelper) => ({
   label: `$${ltxHelper}$`,
   string: ltxHelper,
 }));
 
-const helpers = [
+const helpers: { label: string; string: string; wrap?: boolean }[] = [
   {
     label: 'Nytt block',
-    string: '$$',
+    string: '${}$',
+    wrap: true,
   },
   ...convertLtxHelpers,
 ];
@@ -40,8 +43,11 @@ export default function Home() {
     'Definition för talet $ e = \\lim \\limits_{x \\rightarrow \\plusmn \\infin} (1+\\dfrac{1}{x})^x $'
   );
   const inputRef = useRef<HTMLInputElement>();
-  const [cursorPosition, setCursorPosition] = useState(
+  const [selectionStart, setSelectionStart] = useState(
     inputRef?.current?.selectionStart || 0
+  );
+  const [selectionEnd, setSelectionEnd] = useState(
+    inputRef?.current?.selectionEnd || text.length
   );
   return (
     <Layout course='endimB1'>
@@ -60,20 +66,31 @@ export default function Home() {
           uttryck i "$$", se exempel nedan.
           <br />
         </p>
-        <Stack flexDirection='row' marginBottom='1rem'>
+        <Stack flexDirection='row' flexWrap='wrap'>
           {helpers.map((helper) => (
             <Button
-              style={{ marginRight: '1rem', textTransform: 'none' }}
+              key={helper.label}
+              style={{
+                marginRight: '1rem',
+                marginBottom: '1rem',
+                textTransform: 'none',
+              }}
               variant='outlined'
               onClick={() => {
                 setText((state) => {
-                  const textArray = [
-                    state.substring(0, cursorPosition),
-                    state.substring(cursorPosition, state.length),
-                  ];
-                  if (inputRef) {
-                    inputRef.current?.select();
+                  if (helper.wrap) {
+                    const textArray = [
+                      state.substring(0, selectionStart),
+                      state.substring(selectionStart, selectionEnd),
+                      state.substring(selectionEnd, state.length),
+                    ];
+                    const helperArray = helper.string.split('{}');
+                    return `${textArray[0]}${helperArray[0]}${textArray[1]}${helperArray[1]}${textArray[2]}`;
                   }
+                  const textArray = [
+                    state.substring(0, selectionStart),
+                    state.substring(selectionStart, state.length),
+                  ];
                   return `${textArray[0]}${helper.string}${textArray[1]}`;
                 });
               }}
@@ -89,9 +106,10 @@ export default function Home() {
           value={text}
           inputRef={inputRef}
           onChange={(event) => setText(event.target.value)}
-          onSelect={() =>
-            setCursorPosition(inputRef?.current?.selectionStart || 0)
-          }
+          onSelect={() => {
+            setSelectionStart(inputRef?.current?.selectionStart || 0);
+            setSelectionEnd(inputRef?.current?.selectionEnd || 0);
+          }}
         />
         <Divider />
         <Latex>{text}</Latex>
