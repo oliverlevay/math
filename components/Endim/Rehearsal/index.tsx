@@ -61,6 +61,8 @@ const Rehearsal = () => {
       <Assignment title='64. Visa trigonometriska ettan.' id='64'>
         <b>Trigonometriska ettan</b> <Latex>$\sin^2x+cos^2x=1$</Latex> visas
         enkelt genom Pythagoras sats i enhetscirkeln.
+        <br />
+        <Image width={453} height={461} src='/figures/64.png' />
       </Assignment>
 
       <Assignment title='66. Formulera och bevisa areasatsen.' id='66'>
