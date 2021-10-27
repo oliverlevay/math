@@ -10,6 +10,7 @@ export const ltx = {
   rarr: '\\rarr',
   frac: '\\frac{a}{b}',
   dfrac: '\\dfrac{a}{b}',
+  mult: 'a\\cdot b',
   sqrt: '\\sqrt{a+b}',
   pow: 'a^b',
   inf: '\\infin ',
