@@ -31,16 +31,16 @@ const convertLtxHelpers: { label: string; string: string }[] = Object.values(
 
 const helpers: { label: string; string: string; wrap?: boolean }[] = [
   {
-    label: 'Nytt block',
-    string: '${}$',
+    label: 'Text',
+    string: '\\text{{}}',
     wrap: true,
   },
   ...convertLtxHelpers,
 ];
 
-export default function Home() {
+export default function NewSolution() {
   const [text, setText] = useState(
-    'Definition för talet $ e = \\lim \\limits_{x \\rightarrow \\plusmn \\infin} (1+\\dfrac{1}{x})^x $'
+    '\\text{Definition för talet } e = \\lim \\limits_{x \\rarr \\plusmn \\infin} \\left(1+\\dfrac{1}{x}\\right)^x'
   );
   const inputRef = useRef<HTMLInputElement>();
   const [selectionStart, setSelectionStart] = useState(
@@ -61,10 +61,6 @@ export default function Home() {
             ol1662le-s@student.lu.se.
           </a>
           <br />
-          <br />
-          Vi använder oss av ett plugin som kräver att man wrappar sina LaTeX
-          uttryck i "$$", se exempel nedan.
-          <br />
         </p>
         <Stack flexDirection='row' flexWrap='wrap'>
           {helpers.map((helper) => (
@@ -77,22 +73,20 @@ export default function Home() {
               }}
               variant='outlined'
               onClick={() => {
-                setText((state) => {
-                  if (helper.wrap) {
-                    const textArray = [
-                      state.substring(0, selectionStart),
-                      state.substring(selectionStart, selectionEnd),
-                      state.substring(selectionEnd, state.length),
-                    ];
-                    const helperArray = helper.string.split('{}');
-                    return `${textArray[0]}${helperArray[0]}${textArray[1]}${helperArray[1]}${textArray[2]}`;
-                  }
-                  const textArray = [
-                    state.substring(0, selectionStart),
-                    state.substring(selectionStart, state.length),
-                  ];
-                  return `${textArray[0]}${helper.string}${textArray[1]}`;
-                });
+                if (helper.wrap) {
+                  const wrapperText = helper.string.split('{}');
+                  document.execCommand(
+                    'insertText',
+                    false,
+                    `${wrapperText[0]}${text.substring(
+                      selectionStart,
+                      selectionEnd
+                    )}${wrapperText[1]}`
+                  );
+                } else {
+                  document.execCommand('insertText', false, helper.string);
+                }
+                inputRef?.current?.focus();
               }}
             >
               <Latex>{helper.label}</Latex>
@@ -103,7 +97,6 @@ export default function Home() {
           multiline
           style={{ backgroundColor: 'white' }}
           minRows={5}
-          value={text}
           inputRef={inputRef}
           onChange={(event) => setText(event.target.value)}
           onSelect={() => {
@@ -112,7 +105,7 @@ export default function Home() {
           }}
         />
         <Divider />
-        <Latex>{text}</Latex>
+        <Latex>{text ? `$${text}$` : ''}</Latex>
       </Container>
     </Layout>
   );

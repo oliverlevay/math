@@ -18,6 +18,7 @@ import Cot from './components/figures/Cot';
 import { ltx } from 'lib/latexHelpers';
 
 const Container = styled.div`
+  padding-bottom: 10rem;
   ${TABLET_BP} {
     margin-top: 1rem;
   }
@@ -52,6 +53,9 @@ const DecreaseMobileFont = styled.div`
     font-size: 1rem;
   }
 `;
+
+const breakLine = '\\\\';
+const newLine = '\\\\~\\\\';
 
 const Rehearsal = () => {
   return (
@@ -439,7 +443,7 @@ const Rehearsal = () => {
       </Assignment>
 
       <Assignment
-        title={`83. Lär dig standardgränsvärdena nummer (9.19) till (9.25) på sida 194 i läroboken. Utgående från de två gränsvärdena 
+        title={`83 (WIP). Lär dig standardgränsvärdena nummer (9.19) till (9.25) på sida 194 i läroboken. Utgående från de två gränsvärdena 
       $\\newline(\\dfrac{e^x-1}{x})\\rightarrow$ då $x\\rightarrow\\plusmn\\infin$ , 
       och $\\dfrac{a^x}{x^a}\\rightarrow\\infin$ då $x\\rightarrow\\infin\\newline$
       lär dig härleda (9.20), (9.23), (9.24) och (9.25).`}
@@ -449,15 +453,34 @@ const Rehearsal = () => {
         <Divider />
         <DecreaseMobileFont>
           <Latex>{`$\\begin{matrix*}[l]
-                  ${ltx.limInf}\\dfrac{a^x}{x^a}=\\infin & (a>0, a>1), & (9.19) \\\\
-                  ${ltx.limInf}\\dfrac{x^a}{^a\\log x}=\\infin & (a>0, a>1), & (9.20)\\\\
-                  ${ltx.limPlMnInf}(1+\\dfrac1x)^x=e, && (9.21)\\\\
-                  ${ltx.lim0}\\dfrac{\\sin x}{x}=1, && (9.22)\\\\
-                  ${ltx.lim0}\\dfrac{\\ln(1+x)}{x}=1, && (9.23)\\\\
-                  ${ltx.lim0}\\dfrac{e^x-1}{x}=1, && (9.24)\\\\
-                  ${ltx.lim0Pl}x^a \\ln x=0 & (a>0) & (9.25),
-                  \\end{matrix*}$`}</Latex>
+                  ${ltx.limInf}\\dfrac{a^x}{x^\\alpha}=\\infin & (\\alpha>0, a>1), & (9.19)${newLine}
+                  ${ltx.limInf}\\dfrac{x^\\alpha}{^a\\log x}=\\infin & (\\alpha>0, a>1), & (9.20)${newLine}
+                  ${ltx.limPlMnInf}(1+\\dfrac1x)^x=e, && (9.21)${newLine}
+                  ${ltx.lim0}\\dfrac{\\sin x}{x}=1, && (9.22)${newLine}
+                  ${ltx.lim0}\\dfrac{\\ln(1+x)}{x}=1, && (9.23)${newLine}
+                  ${ltx.lim0}\\dfrac{e^x-1}{x}=1, && (9.24)${newLine}
+                  ${ltx.lim0Pl}x^\\alpha \\ln x=0 & (\\alpha>0) & (9.25),
+                  \\end{matrix*}${newLine}$
+                  `}</Latex>
         </DecreaseMobileFont>
+        <Latex>{`$\\text{Om vi utgår från $(9.19)$ och $(9.21)$ kan vi härleda de fem övriga:}${newLine}
+                (9.20):${breakLine} \\text{Låt } t=^a\\log x: ${ltx.limInf}\\dfrac{x^\\alpha}{^a\\log x}=
+                \\begin{bmatrix*}[l]
+                  t=^a\\log x & \\Rarr & x=a^t${breakLine}
+                  x \\rarr\\infin & \\Rarr & t\\rarr\\infin
+                \\end{bmatrix*}${newLine}
+                \\lim\\limits_{t\\rightarrow\\infin}\\dfrac{(a^t)^\\alpha}{t}=\\lim\\limits_{t\\rightarrow\\infin}\\dfrac{(a^\\alpha)^t}{t}=\\infin$ enligt (9.19)
+                $${newLine}(9.22):${breakLine}
+                \\text{Vi undersöker först funktionen för } x > 0.${breakLine}
+                \\text{Eftersom }x\\text{ kan antas vara litet går det bra att föursätta att }x<\\frac\\pi2${breakLine}
+                \\text{Enligt sats 8.5 gäller då att}${breakLine}
+                \\sin x < x < \\tan x ${ltx.iss}
+                \\sin x < x < \\dfrac{\\sin x}{\\cos x} ${ltx.iss}
+                1 < \\dfrac{x}{\\sin x} < \\dfrac{1}{\\cos x}${newLine}
+                \\text{Då }\\cos x\\text{ är kontinuerlig gäller att }\\dfrac{1}{cox}\\rarr1\\text{ då }x\\rarr0^+.${breakLine}
+                \\dfrac{x}{sin x} \\text{ är då instängd av två funktioner som båda har gränsvärdet 1, alltså:}${newLine}
+                ${ltx.lim0Pl}\\dfrac{x}{\\sin x}=1 ${ltx.iss}${ltx.lim0Pl}\\dfrac{\\sin x}{x}=${ltx.iss}\\dfrac{1}{\\frac{1}{\\sin x}}=1 \\#
+                $`}</Latex>
       </Assignment>
     </Container>
   );
