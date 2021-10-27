@@ -23,9 +23,6 @@ const Container = styled.div`
     margin-top: 1rem;
   }
   line-height: 1;
-  br {
-    min-height: 1rem;
-  }
 `;
 
 const ChapterHeader = styled.h2`

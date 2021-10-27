@@ -92,6 +92,10 @@ const menus = {
         route: routes.endim.rehearsal,
       },
       {
+        label: 'Extentor',
+        route: routes.endim.extentor.home,
+      },
+      {
         label: 'Ny lösning',
         route: routes.endim.newSolution,
       },
