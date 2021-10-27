@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styled from 'styled-components';
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
@@ -10,6 +11,10 @@ import AreaSatsenTriangel2 from './components/figures/AreaSatsenTriangel2';
 import SinusSatsenTriangel from './components/figures/SinussatsenTriangel';
 import CosinussatsenTriangel1 from './components/figures/CosinussatsenTriangel1';
 import CosinussatsenTriangel2 from './components/figures/CosinussatsenTriangel2';
+import Sine from './components/figures/Sine';
+import Cosine from './components/figures/Cosine';
+import Tan from './components/figures/Tan';
+import Cot from './components/figures/Cot';
 
 const Container = styled.div`
   ${TABLET_BP} {
@@ -181,6 +186,104 @@ const Rehearsal = () => {
         <Latex>En halv cirkel: $\pi$</Latex>
         <br />
         <Latex>{'En fjärdedels cirkel: $\\frac{\\pi}{2}$'}</Latex>
+      </Assignment>
+
+      <Assignment
+        title='70. Rita graferna till funktionerna $\sin x, \cos x, \tan x$ och $\cot x$.'
+        id='70'
+      >
+        <Sine />
+        <Cosine />
+        <br />
+        <Tan />
+        <Cot />
+      </Assignment>
+
+      <Assignment
+        title='71. Illustrera dubbelolikheten $\sin x < x < \tan x$ då $0 < x < \fracπ2$.'
+        id='71'
+      >
+        <Image src='/figures/71.png' width={250} height={255} />
+        <Divider />
+        <Latex>
+          Kurvan är enhetscirkeln inritad i första kvadranten. Här syns tydligt
+          att linjestycket $AB$ med längd $\sin x$ är kortare än circelbågen
+          $AC$ med längd $x$. Cirkelbågen är i sin tur kortare än linjestycket
+          $CD$ med längd $\tan x$
+        </Latex>
+      </Assignment>
+
+      <Assignment
+        title='72. Skriv upp de trigonometriska additionsformlerna. Ange formler för dubbla vinkeln för sinus respektive cosinus. Ge bevis.'
+        id='72'
+      >
+        <a
+          href='https://www.youtube.com/watch?v=5tA5lj2dLkw'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          Länk till Jonas video
+        </a>
+        <Divider />
+        <b>Additionsformlerna </b>för cosinus och sinus lyder:
+        <Divider />
+        <Latex>$\cos(x+y)=\cos x\cos y-\sin x\sin y$</Latex>
+        <br />
+        <Latex>$\sin(x+y)=\sin x\cos y+\cos x\sin y$</Latex>
+        <Divider />
+        <b>Bevis: </b>
+        <br />
+        <Image src='/figures/72.png' width={500} height={115} />
+        <SolutionTip>Ur den vänstra figuren får vi:</SolutionTip>
+        <Latex>$d^2=(\cos x - \cos y)^2+(\sin x - \sin y)^2$</Latex>
+        <SolutionTip>
+          Ur den högra figuren, där triangeln enbart roterats ned till x-angeln
+          får vi:
+        </SolutionTip>
+        <Latex>$d^2=(1-\cos(x-y))^2+\sin^2(x-y)$</Latex>
+        <br />
+        <SolutionTip>
+          <Latex>Båda är $=d^2$, dvs lika med varandra</Latex>
+        </SolutionTip>
+        <Latex>
+          $(\cos x - \cos y)^2+(\sin x - \sin y)^2=(1-\cos(x-y))^2+\sin^2(x-y)$
+        </Latex>
+        <SolutionTip>Applicera kvadreringsregler</SolutionTip>
+        <Latex>
+          $\Leftrightarrow\cos^2x-2\cos x\cos y+\cos^2y+\sin^2x-2\sin x\sin
+          y+sin^2y=1+\cos^2(x-y)-2\cos(x-y)+sin^2(x-y)$
+        </Latex>
+        <SolutionTip>Applicera trigonometriska ettan</SolutionTip>
+        <Latex>
+          $\Leftrightarrow1+1-2\cos x\cos y-2\sin x \sin y=1+1-2\cos(x-y)$
+        </Latex>
+        <br />
+        <Latex>$\Leftrightarrow\cos(x-y)=\cos x\cos y + \sin x \sin y$</Latex>
+        <SolutionTip>
+          Nu har vi tagit fram subtraktionsformeln, som vi kan använda för att
+          ta fram additionsformeln.
+        </SolutionTip>
+        <Latex>Kom ihåg att $\cos(-y)=\cos y$ och $\sin(-y)=-\sin y$</Latex>
+        <br />
+        <Latex>$\cos(x+y)=\cos(x-(-y))=$</Latex>
+        <br />
+        <Latex>
+          $\cos x\cos(-y)+\sin x\sin(-y)=\cos x \cos y - \sin x \sin y$
+        </Latex>
+        <Divider />
+        För Sinus:
+        <br />
+        <Latex>$\sin(x+y)=\cos(\frac\pi2-(x+y))=\cos((\frac\pi2-x)-y)$</Latex>
+        <SolutionTip>
+          Applicera subtraktionsformeln för{' '}
+          <Latex>$\cos((\frac\pi2-x)-y)$</Latex>:
+        </SolutionTip>
+        <Latex>
+          $\cos((\frac\pi2-x)-y)=\cos(\frac\pi2-x)\cos y + \sin(\frac\pi2-x)\sin
+          y$
+        </Latex>
+        <br />
+        <Latex>$=\sin x \cos y+\cos x \sin y$ #</Latex>
       </Assignment>
     </Container>
   );
