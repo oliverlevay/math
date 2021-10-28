@@ -3,7 +3,6 @@ import Layout from 'layout';
 import { Title } from 'components';
 import { Button, Stack } from '@mui/material';
 import Solutions from 'components/Endim/Extentor/2021-08-18/Solutions';
-import 'katex/dist/katex.min.css';
 
 const Container = styled.div`
   display: flex;

@@ -20,9 +20,10 @@ export default function Home() {
         <Title>Endimensionell analys B1</Title>
         <Information>Hej! Vad kul att du har hittat hit.</Information>
         <Information>
-          Här kan du hitta värdefulla{' '}
-          <Link href={routes.endim.links}>länkar</Link>, lösningar och andra
-          projekt när du studerar kursen FMAB65, Endimensionell analys B1.
+          Här kan du hitta{' '}
+          <Link href={routes.endim.links}>värdefulla länkar</Link>, lösningar
+          och andra projekt när du studerar kursen FMAB65, Endimensionell analys
+          B1.
         </Information>
         <Information>
           Det som jag har lagt mest energi på i dagsläget är{' '}

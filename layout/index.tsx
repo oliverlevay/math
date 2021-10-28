@@ -29,7 +29,9 @@ const MenuItem = styled.div`
   font-size: 1.8rem;
   a {
     color: ${colors.almond};
-    text-decoration: none;
+    &:before {
+      background-color: ${colors.middleGrey};
+    }
   }
   :hover {
     a {

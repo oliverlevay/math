@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
 import Latex from 'react-latex-next';
-import 'katex/dist/katex.min.css';
 import { TABLET_BP } from 'lib/breakpoints';
 import Assignment from 'components/Assignment';
 

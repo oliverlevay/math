@@ -4,7 +4,7 @@ import Layout from 'layout';
 import { Title } from 'components';
 import TextField from '@mui/material/TextField';
 import Latex from 'react-latex-next';
-import 'katex/dist/katex.min.css';
+
 import { ltx } from 'lib/latexHelpers';
 import { Button, Stack } from '@mui/material';
 
@@ -63,6 +63,7 @@ export default function NewSolution() {
           {helpers.map((helper) => (
             <Button
               key={helper.label}
+              color='secondary'
               style={{
                 marginRight: '1rem',
                 marginBottom: '1rem',
