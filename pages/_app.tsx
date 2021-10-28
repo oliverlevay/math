@@ -8,11 +8,9 @@ import { ThemeProvider } from '@mui/system';
 const GlobalStyle = createGlobalStyle`
   body {
     background: ${colors.magnolia};
-    color: ${colors.blackCoffee};
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     overflow-y: scroll;
-
   }
   box-sizing: border-box;
   a {
