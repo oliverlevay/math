@@ -104,7 +104,17 @@ const Solutions = () => {
         \\end{cases}
         $`}
         id='2b'
-      ></Assignment>
+      >
+        <Latex>{`
+        Villkoret för att $f(x)$ är kontinuerlig är att $\\lim\\limits_{x\\rightarrow\\frac{\\pi}{2}} \\dfrac{e^{\\cos x}-1}{x-\\frac{\\pi}{2}}=0$ så vi undersöker gränsvärderna:
+        $${newLine}
+        \\lim\\limits_{x\\rightarrow\\frac{\\pi}{2}^+} \\dfrac{e^{\\cos x}-1}{x-\\frac{\\pi}{2}}=-1${newLine}
+        \\lim\\limits_{x\\rightarrow\\frac{\\pi}{2}^-} \\dfrac{e^{\\cos x}-1}{x-\\frac{\\pi}{2}}=-1${newLine}
+        -1\\neq0,
+        $
+        därmed är $f(x)$ inte kontinuerlig i $\\frac{\\pi}{2}$ och fortsättningsvis ej kontinuerlig på $\\mathbb{R}$
+        `}</Latex>
+      </Assignment>
     </Container>
   );
 };
