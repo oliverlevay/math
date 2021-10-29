@@ -115,6 +115,28 @@ const Solutions = () => {
         därmed är $f(x)$ inte kontinuerlig i $\\frac{\\pi}{2}$ och fortsättningsvis ej kontinuerlig på $\\mathbb{R}$
         `}</Latex>
       </Assignment>
+      <h4>Uppgift 3</h4>
+      <p>Lös ekvationerna:</p>
+      <Assignment id='3a' title={`3. a) $\\tan x\\cdot\\tan2x=1$`}>
+        <Latex>{`$
+        x=\\plusmn\\dfrac{\\pi}{6}+\\pi k, k\\text{ heltal}
+        $`}</Latex>
+      </Assignment>
+      <Assignment id='3b' title={`3. b) $\\ln(1-e^x) + \\ln(1+e^x)=x$`}>
+        <Latex>{`$
+        \\ln(1-e^x) + \\ln(1+e^x)=x${ltx.iss}${newLine}
+        \\ln((1-e^x)(1+e^x))=x${ltx.iss}${newLine}
+        \\ln(1+-e^{2x})=x${ltx.iss}${newLine}
+        1-e^{2x}=e^x${ltx.iss}${newLine}
+        1-(e^x)^2=e^x${ltx.iss}${newLine}
+        1-t^2=t${ltx.iss}t^2+t-1=0${ltx.iss}${newLine}
+        t=-\\frac{1}{2}\\plusmn\\sqrt{(\\frac12)^2+1}=-\\frac12\\plusmn\\sqrt{\\frac14+\\frac44}=-\\frac12\\plusmn\\sqrt{\\frac{5}{4}}${newLine}
+        t_1(\\text{egentligen }e^x)=\\dfrac{-1+\\sqrt{5}}{2}${ltx.iss}x= \\ln(\\dfrac{-1+\\sqrt{5}}{2}) ${newLine}
+        t_2(\\text{egentligen }e^x)=\\dfrac{-1-\\sqrt{5}}{2}${ltx.iss}x= \\ln(\\dfrac{-1-\\sqrt{5}}{2}), x\\notin\\mathbb{R} ${newLine}
+        $
+        $\\text{Svar: }x= \\ln(\\dfrac{\\sqrt{5}-1}{2})$
+        `}</Latex>
+      </Assignment>
     </Container>
   );
 };

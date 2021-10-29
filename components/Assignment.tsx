@@ -21,6 +21,7 @@ const Anchor = styled.a`
   display: block;
   position: relative;
   visibility: hidden;
+  top: -20rem;
 `;
 
 const Assignment: FC<Props> = ({ title, id, children }) => {
@@ -31,7 +32,6 @@ const Assignment: FC<Props> = ({ title, id, children }) => {
   useEffect(() => {
     if (id === selectedId) {
       setExpanded(true);
-      router.push(router.pathname);
     }
   }, [selectedId, router]);
   return (
@@ -54,24 +54,28 @@ const Assignment: FC<Props> = ({ title, id, children }) => {
               disableTouchListener
               title='Länk kopierad!'
             >
-              <Button
-                variant='outlined'
-                color='secondary'
-                style={{ width: 'fit-content', marginLeft: 'auto' }}
-                onClick={() => {
-                  const url = new URL(document.location.href);
-                  url.searchParams.set('id', id);
-                  copyToClipBoard(url.toString() + `#${id}`, (err) => {
-                    if (!err && !copiedToClipboard) {
-                      setCopiedToClipboard(true);
-                      setTimeout(() => setCopiedToClipboard(false), 2500);
-                    }
-                  });
-                }}
-                title='Kopiera länk till lösning'
-              >
-                <LinkIcon />
-              </Button>
+              <div style={{ width: 'fit-content', marginLeft: 'auto' }}>
+                <Button
+                  variant='outlined'
+                  color='secondary'
+                  onClick={() => {
+                    const url = new URL(
+                      document.location.pathname,
+                      document.location.origin
+                    );
+                    url.searchParams.set('id', id);
+                    copyToClipBoard(url.toString() + `#${id}`, (err) => {
+                      if (!err && !copiedToClipboard) {
+                        setCopiedToClipboard(true);
+                        setTimeout(() => setCopiedToClipboard(false), 2500);
+                      }
+                    });
+                  }}
+                  title='Kopiera länk till lösning'
+                >
+                  <LinkIcon />
+                </Button>
+              </div>
             </Tooltip>
           </Stack>
         </AccordionDetails>
