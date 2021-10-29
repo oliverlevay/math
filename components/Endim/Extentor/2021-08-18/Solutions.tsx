@@ -26,7 +26,7 @@ const Solutions = () => {
         och 6 rätt ger 3 poäng.
       </p>
       <Assignment
-        title={`$a)\\text{ Beräkna }\\dfrac{\\frac23-\\frac12}{2-\\frac13}$`}
+        title={`1. a) Beräkna $\\dfrac{\\frac23-\\frac12}{2-\\frac13}$`}
         id='1a'
       >
         <Latex>{`$
@@ -38,7 +38,7 @@ const Solutions = () => {
         $`}</Latex>
       </Assignment>
       <Assignment
-        title={`$b)$ Låt $\\ell$ vara linjen som går genom punkterna $(-1, 1)$ och $(3, -1)$ Ange linjens ekvation i formen $y=kx+m$`}
+        title={`1. b) Låt $\\ell$ vara linjen som går genom punkterna $(-1, 1)$ och $(3, -1)$ Ange linjens ekvation i formen $y=kx+m$`}
         id='1b'
       >
         <Latex>{`$
@@ -48,14 +48,14 @@ const Solutions = () => {
         $`}</Latex>
       </Assignment>
       <Assignment
-        title={`$c)$ Ange alla vinklar $\\alpha$ mellan 0 och 360 grader som uppfyller $\\sin\\alpha=-\\frac{\\sqrt{2}}{2}$.`}
+        title={`1. c) Ange alla vinklar $\\alpha$ mellan 0 och 360 grader som uppfyller $\\sin\\alpha=-\\frac{\\sqrt{2}}{2}$.`}
         id='1c'
       >
         <Latex>{`$
         255\\degree \\text{ och } 315 \\degree
         $`}</Latex>
       </Assignment>
-      <Assignment title={`$d)$ Lös ekvationen $x^3 = 2x^2 + 3x$.`} id='1a'>
+      <Assignment title={`1. d) Lös ekvationen $x^3 = 2x^2 + 3x$.`} id='1d'>
         <Latex>{`$
         x^3=2x^2+3x${ltx.iss}x^3-(2x^2+3x)=0${ltx.iss}x(x^2-2x-3)=0${breakLine}
         \\text{Dela upp i fall:}${breakLine}
@@ -64,7 +64,7 @@ const Solutions = () => {
         \\text{Svar: }x_1=3,x_2=-1,x_3=0
         $`}</Latex>
       </Assignment>
-      <Assignment title='$e)$ Lös olikheten $\dfrac{x+2}{1-x} > 0$' id='1e'>
+      <Assignment title='1. e) Lös olikheten $\dfrac{x+2}{1-x} > 0$' id='1e'>
         <Latex>{`$
         x\\neq1${newLine}
         \\text{Dela upp i fall:}${breakLine}
@@ -75,12 +75,36 @@ const Solutions = () => {
         \\text{Svar: } -2<x<1
         $`}</Latex>
       </Assignment>
-      <Assignment title='$f)$ Lös ekvationen $\ln(1-x)-\ln(x+3)=\ln1$' id='1e'>
+      <Assignment title='1. f) Lös ekvationen $\ln(1-x)-\ln(x+3)=\ln1$' id='1f'>
         <Latex>{`$
         \\ln(1-x)-\\ln(x+3)=\\ln1${ltx.iss}\\ln(1-x)-\\ln(x+3)=0${ltx.iss}${breakLine}
         \\ln(1-x)=\\ln(x+3)${ltx.iss}1-x=x+3${ltx.iss}x=-1
         $`}</Latex>
       </Assignment>
+      <h4>Uppgift 2</h4>
+      <Assignment
+        title={`2. a) Beräkna $${ltx.limInf}\\dfrac{(x+1)^2+2x \\sin x}{x^3e^{-x}-2x^2}$`}
+        id='2a'
+      >
+        <Latex>{`$
+        ${ltx.limInf}\\dfrac{(x+1)^2+2x \\sin x}{x^3e^{-x}-2x^2}=${newLine}
+        ${ltx.limInf}\\dfrac{x^2+2x+1^2+2x \\sin x}{x^3e^{-x}-2x^2}=${newLine}
+        ${ltx.limInf}\\dfrac{x^2}{x^2}\\cdot\\dfrac{1+\\frac{2}{x}\\frac{1}{x^2}\\frac{2\\sin x}{x}}{xe^{-x}-2}=${newLine}
+        1\\cdot\\dfrac{1+0+0+0}{0-2}=-\\dfrac{1}{2}
+        $`}</Latex>
+      </Assignment>
+      <Assignment
+        title={`
+        2 b) Avgör om funktionen $f(x)$ nedan är kontinuerling på $\\mathbb{R}${newLine}
+        
+        f(x)=
+        \\begin{cases}
+        \\dfrac{e^{\\cos x}- 1}{x - \\frac{\\pi}{2}}, & x\\neq\\frac{pi}{2}${breakLine}
+        0, & x=\\frac{pi}{2}
+        \\end{cases}
+        $`}
+        id='2b'
+      ></Assignment>
     </Container>
   );
 };

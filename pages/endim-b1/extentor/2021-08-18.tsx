@@ -8,6 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 30rem;
 `;
 export default function Home() {
   return (

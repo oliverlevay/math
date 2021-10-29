@@ -63,6 +63,10 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity='sha384-cRxb1HsKSl8bTfU9fBcGsjktUfQa6w+fwvkYnU8XjFH4Qg8To1+/9OXv5iRzrKX4'
           crossOrigin='anonymous'
         />
+        <link
+          rel='stylesheet'
+          href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'
+        />
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>

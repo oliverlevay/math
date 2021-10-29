@@ -459,7 +459,9 @@ const Rehearsal = () => {
                   \\end{matrix*}${newLine}$
                   `}</Latex>
         </DecreaseMobileFont>
-        <Latex>{`$\\text{Om vi utgår från $(9.19)$ och $(9.21)$ kan vi härleda de fem övriga:}${newLine}
+
+        <Latex>{`Om vi utgår från 9.19 och 9.21 kan vi härleda de fem övriga:
+                $${newLine}
                 (9.20):${breakLine} \\text{Låt } t=^a\\log x: ${ltx.limInf}\\dfrac{x^\\alpha}{^a\\log x}=
                 \\begin{bmatrix*}[l]
                   t=^a\\log x & \\Rarr & x=a^t${breakLine}
@@ -468,13 +470,13 @@ const Rehearsal = () => {
                 \\lim\\limits_{t\\rightarrow\\infin}\\dfrac{(a^t)^\\alpha}{t}=\\lim\\limits_{t\\rightarrow\\infin}\\dfrac{(a^\\alpha)^t}{t}=\\infin$ enligt (9.19)
                 $${newLine}(9.22):${breakLine}
                 \\text{Vi undersöker först funktionen för } x > 0.${breakLine}
-                \\text{Eftersom }x\\text{ kan antas vara litet går det bra att föursätta att }x<\\frac\\pi2${breakLine}
+                $ Eftersom $x$ kan antas vara litet går det bra att föursätta att $x<\\frac\\pi2${breakLine}
                 \\text{Enligt sats 8.5 gäller då att}${breakLine}
                 \\sin x < x < \\tan x ${ltx.iss}
                 \\sin x < x < \\dfrac{\\sin x}{\\cos x} ${ltx.iss}
                 1 < \\dfrac{x}{\\sin x} < \\dfrac{1}{\\cos x}${newLine}
                 \\text{Då }\\cos x\\text{ är kontinuerlig gäller att }\\dfrac{1}{cox}\\rarr1\\text{ då }x\\rarr0^+.${breakLine}
-                \\dfrac{x}{sin x} \\text{ är då instängd av två funktioner som båda har gränsvärdet 1, alltså:}${newLine}
+                \\dfrac{x}{sin x} $ är då instängd av två funktioner som båda har gränsvärdet 1, alltså:$${newLine}
                 ${ltx.lim0Pl}\\dfrac{x}{\\sin x}=1 ${ltx.iss}${ltx.lim0Pl}\\dfrac{\\sin x}{x}=${ltx.iss}\\dfrac{1}{\\frac{1}{\\sin x}}=1 \\#
                 $`}</Latex>
       </Assignment>
