@@ -1,16 +1,17 @@
-import { FC, useEffect, useState } from 'react';
-import styled from 'styled-components';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
-import LinkIcon from '@mui/icons-material/Link';
-import { useRouter } from 'next/dist/client/router';
-import Latex from 'react-latex-next';
-import { Stack } from '@mui/material';
-import Tooltip from '@mui/material/Tooltip';
-import copyToClipBoard from 'lib/copyToClipboard';
+import { FC, useEffect, useState } from "react";
+import styled from "styled-components";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Button from "@mui/material/Button";
+import LinkIcon from "@mui/icons-material/Link";
+import { useRouter } from "next/dist/client/router";
+import Latex from "react-latex-next";
+import { Stack } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
+import copyToClipBoard from "lib/copyToClipboard";
+import { colors } from "lib/colors";
 
 type Props = {
   title: string;
@@ -52,18 +53,18 @@ const Assignment: FC<Props> = ({ title, id, children }) => {
               disableFocusListener
               disableHoverListener
               disableTouchListener
-              title='Länk kopierad!'
+              title="Länk kopierad!"
             >
-              <div style={{ width: 'fit-content', marginLeft: 'auto' }}>
+              <div style={{ width: "fit-content", marginLeft: "auto" }}>
                 <Button
-                  variant='outlined'
-                  color='secondary'
+                  variant="outlined"
+                  color="secondary"
                   onClick={() => {
                     const url = new URL(
                       document.location.pathname,
                       document.location.origin
                     );
-                    url.searchParams.set('id', id);
+                    url.searchParams.set("id", id);
                     copyToClipBoard(url.toString() + `#${id}`, (err) => {
                       if (!err && !copiedToClipboard) {
                         setCopiedToClipboard(true);
@@ -71,7 +72,7 @@ const Assignment: FC<Props> = ({ title, id, children }) => {
                       }
                     });
                   }}
-                  title='Kopiera länk till lösning'
+                  title="Kopiera länk till lösning"
                 >
                   <LinkIcon />
                 </Button>

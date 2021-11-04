@@ -8,7 +8,7 @@ import { ThemeProvider } from "@mui/system";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: ${colors.magnolia};
+    background: ${colors.almond};
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     overflow-y: scroll;
@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
 const theme = createTheme({
   palette: {
     primary: {
-      main: colors.almond,
+      main: colors.white,
     },
     secondary: {
       main: colors.davysGrey,
@@ -71,7 +71,10 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <NextNProgress color={colors.activeSoft} />
+        <NextNProgress
+          color={colors.activeSoft}
+          options={{ showSpinner: false }}
+        />
         <Component {...pageProps} />
       </ThemeProvider>
     </>

@@ -65,13 +65,12 @@ export default function NewSolution({ course }: { course: Course }) {
           {helpers.map((helper) => (
             <Button
               key={helper.label}
-              color="secondary"
               style={{
                 marginRight: "1rem",
                 marginBottom: "1rem",
                 textTransform: "none",
               }}
-              variant="outlined"
+              variant="contained"
               onClick={() => {
                 if (helper.wrap) {
                   const wrapperText = helper.string.split("{}");

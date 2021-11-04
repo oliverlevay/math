@@ -62,14 +62,14 @@ const DesktopMenu = styled.div`
 `;
 
 const TopBar = styled.div`
-  padding: 1rem;
+  padding: 1rem 2rem;
   position: fixed;
-  left: 0;
+  left: -1rem;
   top: 0;
   width: 100%;
-  background-color: ${colors.magnolia};
-  border-bottom: 1px solid ${colors.blackCoffee};
+  background-color: ${colors.råsa};
   z-index: 10;
+  box-shadow: 0 8px 6px -6px black;
   ${TABLET_BP} {
     display: none;
   }
