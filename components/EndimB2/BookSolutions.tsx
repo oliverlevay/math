@@ -231,10 +231,83 @@ const Solutions = () => {
         <Latex>{`
         Sätt $z=x + yi$
         $${newLine}
-        x+yi\\cdot2(\\overline{x+yi})=2(x+yi)(x-yi)=2(x^2-(yi)^2)=2x-2(yi)^2=2x^2+2y^2${newLine}
+        x+yi\\cdot2(\\overline{x+yi})=2(x+yi)(x-yi)=2(x^2-(yi)^2)=2x-2(yi)^2=2x^2-2y^2i^2=2x^2+2y^2${newLine}
         2x^2+2y^2=1+i${newLine}$
         Denna uppgift saknar lösning eftersom vänsterledet inte innehåller någon imaginär del.
         `}</Latex>
+      </Assignment>
+      <p>
+        <Latex>{`6.9 Tolka geometriskt i det komplexa talplanet relationen:`}</Latex>
+      </p>
+      <Assignment title={`Re$z+$Im$z=1$`} id="6.9">
+        <Latex>{`
+        Den räta linjen genom 1 och i.$${newLine}$
+        Med $z=x+yi$ är Re$z=x$ och Im$z=y$. Relationen kan alltså skrivas
+        $x+y=1$, vilket beskriver en rät linje genom punkterna $(1,0)$ och $(0,1)$,
+        dvs. en linje genom punkterna 1 och $i$ i det komplexa talplanet.
+        `}</Latex>
+      </Assignment>
+      <p>
+        <Latex>{`6.10 Rita i det komplexa talplanet de $z$ som uppfyller relationen:`}</Latex>
+      </p>
+      <Assignment title={`a) Re$z=3$`} id="6.10a">
+        <Latex>{`Linjen x = 3`}</Latex>
+      </Assignment>
+      <Assignment title={`b) Im$z=-1$`} id="6.10b">
+        <Latex>{`Linjen y = -1`}</Latex>
+      </Assignment>
+      <Assignment title={`c) Im$z>0$`} id="6.10c">
+        <Latex>{`Halvplanet y > 0`}</Latex>
+      </Assignment>
+      <Assignment title={`d) $z+\\overline{z}=0$`} id="6.10d">
+        <Latex>{`Imaginära axeln$${newLine}$
+        Sätt $z=x + yi$$${newLine}
+        x+yi+x-yi=0${ltx.iss}2x=0${ltx.iss}x=0
+        $`}</Latex>
+      </Assignment>
+      <Assignment title={`e) $z=\\overline{z}$`} id="6.10e">
+        <Latex>{`Reella axeln$${newLine}$
+        Sätt $z=x + yi$$${newLine}
+        x+yi=x-yi${ltx.iss}x+yi-(x-yi)=0${ltx.iss}2yi=0${ltx.iss}yi=0
+        $`}</Latex>
+      </Assignment>
+      <p>
+        <Latex>{`6.11 Rita i det komplexa talplanet de $z$ som uppfyller:`}</Latex>
+      </p>
+      <Assignment title={`$|z+2|=1$`} id="6.11">
+        <Latex>{`Cirkel med radie $1$ och medelpunkt $-2${newLine}$
+        Eftersom $|z-u|$ anger avståndet från $z$ till $u$, så är $|z+2|=|z-(-2)|$ avståndet från $z$ till $-2$.
+        Relationen $|z+2|=1$ är alltså uppfylld av alla $z$ vars avstånd till $-2$ är $1$, dvs. alla $z$ på cirkeln med
+        radie $1$ och medelpunkt $-2$.
+        `}</Latex>
+      </Assignment>
+      <p>
+        <Latex>{`6.12 Rita i det komplexa talplanet de $z$ som uppfyller:`}</Latex>
+      </p>
+      <Assignment title={`a) $|z|=1$`} id="6.12a">
+        <Latex>{`Cirkel med radie $1$ och medelpunkt $0$`}</Latex>
+      </Assignment>
+      <Assignment title={`b) $|z|=3$`} id="6.12b">
+        <Latex>{`Cirkel med radie $3$ och medelpunkt $0$`}</Latex>
+      </Assignment>
+      <Assignment title={`c) $|z-2|=1$`} id="6.12c">
+        <Latex>{`Cirkel med radie $1$ och medelpunkt $2$`}</Latex>
+      </Assignment>
+      <Assignment title={`d) $|z+1+i|=2$`} id="6.12d">
+        <Latex>{`Cirkel med radie $2$ och medelpunkt $-1-i${newLine}
+        $Skriv om till formen $|z-u|$ som anger avståndet mellan $z$ och $u$:$${newLine}
+        |z+1+i|=|z-(-(1+i))|=|z-(-1-i)|${newLine}
+        |z-(-1-i)|=2${ltx.iss}$Avståndet mellan $z$ och $(-1-i)$ är $2$
+        `}</Latex>
+      </Assignment>
+      <Assignment title={`e) $|z|\\leq 1$`} id="6.12e">
+        <Latex>{`Cirkelskivan med radie $2$ och medelpunkt $0$`}</Latex>
+      </Assignment>
+      <Assignment title={`f) $|z|>2$`} id="6.12f">
+        <Latex>{`Allt utanför cirkelskivan i e)`}</Latex>
+      </Assignment>
+      <Assignment title={`g) $1\\leq|z+1|\\leq2$`} id="6.12g">
+        <Latex>{`Området mellan två cirklar med medelpunkt $-1$ och radierna $1$ respektive $2$`}</Latex>
       </Assignment>
     </Container>
   );
