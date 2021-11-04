@@ -231,8 +231,9 @@ const Solutions = () => {
         <Latex>{`
         Sätt $z=x + yi$
         $${newLine}
-        WIP
-        $
+        x+yi\\cdot2(\\overline{x+yi})=2(x+yi)(x-yi)=2(x^2-(yi)^2)=2x-2(yi)^2=2x^2+2y^2${newLine}
+        2x^2+2y^2=1+i${newLine}$
+        Denna uppgift saknar lösning eftersom vänsterledet inte innehåller någon imaginär del.
         `}</Latex>
       </Assignment>
     </Container>
