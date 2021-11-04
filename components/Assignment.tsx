@@ -11,7 +11,6 @@ import Latex from "react-latex-next";
 import { Stack } from "@mui/material";
 import Tooltip from "@mui/material/Tooltip";
 import copyToClipBoard from "lib/copyToClipboard";
-import { colors } from "lib/colors";
 
 type Props = {
   title: string;
