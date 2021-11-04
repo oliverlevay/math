@@ -1,11 +1,12 @@
-import { FC, useState } from 'react';
-import styled from 'styled-components';
-import Link from 'next/link';
-import { slide as Menu } from 'react-burger-menu';
-import { routes } from 'lib/routes';
-import { colors } from 'lib/colors';
-import BurgerMenuStylesProvider from 'layout/BurgerMenuStylesProvider';
-import { TABLET_BP } from 'lib/breakpoints';
+import { FC, useState } from "react";
+import styled from "styled-components";
+import Link from "next/link";
+import { slide as Menu } from "react-burger-menu";
+import { routes } from "lib/routes";
+import { colors } from "lib/colors";
+import BurgerMenuStylesProvider from "layout/BurgerMenuStylesProvider";
+import { TABLET_BP } from "lib/breakpoints";
+import { Course } from "lib/types";
 
 const Container = styled.div`
   display: flex;
@@ -14,6 +15,7 @@ const Container = styled.div`
 
 const Content = styled.div`
   display: flex;
+  width: 100%;
   max-width: 100vw;
   padding: 0.5rem;
   padding-top: 6rem;
@@ -75,38 +77,59 @@ const TopBar = styled.div`
 
 const menus = {
   endimB1: {
-    title: 'Endimensionell Analys',
+    title: "Endim B1",
     items: [
       {
-        label: 'Hem',
+        label: "Hem",
         route: routes.home,
       },
       {
-        label: 'Endim B1',
-        route: routes.endim.home,
+        label: "Endim B1",
+        route: routes.endimB1.home,
       },
       {
-        label: 'Länkar',
-        route: routes.endim.links,
+        label: "Länkar",
+        route: routes.endimB1.links,
       },
       {
-        label: 'Instuderingsfrågor',
-        route: routes.endim.rehearsal,
+        label: "Instuderingsfrågor",
+        route: routes.endimB1.rehearsal,
       },
       {
-        label: 'Extentor',
-        route: routes.endim.extentor.home,
+        label: "Extentor",
+        route: routes.endimB1.extentor.home,
       },
       {
-        label: 'Ny lösning',
-        route: routes.endim.newSolution,
+        label: "Ny lösning",
+        route: routes.endimB1.newSolution,
+      },
+    ],
+  },
+  endimB2: {
+    title: "Endim B2",
+    items: [
+      {
+        label: "Hem",
+        route: routes.home,
+      },
+      {
+        label: "Endim B2",
+        route: routes.endimB2.home,
+      },
+      {
+        label: "Uppgifter i boken",
+        route: routes.endimB2.bookSolutions,
+      },
+      {
+        label: "Ny lösning",
+        route: routes.endimB2.newSolution,
       },
     ],
   },
 };
 
 type Props = {
-  course: 'endimB1';
+  course: Course;
 };
 
 const Layout: FC<Props> = ({ children, course }) => {

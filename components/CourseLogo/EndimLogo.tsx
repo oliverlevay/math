@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import styled from 'styled-components';
-import { colors } from 'lib/colors';
+import Image from "next/image";
+import styled from "styled-components";
+import { colors } from "lib/colors";
 
 const Container = styled.div`
   display: flex;
@@ -53,13 +53,13 @@ const StudentLitteraturLogoContainer = styled.div`
   transform-origin: left;
 `;
 
-const EndimLogo = () => {
+const EndimLogo = ({ title }: { title: string }) => {
   return (
     <Container>
       <Sidebar>
         <StudentLitteraturLogoContainer>
           <Image
-            src='/images/studentlitteratur-logo.png'
+            src="/images/studentlitteratur-logo.png"
             width={315}
             height={45}
           />
@@ -68,7 +68,7 @@ const EndimLogo = () => {
       </Sidebar>
 
       <CopyContainer>
-        <CourseTitle>Endimensionell Analys B1</CourseTitle>
+        <CourseTitle>Endimensionell Analys {title}</CourseTitle>
         <CourseAuthors>Jonas Månsson & Patrik Nordbeck</CourseAuthors>
       </CopyContainer>
     </Container>

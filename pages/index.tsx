@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import EndimLogo from 'components/CourseLogo/EndimLogo';
-import styled from 'styled-components';
-import { Title } from 'components';
-import { routes } from 'lib/routes';
+import Link from "components/Link";
+import EndimLogo from "components/CourseLogo/EndimLogo";
+import styled from "styled-components";
+import { Title } from "components";
+import { routes } from "lib/routes";
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +13,14 @@ const Container = styled.div`
 
 const CourseList = styled.div``;
 
-const CourseContainer = styled.div``;
+const CourseContainer = styled.div`
+  display: flex;
+`;
+
+const Margin1Rem = styled.div`
+  margin-right: 1rem;
+  margin-top: 1rem;
+`;
 
 export default function Home() {
   return (
@@ -21,10 +28,12 @@ export default function Home() {
       <Title>Välj en kurs</Title>
       <CourseList>
         <CourseContainer>
-          <Link href={routes.endim.home} passHref>
-            <a style={{ textDecoration: 'none' }}>
-              <EndimLogo />
-            </a>
+          <Link href={routes.endimB1.home}>
+            <EndimLogo title={"B1"} />
+          </Link>
+          <Margin1Rem />
+          <Link href={routes.endimB2.home}>
+            <EndimLogo title={"B2"} />
           </Link>
         </CourseContainer>
       </CourseList>

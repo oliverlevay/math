@@ -1,21 +1,28 @@
 export const routes = {
-  home: '/',
-  endim: {
-    home: '/endim-b1',
+  home: "/",
+  endimB1: {
+    home: "/endim-b1",
     get links() {
-      return this.home + '/links';
+      return this.home + "/links";
     },
     get rehearsal() {
-      return this.home + '/rehearsal';
+      return this.home + "/rehearsal";
     },
     get newSolution() {
-      return this.home + '/new-solution';
+      return this.home + "/new-solution";
     },
     extentor: {
-      home: '/endim-b1/extentor',
+      home: "/endim-b1/extentor",
       get _20210818() {
-        return this.home + '/2021-08-18';
+        return this.home + "/2021-08-18";
       },
     },
+  },
+  endimB2: {
+    home: "/endim-b2",
+    get newSolution() {
+      return this.home + "/new-solution";
+    },
+    bookSolutions: "/endim-b2/book-solutions",
   },
 };
