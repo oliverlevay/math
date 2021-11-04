@@ -21,7 +21,7 @@ export default function Home() {
           <br />
           <br />
           Jag kommer initialt börja med att lägga upp{" "}
-          <Link href={routes.endimB2.bookSolutions}>
+          <Link href={routes.endimB2.bookSolutions.home}>
             lösningar till uppgifter i boken
           </Link>
           <br />
