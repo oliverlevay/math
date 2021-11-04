@@ -1,9 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
-import { AppProps } from 'next/app';
-import Head from 'next/head';
-import { colors } from 'lib/colors';
-import { createTheme } from '@mui/material';
-import { ThemeProvider } from '@mui/system';
+import { createGlobalStyle } from "styled-components";
+import { AppProps } from "next/app";
+import Head from "next/head";
+import { colors } from "lib/colors";
+import NextNProgress from "nextjs-progressbar";
+import { createTheme } from "@mui/material";
+import { ThemeProvider } from "@mui/system";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -55,21 +56,22 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        {' '}
+        {" "}
         <title>Sakur Math</title>
         <link
-          rel='stylesheet'
-          href='https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/katex.min.css'
-          integrity='sha384-cRxb1HsKSl8bTfU9fBcGsjktUfQa6w+fwvkYnU8XjFH4Qg8To1+/9OXv5iRzrKX4'
-          crossOrigin='anonymous'
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/katex.min.css"
+          integrity="sha384-cRxb1HsKSl8bTfU9fBcGsjktUfQa6w+fwvkYnU8XjFH4Qg8To1+/9OXv5iRzrKX4"
+          crossOrigin="anonymous"
         />
         <link
-          rel='stylesheet'
-          href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
         />
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
+        <NextNProgress color={colors.activeSoft} />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
