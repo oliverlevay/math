@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Head from "next/head";
+
 import Layout from "layout";
 import { Title } from "components";
-import BookSolutions from "components/EndimB2/BookSolutions";
+import PartOne from "components/EndimB2/BookSolutions/PartOne";
 
 const Container = styled.div`
   display: flex;
@@ -18,7 +19,8 @@ export default function Home() {
       </Head>
       <Container>
         <Title>Lösningar till uppgifter i boken</Title>
-        <BookSolutions />
+        <h2>Kapitel 6. Komplexa tal</h2>
+        <PartOne />
       </Container>
     </Layout>
   );

@@ -118,7 +118,7 @@ const menus = {
       },
       {
         label: "Uppgifter i boken",
-        route: routes.endimB2.bookSolutions,
+        route: routes.endimB2.bookSolutions.home,
       },
       {
         label: "Ny lösning",

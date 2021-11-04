@@ -23,6 +23,12 @@ export const routes = {
     get newSolution() {
       return this.home + "/new-solution";
     },
-    bookSolutions: "/endim-b2/book-solutions",
+    bookSolutions: {
+      home: "/endim-b2/book-solutions",
+      chapter6: {
+        home: "/endim-b2/book-solutions/chapter6",
+        partOne: "/endim-b2/book-solutions/chapter6/part-one",
+      },
+    },
   },
 };
