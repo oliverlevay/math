@@ -2,12 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Latex from 'react-latex-next';
 import Assignment from 'components/Assignment';
-import { ltx } from 'lib/latexHelpers';
+import { ltx, breakLine, newLine } from 'lib/latexHelpers';
 
 const Container = styled.div``;
-
-const breakLine = '\\\\';
-const newLine = '\\\\~\\\\';
 
 const Solutions = () => {
   return (

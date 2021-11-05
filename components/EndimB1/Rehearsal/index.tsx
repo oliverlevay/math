@@ -14,7 +14,7 @@ import Sine from './components/figures/Sine';
 import Cosine from './components/figures/Cosine';
 import Tan from './components/figures/Tan';
 import Cot from './components/figures/Cot';
-import { ltx } from 'lib/latexHelpers';
+import { ltx, breakLine, newLine } from 'lib/latexHelpers';
 
 const Container = styled.div`
   padding-bottom: 10rem;
@@ -49,9 +49,6 @@ const DecreaseMobileFont = styled.div`
     font-size: 1rem;
   }
 `;
-
-const breakLine = '\\\\';
-const newLine = '\\\\~\\\\';
 
 const Rehearsal = () => {
   return (

@@ -18,3 +18,6 @@ export const ltx = {
   ln: '\\ln{x}',
   abs: '|x|',
 };
+
+export const breakLine = '\\\\';
+export const newLine = '\\\\~\\\\';
