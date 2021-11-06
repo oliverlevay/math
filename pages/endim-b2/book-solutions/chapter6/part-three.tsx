@@ -3,8 +3,6 @@ import Head from "next/head";
 
 import Layout from "layout";
 import { Title } from "components";
-import PartOne from "components/EndimB2/BookSolutions/Chapter6/PartOne";
-import PartTwo from "components/EndimB2/BookSolutions/Chapter6/PartTwo";
 import PartThree from "components/EndimB2/BookSolutions/Chapter6/PartThree";
 
 const Container = styled.div`
@@ -22,8 +20,6 @@ export default function Home() {
       <Container>
         <Title>Lösningar till uppgifter i boken</Title>
         <h2>Kapitel 6. Komplexa tal</h2>
-        <PartOne />
-        <PartTwo />
         <PartThree />
       </Container>
     </Layout>
