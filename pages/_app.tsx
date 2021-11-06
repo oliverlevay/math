@@ -57,7 +57,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         {" "}
-        <title>Sakur Math</title>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/katex.min.css"

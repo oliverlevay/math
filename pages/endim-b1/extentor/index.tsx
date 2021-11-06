@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "layout";
 import { Title } from "components";
@@ -13,6 +14,9 @@ const Container = styled.div`
 export default function Home() {
   return (
     <Layout course="endimB1">
+      <Head>
+        <title>Extentor | Sakur Math</title>
+      </Head>
       <Container>
         <Title>Extentor</Title>
         <h2>Välj tenta</h2>

@@ -1,9 +1,10 @@
-import styled from "styled-components";
-import Head from "next/head";
+import styled from 'styled-components';
+import Head from 'next/head';
 
-import Layout from "layout";
-import { Title } from "components";
-import PartOne from "components/EndimB2/BookSolutions/PartOne";
+import Layout from 'layout';
+import { Title } from 'components';
+import PartOne from 'components/EndimB2/BookSolutions/Chapter6/PartOne';
+import PartTwo from 'components/EndimB2/BookSolutions/Chapter6/PartTwo';
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ const Container = styled.div`
 `;
 export default function Home() {
   return (
-    <Layout course="endimB2">
+    <Layout course='endimB2'>
       <Head>
         <title>Lösningar till uppgifter i boken | Endim B2</title>
       </Head>
@@ -21,6 +22,7 @@ export default function Home() {
         <Title>Lösningar till uppgifter i boken</Title>
         <h2>Kapitel 6. Komplexa tal</h2>
         <PartOne />
+        <PartTwo />
       </Container>
     </Layout>
   );

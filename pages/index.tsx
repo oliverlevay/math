@@ -1,4 +1,5 @@
 import Link from "components/Link";
+import Head from "next/head";
 import EndimLogo from "components/CourseLogo/EndimLogo";
 import styled from "styled-components";
 import { Title } from "components";
@@ -25,6 +26,9 @@ const Margin1Rem = styled.div`
 export default function Home() {
   return (
     <Container>
+      <Head>
+        <title>Välj en kurs | Sakur Math</title>
+      </Head>
       <Title>Välj en kurs</Title>
       <CourseList>
         <CourseContainer>

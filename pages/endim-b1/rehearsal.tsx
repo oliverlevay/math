@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Head from "next/head";
 import Layout from "layout";
 import { Title } from "components";
 import Rehearsal from "components/EndimB1/Rehearsal";
@@ -15,6 +16,9 @@ const Information = styled.p``;
 export default function RehearsalPage() {
   return (
     <Layout course="endimB1">
+      <Head>
+        <title>Instuderingsfrågor | Sakur Math</title>
+      </Head>
       <Container>
         <Title>Instuderingsfrågor</Title>
         <Information>

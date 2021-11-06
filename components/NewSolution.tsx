@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import Head from "next/head";
 import styled from "styled-components";
 import Layout from "layout";
 import { Title } from "components";
@@ -50,6 +51,9 @@ export default function NewSolution({ course }: { course: Course }) {
   );
   return (
     <Layout course={course}>
+      <Head>
+        <title>Ny lösning | Sakur Math</title>
+      </Head>
       <Container>
         <Title>Ny lösning</Title>
         <p>

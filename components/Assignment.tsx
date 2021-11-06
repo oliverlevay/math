@@ -37,7 +37,7 @@ const Assignment: FC<Props> = ({ title, id, children }) => {
   return (
     <>
       <Anchor id={id} />
-      <Accordion expanded={expanded}>
+      <Accordion expanded={expanded} style={{ lineHeight: 2 }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           onClick={() => setExpanded((state) => !state)}

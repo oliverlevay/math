@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Head from "next/head";
 import Layout from "layout";
 import { Title } from "components";
 import { Button, Stack } from "@mui/material";
@@ -13,6 +14,9 @@ const Container = styled.div`
 export default function Home() {
   return (
     <Layout course="endimB1">
+      <Head>
+        <title>Extenta 2021-08-18 | Sakur Math</title>
+      </Head>
       <Container>
         <Title>Extenta 2021-08-18</Title>
         <Stack direction="row" spacing={2}>
