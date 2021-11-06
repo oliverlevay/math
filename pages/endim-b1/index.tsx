@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "layout";
 import { Title } from "components";
@@ -16,6 +17,9 @@ const Information = styled.p``;
 export default function Home() {
   return (
     <Layout course="endimB1">
+      <Head>
+        <title>Endimensionell analys B1 | Sakur Math</title>
+      </Head>
       <Container>
         <Title>Endimensionell analys B1</Title>
         <Information>Hej! Vad kul att du har hittat hit.</Information>
