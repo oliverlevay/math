@@ -12,7 +12,7 @@ const Container = styled.div`
 const Solutions = () => {
   return (
     <Container>
-      <h3>Kapitel 6. Polär form</h3>
+      <h3>Polär form</h3>
       <p>
         <Latex>{`6.18 Ange på formen $a+bi$ de komplexa tal vars absolutbelopp och argument är:`}</Latex>
       </p>
