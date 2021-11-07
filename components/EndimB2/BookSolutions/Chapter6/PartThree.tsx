@@ -414,6 +414,43 @@ const Solutions = () => {
         $detta ger $z_3=-1$ och $z_4=2$
         $${newLine}\\textbf{Svar: } z=-1,\\quad2,\\quad3i,\\quad-3i$`}</Latex>
       </Assignment>
+
+      <p>
+        <Latex>{`6.53 Faktorisera polynomet $p(x)=x^5-x^4+4x-4$ i realla faktorer av så låg grad som möjligt`}</Latex>
+      </p>
+      <Assignment title="Lösning" id="6.53">
+        <Latex>{`
+        Gissa en rot $p(1) = 0$. Använd polynomdivision. $${breakLine}
+        \\quad p(x)=(x-1)(x^{4}+4)${newLine}
+        $Skriv om $x^4+4$ som en binomisk ekvation$${breakLine}
+        z^4+4=0${ltx.iss}z^4=-4${breakLine}
+        z=re^{i\\theta}${breakLine}
+        z^4=(re^{i\\theta})^4=r^4(e^{i\\theta})^4=r^4e^{i4\\theta}${breakLine}
+        $Eftersom $-4=4e^{i\\pi}$ kan vår ekvation skrivas$${breakLine}
+        r^4e^{i4\\theta}=4e^{i\\pi}${breakLine}
+        \\begin{cases}
+        r^4=4 & r\\geq 0${breakLine}
+        4\\theta=\\pi+k2\\pi & k\\in \\mathbb{Z}
+        \\end{cases}${ltx.iss}
+        \\begin{cases}
+        r=\\sqrt{2}${breakLine}
+        \\theta=\\frac{\\pi}{4}+k\\frac{\\pi}{2}, k \\in\\{0,1,2,3\\}
+        \\end{cases}${newLine}
+        z_0=\\sqrt{2}e^{i(\\pi/4+0(\\pi/2)}=\\sqrt{2}e^{i\\pi/4}=
+        \\sqrt{2}(\\frac{1}{\\sqrt{2}}+\\frac{1}{\\sqrt{2}}i)=1+i${breakLine}
+        z_1=\\sqrt{2}e^{i(\\pi/4+1(\\pi/2)}=\\sqrt{2}e^{i3\\pi/4}=
+        \\sqrt{2}(-\\frac{1}{\\sqrt{2}}+\\frac{1}{\\sqrt{2}}i)=-1+i${breakLine}
+        z_2=\\sqrt{2}e^{i(\\pi/4+2(\\pi/2)}=\\sqrt{2}e^{i5\\pi/4}=
+        \\sqrt{2}(-\\frac{1}{\\sqrt{2}}-\\frac{1}{\\sqrt{2}}i)=-1-i${breakLine}
+        z_3=\\sqrt{2}e^{i(\\pi/4+3(\\pi/2)}=\\sqrt{2}e^{i7\\pi/4}=
+        \\sqrt{2}(\\frac{1}{\\sqrt{2}}-\\frac{1}{\\sqrt{2}}i)=1+i${newLine}
+        $Använd faktorsatsen och konjugatregeln$${breakLine}
+        z^4+4=(z-(1+i))(z-(-1+i))(z-(-1-i))(z-(1+i))=${breakLine}
+        (z^2+2z+2)(z^2-2z+2)${breakLine}
+        $Faktoriseringen blir alltså $${breakLine}
+        (x^{2}-2 x+2)(x^{2}+2 x+2)
+        ${newLine}\\textbf{Svar: } (x-1)(x^2-2x+2)(x^2+2x+2)$`}</Latex>
+      </Assignment>
     </Container>
   );
 };
