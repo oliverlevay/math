@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Link from 'next/link';
-import Latex from 'react-latex-next';
-import Assignment from 'components/Assignment';
-import { ltx, newLine, breakLine } from 'lib/latexHelpers';
+import React from "react";
+import styled from "styled-components";
+import Link from "next/link";
+import Latex from "react-latex-next";
+import Assignment from "components/Assignment";
+import { ltx, newLine, breakLine } from "lib/latexHelpers";
 
 const Container = styled.div`
   width: 100%;
@@ -16,7 +16,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.18 Ange på formen $a+bi$ de komplexa tal vars absolutbelopp och argument är:`}</Latex>
       </p>
-      <Assignment title={`a) $\\sqrt{2}, \\frac\\pi4$`} id='6.18a'>
+      <Assignment title={`a) $\\sqrt{2}, \\frac\\pi4$`} id="6.18a">
         <Latex>{`$
         |z|=r=\\sqrt{2}${breakLine}
         \\arg{z}=\\theta=\\frac\\pi4${breakLine}
@@ -25,7 +25,7 @@ const Solutions = () => {
         \\sqrt{2}\\dfrac{\\sqrt{2}}{2} + i\\sqrt{2}\\dfrac{\\sqrt{2}}{2}=1+i
         $`}</Latex>
       </Assignment>
-      <Assignment title={`b) $1, \\pi$`} id='6.18b'>
+      <Assignment title={`b) $1, \\pi$`} id="6.18b">
         <Latex>{`$
         |z|=r=1${breakLine}
         \\arg{z}=\\theta=\\pi${breakLine}
@@ -34,7 +34,7 @@ const Solutions = () => {
         -1 + 0 = -1
         $`}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\sqrt{2}, \\frac{9\\pi}{4}$`} id='6.18c'>
+      <Assignment title={`c) $\\sqrt{2}, \\frac{9\\pi}{4}$`} id="6.18c">
         <Latex>{`$
         |z|=r=\\sqrt{2}${breakLine}
         \\arg{z}=\\theta=\\frac{9\\pi}{4}=2\\pi+\\frac{\\pi}{4}\\backsimeq\\frac\\pi4${breakLine}
@@ -43,7 +43,7 @@ const Solutions = () => {
         \\sqrt{2}\\dfrac{\\sqrt{2}}{2} + i\\sqrt{2}\\dfrac{\\sqrt{2}}{2}=1+i
         $`}</Latex>
       </Assignment>
-      <Assignment title={`d) $1, \\frac{\\pi}{2}$`} id='6.18d'>
+      <Assignment title={`d) $1, \\frac{\\pi}{2}$`} id="6.18d">
         <Latex>{`$
         |z|=r=1${breakLine}
         \\arg{z}=\\theta=\\frac{\\pi}{2}${breakLine}
@@ -52,7 +52,7 @@ const Solutions = () => {
         1\\cdot0 + i\\cdot1\\cdot1=i
         $`}</Latex>
       </Assignment>
-      <Assignment title={`e) $1, 2\\pi$`} id='6.18e'>
+      <Assignment title={`e) $1, 2\\pi$`} id="6.18e">
         <Latex>{`$
         |z|=r=1${breakLine}
         \\arg{z}=\\theta=
@@ -66,7 +66,7 @@ const Solutions = () => {
       </Assignment>
       <Assignment
         title={`f) $\\frac{1}{\\sqrt{2}}, -\\frac{\\pi}{4}$`}
-        id='6.18f'
+        id="6.18f"
       >
         <Latex>{`$
         |z|=r=\\frac{1}{\\sqrt{2}}
@@ -81,7 +81,7 @@ const Solutions = () => {
         \\frac12-\\frac12i
         $`}</Latex>
       </Assignment>
-      <Assignment title={`g) $1, -100\\pi$`} id='6.18g'>
+      <Assignment title={`g) $1, -100\\pi$`} id="6.18g">
         <Latex>{`$
         |z|=r=1
         ${breakLine}
@@ -100,35 +100,35 @@ const Solutions = () => {
         6.19 Rita följande komplexa tal i ett talplan. Bestäm även argument,
         absolutbelop och polär form:
       </p>
-      <Assignment title={`a) $1$`} id='6.19a'>
+      <Assignment title={`a) $1$`} id="6.19a">
         <Latex>{`$
         z=1${ltx.iss}|z|=1${breakLine}
         \\arg z=0${breakLine}
         \\text{Polär form: }z=re^{i\\theta}=1e^{i0}
         $`}</Latex>
       </Assignment>
-      <Assignment title={`b) $-13$`} id='6.19b'>
+      <Assignment title={`b) $-13$`} id="6.19b">
         <Latex>{`$
         z=-13${ltx.iss}|z|=13${breakLine}
         \\arg z=\\pi${breakLine}
         \\text{Polär form: }z=re^{i\\theta}=1e^{i\\pi}
         $`}</Latex>
       </Assignment>
-      <Assignment title={`c) $i$`} id='6.19c'>
+      <Assignment title={`c) $i$`} id="6.19c">
         <Latex>{`$
         z=i${ltx.iss}|z|=\\sqrt{0^2+1^2}=1${breakLine}
         \\arg z=\\frac{\\pi}{2}${breakLine}
         \\text{Polär form: }z=re^{i\\theta}=1e^{i\\frac{\\pi}{2}}
         $`}</Latex>
       </Assignment>
-      <Assignment title={`d) $-1+i$`} id='6.19d'>
+      <Assignment title={`d) $-1+i$`} id="6.19d">
         <Latex>{`$
         z=-1+i${ltx.iss}|z|=\\sqrt{(-1)^2+1^2}=\\sqrt{2}${breakLine}
         \\arg z=\\frac{3\\pi}{4}${breakLine}
         \\text{Polär form: }z=re^{i\\theta}=\\sqrt{2}e^{i\\frac{3\\pi}{4}}
         $`}</Latex>
       </Assignment>
-      <Assignment title={`e) $i\\sqrt{3}-1$`} id='6.19e'>
+      <Assignment title={`e) $i\\sqrt{3}-1$`} id="6.19e">
         <Latex>{`$
         z=i\\sqrt3-1${ltx.iss}|z|=\\sqrt{\\sqrt{3}^2+(-1)^2}=\\sqrt{4}=2${breakLine}
         $Eftersom $\\sqrt{3}>1$ måste vi faktorisera med $r=|z|=2$ för att få en standardvinkel$${breakLine}
@@ -136,7 +136,7 @@ const Solutions = () => {
         \\text{Polär form: }z=re^{i\\theta}=2e^{i\\frac{2\\pi}{3}}
         $`}</Latex>
       </Assignment>
-      <Assignment title={`f) $\\sqrt{3}+3i$`} id='6.19f'>
+      <Assignment title={`f) $\\sqrt{3}+3i$`} id="6.19f">
         <Latex>{`$
         z=i\\sqrt3-1${ltx.iss}|z|=\\sqrt{\\sqrt{3}^2+(3)^2}=\\sqrt{12}${breakLine}
         $Eftersom $\\sqrt{3}, 3>1$ måste vi faktorisera med $r=|z|=\\sqrt{12}$ för att få en standardvinkel$${breakLine}
@@ -151,7 +151,7 @@ const Solutions = () => {
       <p>6.20 Vad är absolutbelopp av:</p>
       <Assignment
         title={`a) $\\cos\\frac{\\pi}{8}+i\\sin\\frac{\\pi}{8}$`}
-        id='6.20a'
+        id="6.20a"
       >
         <Latex>{`
         Använd den trigonometriska ettan$${breakLine}
@@ -163,7 +163,7 @@ const Solutions = () => {
       </Assignment>
       <Assignment
         title={`b) $\\cos\\frac{9\\pi}{5}+i\\sin\\frac{9\\pi}{5}$`}
-        id='6.20b'
+        id="6.20b"
       >
         <Latex>{`
         Använd den trigonometriska ettan$${breakLine}
@@ -173,7 +173,7 @@ const Solutions = () => {
         $
         `}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\cos\\theta+i\\sin\\theta$`} id='6.20c'>
+      <Assignment title={`c) $\\cos\\theta+i\\sin\\theta$`} id="6.20c">
         <Latex>{`
         Använd den trigonometriska ettan$${breakLine}
         |\\cos\\theta+i\\sin\\theta|=
@@ -183,7 +183,7 @@ const Solutions = () => {
         `}</Latex>
       </Assignment>
       <p>6.21 Vad är absolutbelopp av:</p>
-      <Assignment title={`a) $e^{i\\frac{\\pi}{8}}$`} id='6.21a'>
+      <Assignment title={`a) $e^{i\\frac{\\pi}{8}}$`} id="6.21a">
         <Latex>{`
         $|e^{i\\theta}|=|\\cos\\theta+i\\sin\\theta|=|\\cos\\frac{\\pi}{8}+i\\sin\\frac{\\pi}{8}|${breakLine} $
         Använd den trigonometriska ettan$${breakLine}
@@ -193,7 +193,7 @@ const Solutions = () => {
         $
         `}</Latex>
       </Assignment>
-      <Assignment title={`b) $e^{i\\frac{9\\pi}{5}}$`} id='6.21b'>
+      <Assignment title={`b) $e^{i\\frac{9\\pi}{5}}$`} id="6.21b">
         <Latex>{`
         $|e^{i\\theta}|=|\\cos\\theta+i\\sin\\theta|=|\\cos\\frac{9\\pi}{5}+i\\sin\\frac{9\\pi}{5}|${breakLine} $
         Använd den trigonometriska ettan$${breakLine}
@@ -205,7 +205,7 @@ const Solutions = () => {
       </Assignment>
       <Assignment
         title={`c) $e^{i\\theta}$ om $\\theta$ är reellt?`}
-        id='6.21c'
+        id="6.21c"
       >
         <Latex>{`
         $|e^{i\\theta}|=|\\cos\\theta+i\\sin\\theta|${breakLine} $
@@ -220,13 +220,13 @@ const Solutions = () => {
       <p>
         <Latex>{`6.22 Argumenet av $z$ är $\\pi/3$ och $\\arg w=\\pi/4$ Bestäm ett argument till:`}</Latex>
       </p>
-      <Assignment title={`a) $zw$`} id='6.22a'>
+      <Assignment title={`a) $zw$`} id="6.22a">
         <Latex>{`$
         \\arg z = \\frac{\\pi}{3}, \\arg w = \\frac{\\pi}{4}${breakLine}
         \\arg zw = \\arg z + \\arg w = \\frac{\\pi}{3} + \\frac{\\pi}{4}=\\frac{7\\pi}{12}
         $`}</Latex>
       </Assignment>
-      <Assignment title={`b) $z/w$`} id='6.22b'>
+      <Assignment title={`b) $z/w$`} id="6.22b">
         <Latex>{`$
         \\arg z = \\frac{\\pi}{3}, \\arg w = \\frac{\\pi}{4}${breakLine}
         \\arg \\frac{z}{w} = \\arg z - \\arg w = \\frac{\\pi}{3} - \\frac{\\pi}{4}=\\frac{\\pi}{12}
@@ -234,7 +234,7 @@ const Solutions = () => {
       </Assignment>
       <Assignment
         title={`c) Kan man säga något om vad $\\arg(z+w)$ eller $\\arg(z-w)$ är?`}
-        id='6.22c'
+        id="6.22c"
       >
         <Latex>{`
         Nej.$${newLine}$
@@ -247,7 +247,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.23 Argumentet av $z$ är $\\pi/3$. Ange ett argument som ligger mellan $0$ och $2\\pi$ till $z^{2000}$`}</Latex>
       </p>
-      <Assignment title={`Lösning`} id='6.23'>
+      <Assignment title={`Lösning`} id="6.23">
         <Latex>{`$
         z^{2000} = (e^{i\\frac{\\pi}{3}})^{2000} = 
         e^{i\\frac{2000\\pi}{3}}${ltx.iss}
@@ -267,7 +267,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.24 Beräkna argumentet av $z=\\dfrac{1+i\\sqrt{3}}{(2-2i)^3}$`}</Latex>
       </p>
-      <Assignment title={`Lösning`} id='6.24'>
+      <Assignment title={`Lösning`} id="6.24">
         <Latex>{`
         Kalla täljaren för $w$ och nämnaren för $x$: $${breakLine}
         z=\\dfrac{1+i\\sqrt{3}}{(2-2i)^3}=\\dfrac{w}{x}${newLine}
@@ -293,7 +293,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.25 Bestäm $\\arg \\dfrac{(2+2i)(1+i\\sqrt{3})}{3i(\\sqrt{12}-2i)}$`}</Latex>
       </p>
-      <Assignment title={`Lösning`} id='6.25'>
+      <Assignment title={`Lösning`} id="6.25">
         <Latex>{`
           Då argumentet är det enda som är intressant kan alla faktorer skrivas ihop som $k$.
           $${breakLine}
@@ -315,7 +315,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.26 Låt $w$ vara ett givet reelt tal. Bestäm ett argument av`}</Latex>
       </p>
-      <Assignment title={`a) $1+2iw$`} id='6.26a'>
+      <Assignment title={`a) $1+2iw$`} id="6.26a">
         <Latex>{`
         Låt $z=a+bi$ och $\\theta$ ett argument till $z$. Eftersom Re$z$ motsvarar x-axeln och Im$z$ motsvarar y-axeln i ett koordinatsystem är $\\tan\\theta=\\frac{b}{a},~~a\\neq 0$.
         $${breakLine}$
@@ -325,7 +325,7 @@ const Solutions = () => {
         ${newLine}\\textbf{Svar: } \\arctan2w
         $`}</Latex>
       </Assignment>
-      <Assignment title={`b) $-1+2iw$`} id='6.26b'>
+      <Assignment title={`b) $-1+2iw$`} id="6.26b">
         <Latex>{`
         Låt $z=a+bi$ och $\\theta$ ett argument till $z$. Eftersom Re$z$ motsvarar x-axeln och Im$z$ motsvarar y-axeln i ett koordinatsystem är $\\tan\\theta=\\frac{b}{a},~~a\\neq 0$.
         $${breakLine}$
@@ -335,53 +335,53 @@ const Solutions = () => {
         ${newLine}\\textbf{Svar: } \\pi-\\arctan2w
         $`}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\dfrac{1}{1+2iw}$`} id='6.26c'>
+      <Assignment title={`c) $\\dfrac{1}{1+2iw}$`} id="6.26c">
         <Latex>{`
         Låt $z=a+bi$ och $\\theta$ ett argument till $z$. Eftersom Re$z$ motsvarar x-axeln och Im$z$ motsvarar y-axeln i ett koordinatsystem är $\\tan\\theta=\\frac{b}{a},~~a\\neq 0$.
         $${breakLine}$
         Om $a > 0$ är $\\theta=\\arctan\\frac{b}{a}$ och om $a < 0$ är $\\theta=\\pi+\\arctan\\frac{b}{a}$.
         $${newLine}\\arg 1=0${breakLine}
         \\arg(1+2iw)=\\arctan2w\\;$`}</Latex>
-        <Link href='?id=6.26a#6.26a'>(se uppgift a)</Link>
+        <Link href="?id=6.26a#6.26a">(se uppgift a)</Link>
         <Latex>{`$${breakLine}
         \\arg\\Big(\\dfrac{1}{1+2iw}\\Big)=\\arg1-\\arg(1+2w)=0-\\arctan(2w)=-\\arctan(2w)
         ${newLine}\\textbf{Svar: } -\\arctan2w
         $`}</Latex>
       </Assignment>
-      <Assignment title={`d) $\\dfrac{1}{-1+2iw}$`} id='6.26d'>
+      <Assignment title={`d) $\\dfrac{1}{-1+2iw}$`} id="6.26d">
         <Latex>{`
         Låt $z=a+bi$ och $\\theta$ ett argument till $z$. Eftersom Re$z$ motsvarar x-axeln och Im$z$ motsvarar y-axeln i ett koordinatsystem är $\\tan\\theta=\\frac{b}{a},~~a\\neq 0$.
         $${breakLine}$
         Om $a > 0$ är $\\theta=\\arctan\\frac{b}{a}$ och om $a < 0$ är $\\theta=\\pi+\\arctan\\frac{b}{a}$.
         $${newLine}\\arg 1=0${breakLine}
         \\arg(-1+2iw)=\\pi-\\arctan2w\\;$`}</Latex>
-        <Link href='?id=6.26b#6.26b'>(se uppgift b)</Link>
+        <Link href="?id=6.26b#6.26b">(se uppgift b)</Link>
         <Latex>{`$${breakLine}
         \\arg\\Big(\\dfrac{1}{-1+2iw}\\Big)=\\arg1-\\arg(-1+2w)=0-(\\pi-\\arctan(2w))=\\arctan(2w)-\\pi
         ${newLine}\\textbf{Svar: } \\arctan(2w)-\\pi
         $`}</Latex>
       </Assignment>
-      <Assignment title={`e) $\\dfrac{1}{(1+2iw)^2}$`} id='6.26e'>
+      <Assignment title={`e) $\\dfrac{1}{(1+2iw)^2}$`} id="6.26e">
         <Latex>{`
         Låt $z=a+bi$ och $\\theta$ ett argument till $z$. Eftersom Re$z$ motsvarar x-axeln och Im$z$ motsvarar y-axeln i ett koordinatsystem är $\\tan\\theta=\\frac{b}{a},~~a\\neq 0$.
         $${breakLine}$
         Om $a > 0$ är $\\theta=\\arctan\\frac{b}{a}$ och om $a < 0$ är $\\theta=\\pi+\\arctan\\frac{b}{a}$.
         $${newLine}\\arg 1=0${breakLine}
         \\arg(1+2iw)=\\arctan2w\\;$`}</Latex>
-        <Link href='?id=6.26a#6.26a'>(se uppgift a)</Link>
+        <Link href="?id=6.26a#6.26a">(se uppgift a)</Link>
         <Latex>{`$${breakLine}
         \\arg\\Big(\\dfrac{1}{(1+2iw)^2}\\Big)=\\arg1-2\\arg(1+2w)=0-2\\arctan(2w)=-2\\arctan(2w)
         ${newLine}\\textbf{Svar: } -2\\arctan2w
         $`}</Latex>
       </Assignment>
-      <Assignment title={`f) $\\dfrac{e^{iw}}{(1+2iw)^2}$`} id='6.26f'>
+      <Assignment title={`f) $\\dfrac{e^{iw}}{(1+2iw)^2}$`} id="6.26f">
         <Latex>{`
         Låt $z=a+bi$ och $\\theta$ ett argument till $z$. Eftersom Re$z$ motsvarar x-axeln och Im$z$ motsvarar y-axeln i ett koordinatsystem är $\\tan\\theta=\\frac{b}{a},~~a\\neq 0$.
         $${breakLine}$
         Om $a > 0$ är $\\theta=\\arctan\\frac{b}{a}$ och om $a < 0$ är $\\theta=\\pi+\\arctan\\frac{b}{a}$.
         $${newLine}\\arg e^{iw}=w${breakLine}
         \\arg(1+2iw)=\\arctan2w\\;$`}</Latex>
-        <Link href='?id=6.26a#6.26a'>(se uppgift a)</Link>
+        <Link href="?id=6.26a#6.26a">(se uppgift a)</Link>
         <Latex>{`$${breakLine}
         \\arg\\Big(\\dfrac{e^{iw}}{1+2iw}\\Big)=\\arg e^{iw}-\\arg(1+2w)=w-\\arctan(2w)
         ${newLine}\\textbf{Svar: } w-\\arctan2w
@@ -391,7 +391,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.27 Beräkna $(\\frac12+i\\frac{\\sqrt{3}}{2})^{100}$`}</Latex>
       </p>
-      <Assignment title='Lösning' id='6.27'>
+      <Assignment title="Lösning" id="6.27">
         <Latex>{`
         Använd faktumet att både sinus och cosinus har perioden $2\\pi$.
         $${newLine}
@@ -410,7 +410,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.28 Använd de Moivres formel för att uttrycka $\\cos 4\\theta$ och $\\sin 4\\theta$ med hjälp av $\\sin\\theta$ och $\\cos\\theta$`}</Latex>
       </p>
-      <Assignment title='Lösning' id='6.28'>
+      <Assignment title="Lösning" id="6.28">
         <Latex>{`
         de Moivres formel: $(\\cos\\theta+i\\sin\\theta)^n=\\cos n\\theta + i\\sin n \\theta$
         
@@ -433,7 +433,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.29 Använd Eulers formler för att härleda ett uttryck för $\\cos\\alpha\\sin\\beta$`}</Latex>
       </p>
-      <Assignment title='Lösning' id='6.29'>
+      <Assignment title="Lösning" id="6.29">
         <Latex>{`
         Med hjälp av Eulers formler
         $${breakLine}
@@ -448,9 +448,9 @@ const Solutions = () => {
       </Assignment>
 
       <p>
-        <Latex>{`6.32 Vektorerna i det komplexa talplanet vrids vinkeln $5\\pi/6$ i positiv led. I vilket tal övergår`}</Latex>
+        <Latex>{`6.32 Vektorerna i det komplexa talplanet vrids vinkeln $5\\pi/6$ i positiv led, varefter de förstoras i skalan 3. I vilket tal övergår`}</Latex>
       </p>
-      <Assignment title='a) 1' id='6.32a'>
+      <Assignment title="a) 1" id="6.32a">
         <Latex>{`
         Vridning vinkeln $5\\pi/6$ i positiv led motsvarar att argumentet ökar med $5\\pi/6$ och skalan ökar med 3. $${breakLine}$
         Alltså ska de givna talen multipliceras med $1\\cdot e^{i5\\pi/6}\\cdot3=3(\\cos\\frac{5\\pi}{6}+i\\sin\\frac{5\\pi}{6})=3(-\\frac{\\sqrt{3}}{2}+\\frac{1}{2}i)=-\\frac{3\\sqrt{3}}{2}+\\frac{3}{2}i${newLine}
@@ -460,7 +460,7 @@ const Solutions = () => {
         ${newLine}\\textbf{Svar: } -\\dfrac{3\\sqrt{3}}{2}+\\dfrac{3}{2}i
         $`}</Latex>
       </Assignment>
-      <Assignment title='b) -1+i' id='6.32b'>
+      <Assignment title="b) -1+i" id="6.32b">
         <Latex>{`
         Vridning vinkeln $5\\pi/6$ i positiv led motsvarar att argumentet ökar med $5\\pi/6$ och skalan ökar med 3. $${breakLine}$
         Alltså ska de givna talen multipliceras med $1\\cdot e^{i5\\pi/6}\\cdot3=3(\\cos\\frac{5\\pi}{6}+i\\sin\\frac{5\\pi}{6})=3(-\\frac{\\sqrt{3}}{2}+\\frac{1}{2}i)=-\\frac{3\\sqrt{3}}{2}+\\frac{3}{2}i${newLine}
@@ -476,21 +476,21 @@ const Solutions = () => {
       <p>
         <Latex>{`6.34 Beräkna $e^z$ för följande $z$:`}</Latex>
       </p>
-      <Assignment title='a) $0$' id='6.34a'>
+      <Assignment title="a) $0$" id="6.34a">
         <Latex>{`$
         e^0=1
 
         ${newLine}\\textbf{Svar: } 1
         $`}</Latex>
       </Assignment>
-      <Assignment title='b) $i\frac{\pi}{2}$' id='6.34b'>
+      <Assignment title="b) $i\frac{\pi}{2}$" id="6.34b">
         <Latex>{`$
         e^{i\\frac{\\pi}{2}}=\\cos\\frac{\\pi}{2}+i\\sin\\frac{\\pi}{2}= 0 + i\\cdot 1 = i
 
         ${newLine}\\textbf{Svar: } i
         $`}</Latex>
       </Assignment>
-      <Assignment title='c) $\frac{1}{2}\ln 2 + i\frac{\pi}{4}$' id='6.34c'>
+      <Assignment title="c) $\frac{1}{2}\ln 2 + i\frac{\pi}{4}$" id="6.34c">
         <Latex>{`$
         e^{\\frac{1}{2}\\ln 2 + i\\pi/4}=
         e^{\\frac{1}{2}\\ln 2}e^{i\\pi/4}=
@@ -500,14 +500,14 @@ const Solutions = () => {
         ${newLine}\\textbf{Svar: } 1+i
         $`}</Latex>
       </Assignment>
-      <Assignment title='d) $i\pi$' id='6.34d'>
+      <Assignment title="d) $i\pi$" id="6.34d">
         <Latex>{`$
         e^{i\\pi}=\\cos\\pi+i\\sin\\pi=-1
 
         ${newLine}\\textbf{Svar: } -1
         $`}</Latex>
       </Assignment>
-      <Assignment title='e) $3-i$' id='6.34e'>
+      <Assignment title="e) $3-i$" id="6.34e">
         <Latex>{`$
         e^{3-i}=e^3e^{-i}=e^3(\\cos(-1)+i\\sin(-1))=e^3\\cos1-ie^3\\sin1
 
