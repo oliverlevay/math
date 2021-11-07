@@ -334,6 +334,86 @@ const Solutions = () => {
           />
         </div>
       </Assignment>
+      <div style={{ display: "flex", margin: "1rem 0" }}>
+        <p style={{ margin: 0, marginRight: "1rem", lineHeight: 1.5 }}>6.44</p>
+        <Latex>{`
+        Bestäm konstaten $a$ så att polynomet$${breakLine}
+        \\quad p(x)=x^3-2x^2-19x+a${breakLine}$
+        får faktorn $x-1$. Faktorisera polynomet för detta $a$-värde.
+        `}</Latex>
+      </div>
+      <Assignment title="Lösning" id="6.44">
+        <Latex>{`
+        Ansätter lösning med $x-1$ som faktor (kan lösas med polynomdivision också):$${breakLine}
+        x^3-2x^2-19x+a=${breakLine}
+        (x-1)(x^2+Ax+B)=${breakLine}
+        x^3+Ax^2+Bx-x^2-Ax-B=${breakLine}
+        x^3+(A-1)x^2+(B-A)x-B${newLine}
+        $Identifierar variablerna:$${breakLine}
+        \\begin{cases}
+        A-1=-2 ${breakLine}
+        B-A=-19 ${breakLine}
+        -B=a
+        \\end{cases}
+        \\Leftrightarrow
+        \\begin{cases}
+        A=-1 ${breakLine}
+        B=-20 ${breakLine}
+        a=20
+        \\end{cases}${newLine}
+        x^3-2x^2-19x+20=(x-1)(x^2-x-20) ${newLine}
+        $Faktorisera $x^2-x-20$ med pq-formeln.$${breakLine}
+        x^2-x-20=0${breakLine}
+        x=\\frac{1}{2}\\pm\\sqrt{\\frac{1}{4}+20}=
+        \\frac{1}{2}\\pm\\sqrt{\\frac{81}{4}}=
+        \\frac{1}{2}\\pm\\frac{9}{2}${breakLine}
+        x_1=5${breakLine}
+        x_2=-4${newLine}
+        (x-1)(x^2-x-20)=(x-1)(x-5)(x+4)
+
+        ${newLine}\\textbf{Svar: } a=20, \\quad p(x)=(x-1)(x-5)(x+4)$`}</Latex>
+      </Assignment>
+
+      <div style={{ display: "flex", margin: "1rem 0" }}>
+        <p style={{ margin: 0, marginRight: "1rem", lineHeight: 1.5 }}>6.45</p>
+        <Latex>{`
+        Ekvationen
+        $${breakLine}\\quad z^4-2z^3+2z^2-10z+25=0${breakLine}$
+        har rötterna $z=2+i$ och $z=-1-2i$. Lös ekvationen fullständigt.
+        `}</Latex>
+      </div>
+      <Assignment title="Lösning" id="6.45">
+        <Latex>{`
+        Polynomet har reella koefficienter.$${breakLine}$ 
+        Förutom nollställerna $2+i$ och $-1-2i$ är då även konjugaten $2-i$ och $-1+2i$ nollställen.$${breakLine}$
+        Eftersom det rör sig  om ett fjärdegradspolynom, och vi har funnit lika många nollställen, så är ekvationen fullständigt löst.
+
+        $${newLine}\\textbf{Svar: } z=2\\pm i, -1 \\pm 2i$`}</Latex>
+      </Assignment>
+
+      <p>
+        <Latex>{`6.49 Ekvationen $z^4-z^3+7z^2-9z-18=0$ har en rent imaginär rot. Lös ekvationen.`}</Latex>
+      </p>
+      <Assignment title="Lösning" id="6.49">
+        <Latex>{`
+        Vi ansätter en rent imaginär rot $z=bi$ och sätter in i ekvationen$${newLine}
+        (bi)^4-(bi)^3+7(bi)^2-9bi-18=0${ltx.iss}${breakLine}        
+        b^4+b^3i-7b^2-9bi-18=0${ltx.iss}${breakLine} 
+        (b^4-7b^2-18)+(b^3-9b)i=0${ltx.iss}${breakLine} 
+        \\begin{cases}
+          b^4-7b^2-18=0${breakLine}
+          b^3-9b=b(b^2-9)=0
+        \\end{cases}${newLine}$
+
+        Ur systemets sista ekvation får vi möjligheterna $b=0$, som ej uppfyller
+        den första, och $b=\\pm 3$, som uppfyller den första.$${breakLine}$
+        Vi har alltså rötterna $z_1=3i$ och $z_2=-3i$.$${newLine}$
+        Polynomdivision med $(z-z_1)(z-z_2)=z^2+9$ ger $${breakLine}
+        z^4-z^3+7z^2-9z-18=(z^2+9)(z^2-z-2)${breakLine}
+        $och vi finner de båda resterande rötterna genom att sätta $z^2-z-2=0${breakLine}
+        $detta ger $z_3=-1$ och $z_4=2$
+        $${newLine}\\textbf{Svar: } z=-1,\\quad2,\\quad3i,\\quad-3i$`}</Latex>
+      </Assignment>
     </Container>
   );
 };
