@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
 import Image from "next/image";
 import Latex from "react-latex-next";
 import Assignment from "components/Assignment";
