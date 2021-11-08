@@ -80,11 +80,11 @@ const menus = {
     title: "Endim B1",
     items: [
       {
-        label: "Hem",
+        label: "Alla kurser",
         route: routes.home,
       },
       {
-        label: "Endim B1",
+        label: "Hem",
         route: routes.endimB1.home,
       },
       {
@@ -109,11 +109,11 @@ const menus = {
     title: "Endim B2",
     items: [
       {
-        label: "Hem",
+        label: "Alla kurser",
         route: routes.home,
       },
       {
-        label: "Endim B2",
+        label: "Hem",
         route: routes.endimB2.home,
       },
       {
