@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import Head from 'next/head';
+import styled from "styled-components";
+import Head from "next/head";
 
-import Layout from 'layout';
-import { Title } from 'components';
-import PartTwo from 'components/EndimB2/BookSolutions/Chapter6/PartTwo';
+import Layout from "layout";
+import { Title } from "components";
+import PartTwo from "components/EndimB2/BookSolutions/Chapter6/PartTwo";
 
 const Container = styled.div`
   display: flex;
@@ -11,9 +11,9 @@ const Container = styled.div`
   width: 100%;
   padding-bottom: 30rem;
 `;
-export default function Home() {
+export default function Chapter6PartTwo() {
   return (
-    <Layout course='endimB2'>
+    <Layout course="endimB2">
       <Head>
         <title>Lösningar till uppgifter i boken | Endim B2</title>
       </Head>

@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Layout from "layout";
 import { Title } from "components";
-import PartOne from "components/EndimB2/BookSolutions/Chapter6/PartOne";
+import PartOne from "components/EndimB2/BookSolutions/Chapter12/PartOne";
 
 const Container = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export default function Chapter6PartOne() {
       </Head>
       <Container>
         <Title>Lösningar till uppgifter i boken</Title>
-        <h2>Kapitel 6. Komplexa tal</h2>
+        <h2>Kapitel 12. Primitiva Funktioner</h2>
         <PartOne />
       </Container>
     </Layout>
