@@ -161,18 +161,48 @@ const Solutions = () => {
         ${newLine}\\textbf{Svar: } -\\dfrac{2}{\\sqrt{x}}$`}</Latex>
       </Assignment>
 
-      {/*       <p>
+      <p>
         <Latex>{`12.3 $\\quad$ Bestäm en primitiv funktion till:`}</Latex>
       </p>
       <Assignment title={`d) $\\dfrac{2}{x+1}$`} id="12.2d">
         <Latex>{`$
-        \\displaystyle\\int{\\dfrac{1}{x+\\alpha}dx}=\\ln |x+\\alpha|+C${newLine}
-        \\dfrac{2}{x+1}=2\\cdot\\dfrac{1}{x+1}${newLine}
         \\displaystyle\\int{2\\cdot\\dfrac{1}{x+1}dx}=
         2\\displaystyle\\int{\\dfrac{1}{x+1}dx}
-        =2\\ln |x+1|+C
-        ${newLine}\\textbf{Svar: } -\\dfrac{2}{\\sqrt{x}}$`}</Latex>
-      </Assignment> */}
+        =\\begin{bmatrix}
+        t=x+1${breakLine}
+        \\frac{dt}{dx}=1 \\Rightarrow dt=dx
+        \\end{bmatrix}
+        =2\\int{\\dfrac{1}{t}}dt
+        =2\\ln |x+1|+C${newLine}
+        $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${breakLine}
+        ${breakLine}\\textbf{Svar: } 2\\ln |x+1|$`}</Latex>
+      </Assignment>
+      <Assignment title={`e) $\\dfrac{1}{2x+1}$`} id="12.2e">
+        <Latex>{`$
+        \\displaystyle\\int{\\dfrac{1}{2x+1}dx}
+        =\\begin{bmatrix}
+        t=2x+1${breakLine}
+        \\frac{dt}{dx}=2 \\Rightarrow dt=2dx
+        \\end{bmatrix}=
+        \\int{\\dfrac{1}{t}}\\cdot\\frac{1}{2}dt=
+        \\dfrac{1}{2}\\int{\\dfrac{1}{t}dt}
+        =\\frac{1}{2}\\ln|t|+C=\\frac{1}{2}\\ln|2x+1|+C${newLine}
+        $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${breakLine}
+        ${breakLine}\\textbf{Svar: } \\frac{1}{2}\\ln|2x+1|$`}</Latex>
+      </Assignment>
+      <Assignment title={`l) $\\dfrac{2}{(1-3x)^2}$`} id="12.2l">
+        <Latex>{`$
+        \\displaystyle\\int{\\dfrac{2}{(1-3x)^2}}
+        =\\begin{bmatrix}
+        t=1-3x${breakLine}
+        \\frac{dt}{dx}=-3 \\Rightarrow dt=-3dx
+        \\end{bmatrix}=
+        \\int{\\dfrac{2}{t^2}}\\cdot-\\frac{1}{3}dt=
+        -\\dfrac{2}{3}\\int{t^{-2}dt}=${newLine}
+        -\\frac{2}{3}\\cdot-t^{-1}+C=-\\frac{2}{3}-\\frac{1}{t}+C=\\frac{2}{3t}+C=\\frac{2}{3(1-3x)}+C${newLine}
+        $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${breakLine}
+        ${breakLine}\\textbf{Svar: } \\dfrac{2}{3(1-3x)}$`}</Latex>
+      </Assignment>
     </Container>
   );
 };
