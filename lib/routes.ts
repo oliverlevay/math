@@ -31,6 +31,12 @@ export const routes = {
         partTwo: "/endim-b2/book-solutions/chapter6/part-two",
         partThree: "/endim-b2/book-solutions/chapter6/part-three",
       },
+      chapter12: {
+        home: "/endim-b2/book-solutions/chapter12",
+        partOne: "/endim-b2/book-solutions/chapter12/part-one",
+        partTwo: "/endim-b2/book-solutions/chapter12/part-two",
+        partThree: "/endim-b2/book-solutions/chapter12/part-three",
+      },
     },
   },
 };

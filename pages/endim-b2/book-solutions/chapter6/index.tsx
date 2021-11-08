@@ -13,7 +13,7 @@ const Container = styled.div`
   width: 100%;
   padding-bottom: 30rem;
 `;
-export default function Home() {
+export default function Chapter6() {
   return (
     <Layout course="endimB2">
       <Head>
