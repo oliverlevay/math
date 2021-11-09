@@ -1,20 +1,20 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import styled from 'styled-components';
-import Latex from 'react-latex-next';
-import { TABLET_BP } from 'lib/breakpoints';
-import Assignment from 'components/Assignment';
+import Link from "next/link";
+import Image from "next/image";
+import styled from "styled-components";
+import Latex from "react-latex-next";
+import { TABLET_BP } from "lib/breakpoints";
+import Assignment from "components/Assignment";
 
-import AreaSatsenTriangle1 from './components/figures/AreaSatsenTriangel1';
-import AreaSatsenTriangel2 from './components/figures/AreaSatsenTriangel2';
-import SinusSatsenTriangel from './components/figures/SinussatsenTriangel';
-import CosinussatsenTriangel1 from './components/figures/CosinussatsenTriangel1';
-import CosinussatsenTriangel2 from './components/figures/CosinussatsenTriangel2';
-import Sine from './components/figures/Sine';
-import Cosine from './components/figures/Cosine';
-import Tan from './components/figures/Tan';
-import Cot from './components/figures/Cot';
-import { ltx, breakLine, newLine } from 'lib/latexHelpers';
+import AreaSatsenTriangle1 from "./components/figures/AreaSatsenTriangel1";
+import AreaSatsenTriangel2 from "./components/figures/AreaSatsenTriangel2";
+import SinusSatsenTriangel from "./components/figures/SinussatsenTriangel";
+import CosinussatsenTriangel1 from "./components/figures/CosinussatsenTriangel1";
+import CosinussatsenTriangel2 from "./components/figures/CosinussatsenTriangel2";
+import Sine from "./components/figures/Sine";
+import Cosine from "./components/figures/Cosine";
+import Tan from "./components/figures/Tan";
+import Cot from "./components/figures/Cot";
+import { ltx, breakLine, newLine } from "lib/latexHelpers";
 
 const Container = styled.div`
   padding-bottom: 10rem;
@@ -25,7 +25,7 @@ const Container = styled.div`
 `;
 
 const ChapterHeader = styled.h2`
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 `;
 
 const SolutionTip = styled.div`
@@ -55,19 +55,27 @@ const Rehearsal = () => {
     <Container>
       <ChapterHeader>Kapitel T och 8.4</ChapterHeader>
 
-      <Assignment title='64. Visa trigonometriska ettan.' id='64'>
+      <Assignment
+        author="Oliver"
+        title="64. Visa trigonometriska ettan."
+        id="64"
+      >
         <b>Trigonometriska ettan</b> <Latex>$\sin^2x+cos^2x=1$</Latex> visas
         enkelt genom Pythagoras sats i enhetscirkeln.
         <br />
-        <Image width={453} height={461} src='/figures/64.png' />
+        <Image width={453} height={461} src="/figures/64.png" />
       </Assignment>
 
-      <Assignment title='66. Formulera och bevisa areasatsen.' id='66'>
+      <Assignment
+        author="Oliver"
+        title="66. Formulera och bevisa areasatsen."
+        id="66"
+      >
         <Divider />
         <b>Areasatsen</b> säger att arean av en triangel är halva produkten av
         två sidors längder multiplicerat med sinus för mellanliggande vinkel.
         <Divider />
-        Formel: <Latex>{'$A=\\dfrac{bc\\sin\\alpha}{2}$'}</Latex>
+        Formel: <Latex>{"$A=\\dfrac{bc\\sin\\alpha}{2}$"}</Latex>
         <FiguresContainer>
           <AreaSatsenTriangle1 />
           <Divider />
@@ -76,31 +84,35 @@ const Rehearsal = () => {
         <b>Bevis:</b> Antingen kan vinkeln vara spetsig (vänster figur) eller
         trubbig (höger figur).
         <br />
-        <Latex>{'I vänster figur gäller $h=c\\sin\\alpha$'}</Latex>
+        <Latex>{"I vänster figur gäller $h=c\\sin\\alpha$"}</Latex>
         <br />
         <Latex>
           {
-            'I höger figur gäller $h=c\\sin\\beta=c\\sin(180\\degree-\\alpha)=c\\sin\\alpha$'
+            "I höger figur gäller $h=c\\sin\\beta=c\\sin(180\\degree-\\alpha)=c\\sin\\alpha$"
           }
         </Latex>
-        . <br /> I båda fallen gäller alltså{' '}
-        <Latex>{'$A=\\dfrac{bh}{2}=\\dfrac{bc\\sin\\alpha}{2}$.'}</Latex>
+        . <br /> I båda fallen gäller alltså{" "}
+        <Latex>{"$A=\\dfrac{bh}{2}=\\dfrac{bc\\sin\\alpha}{2}$."}</Latex>
       </Assignment>
 
-      <Assignment title='67. Formulera och bevisa sinussatsen.' id='67'>
+      <Assignment
+        author="Oliver"
+        title="67. Formulera och bevisa sinussatsen."
+        id="67"
+      >
         <Divider />
-        <b>Sinussatsen</b> säger att i en triangel med sidorna{' '}
+        <b>Sinussatsen</b> säger att i en triangel med sidorna{" "}
         <Latex>
           {
-            '$a, b, c$ och motstående vinklarna $\\alpha, \\beta, \\gamma$ gäller att:'
+            "$a, b, c$ och motstående vinklarna $\\alpha, \\beta, \\gamma$ gäller att:"
           }
         </Latex>
         <Divider />
         <Latex>
           {
-            '$\\dfrac{sin\\alpha}{a}=\\dfrac{sin\\beta}{b}=\\dfrac{sin\\gamma}{c}$'
+            "$\\dfrac{sin\\alpha}{a}=\\dfrac{sin\\beta}{b}=\\dfrac{sin\\gamma}{c}$"
           }
-        </Latex>{' '}
+        </Latex>{" "}
         <FiguresContainer>
           <SinusSatsenTriangel />
         </FiguresContainer>
@@ -108,21 +120,25 @@ const Rehearsal = () => {
         <Divider />
         <Latex>
           {
-            '$A=\\dfrac{ab\\sin\\alpha}{2}=\\dfrac{ab\\sin\\beta}{2}=\\dfrac{ab\\sin\\gamma}{2}$'
+            "$A=\\dfrac{ab\\sin\\alpha}{2}=\\dfrac{ab\\sin\\beta}{2}=\\dfrac{ab\\sin\\gamma}{2}$"
           }
         </Latex>
         <Divider />
         <Latex>
           {
-            'Multipliceras varje led med med $\\dfrac{2}{abc}$ fås resultatet i satsen.'
+            "Multipliceras varje led med med $\\dfrac{2}{abc}$ fås resultatet i satsen."
           }
         </Latex>
       </Assignment>
 
-      <Assignment title='68. Formulera och bevisa cosinussatsen.' id='68'>
-        Kom ihåg <Link href='?id=64#64'>trigonometriska ettan</Link>
+      <Assignment
+        author="Oliver"
+        title="68. Formulera och bevisa cosinussatsen."
+        id="68"
+      >
+        Kom ihåg <Link href="?id=64#64">trigonometriska ettan</Link>
         <Divider />
-        <b>Cosinussatsen</b>{' '}
+        <b>Cosinussatsen</b>{" "}
         <Latex>
           säger att om sidorna i en triangel är $a, b, c$ och den till sidan $a$
           motstående vinkeln är $\alpha$ så gäller:
@@ -185,19 +201,23 @@ const Rehearsal = () => {
         <Latex>$b^2+c^2-2bc\cos\alpha$</Latex>
       </Assignment>
 
-      <Assignment title='69. Hur definieras vinkelmåttet radian?' id='69'>
-        <Latex>{'1 rad $=\\dfrac{360\\degree}{2\\pi}$'}</Latex>
+      <Assignment
+        author="Oliver"
+        title="69. Hur definieras vinkelmåttet radian?"
+        id="69"
+      >
+        <Latex>{"1 rad $=\\dfrac{360\\degree}{2\\pi}$"}</Latex>
         <Divider />
         <Latex>En hel cirkel: $2\pi$</Latex>
         <br />
         <Latex>En halv cirkel: $\pi$</Latex>
         <br />
-        <Latex>{'En fjärdedels cirkel: $\\frac{\\pi}{2}$'}</Latex>
+        <Latex>{"En fjärdedels cirkel: $\\frac{\\pi}{2}$"}</Latex>
       </Assignment>
 
       <Assignment
-        title='70. Rita graferna till funktionerna $\sin x, \cos x, \tan x$ och $\cot x$.'
-        id='70'
+        title="70. Rita graferna till funktionerna $\sin x, \cos x, \tan x$ och $\cot x$."
+        id="70"
       >
         <Sine />
         <Cosine />
@@ -207,10 +227,10 @@ const Rehearsal = () => {
       </Assignment>
 
       <Assignment
-        title='71. Illustrera dubbelolikheten $\sin x < x < \tan x$ då $0 < x < \fracπ2$.'
-        id='71'
+        title="71. Illustrera dubbelolikheten $\sin x < x < \tan x$ då $0 < x < \fracπ2$."
+        id="71"
       >
-        <Image src='/figures/71.png' width={250} height={255} />
+        <Image src="/figures/71.png" width={250} height={255} />
         <Divider />
         <Latex>
           Kurvan är enhetscirkeln inritad i första kvadranten. Här syns tydligt
@@ -221,13 +241,13 @@ const Rehearsal = () => {
       </Assignment>
 
       <Assignment
-        title='72. Skriv upp de trigonometriska additionsformlerna. Ange formler för dubbla vinkeln för sinus respektive cosinus. Ge bevis.'
-        id='72'
+        title="72. Skriv upp de trigonometriska additionsformlerna. Ange formler för dubbla vinkeln för sinus respektive cosinus. Ge bevis."
+        id="72"
       >
         <a
-          href='https://www.youtube.com/watch?v=5tA5lj2dLkw'
-          rel='noopener noreferrer'
-          target='_blank'
+          href="https://www.youtube.com/watch?v=5tA5lj2dLkw"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           Länk till Jonas video
         </a>
@@ -240,7 +260,7 @@ const Rehearsal = () => {
         <Divider />
         <b>Bevis: </b>
         <br />
-        <Image src='/figures/72.png' width={500} height={115} />
+        <Image src="/figures/72.png" width={500} height={115} />
         <SolutionTip>Ur den vänstra figuren får vi:</SolutionTip>
         <Latex>$d^2=(\cos x - \cos y)^2+(\sin x - \sin y)^2$</Latex>
         <SolutionTip>
@@ -282,7 +302,7 @@ const Rehearsal = () => {
         <br />
         <Latex>$\sin(x+y)=\cos(\frac\pi2-(x+y))=\cos((\frac\pi2-x)-y)$</Latex>
         <SolutionTip>
-          Applicera subtraktionsformeln för{' '}
+          Applicera subtraktionsformeln för{" "}
           <Latex>$\cos((\frac\pi2-x)-y)$</Latex>:
         </SolutionTip>
         <Latex>
@@ -294,8 +314,8 @@ const Rehearsal = () => {
       </Assignment>
 
       <Assignment
-        title='73. Redogör för hjälpvinkelmetoden vid behandling av uttryck av formen $a \sin \omega x + b \cos \omega x.$'
-        id='73'
+        title="73. Redogör för hjälpvinkelmetoden vid behandling av uttryck av formen $a \sin \omega x + b \cos \omega x.$"
+        id="73"
       >
         <b>Hjälpvinkelmetoden</b> är ett sätt att skriva om en kombination av
         cosinus- och sinusvågor som en enda cosinus- eller sinusvåg. Detta
@@ -303,26 +323,26 @@ const Rehearsal = () => {
         <Divider />
         <Latex>
           {
-            '$a\\sin(\\omega x)+b\\cos(\\omega x)=\\sqrt{a^2+b^2}\\sin(\\omega x+\\varphi)$'
+            "$a\\sin(\\omega x)+b\\cos(\\omega x)=\\sqrt{a^2+b^2}\\sin(\\omega x+\\varphi)$"
           }
         </Latex>
         <br />
         <Latex>
           {
-            'där $\\varphi$ uppfyller $\\cos \\varphi=\\dfrac{a}{\\sqrt{a^2+b^2}}$ , $\\sin \\varphi=\\dfrac{b}{\\sqrt{a^2+b^2}}$'
+            "där $\\varphi$ uppfyller $\\cos \\varphi=\\dfrac{a}{\\sqrt{a^2+b^2}}$ , $\\sin \\varphi=\\dfrac{b}{\\sqrt{a^2+b^2}}$"
           }
         </Latex>
         <br />
         <Latex>
           {
-            '$\\sqrt{a^2+b^2}$ kallas amplitud, $\\varphi$ kallas fasförskjutning och $\\omega$ vinkelfrekvens'
+            "$\\sqrt{a^2+b^2}$ kallas amplitud, $\\varphi$ kallas fasförskjutning och $\\omega$ vinkelfrekvens"
           }
         </Latex>
       </Assignment>
 
       <Assignment
-        title='74. Givet radien i en cirkel, skriv upp formler för dess omkrets respektive area.'
-        id='74'
+        title="74. Givet radien i en cirkel, skriv upp formler för dess omkrets respektive area."
+        id="74"
       >
         <Latex>En cirkel med radien $r$ har</Latex>
         <b> omkretsen </b>
@@ -332,8 +352,8 @@ const Rehearsal = () => {
       </Assignment>
 
       <Assignment
-        title='75. Ange sambandet mellan båglängd, vinkel och radie för en cirkelsektor, dels då vinkeln mäts i grader, dels i radianer.'
-        id='75'
+        title="75. Ange sambandet mellan båglängd, vinkel och radie för en cirkelsektor, dels då vinkeln mäts i grader, dels i radianer."
+        id="75"
       >
         <Latex>
           Sambandet mellan båglängd $b$, vinkel $\alpha$ och radie $r$ för en
@@ -342,23 +362,23 @@ const Rehearsal = () => {
         <br />
         <Latex>
           {
-            '$b=\\dfrac{\\alpha}{360\\degree}\\cdot2\\pi r=\\alpha r$ (om $a$ är i rad)'
+            "$b=\\dfrac{\\alpha}{360\\degree}\\cdot2\\pi r=\\alpha r$ (om $a$ är i rad)"
           }
         </Latex>
       </Assignment>
 
       <Assignment
-        title='76. Givet radien och båglängden för en cirkelsektor, ange dess area.'
-        id='76'
+        title="76. Givet radien och båglängden för en cirkelsektor, ange dess area."
+        id="76"
       >
-        <Latex>{'$\\dfrac{\\alpha}{360\\degree}\\pi r^2$'}</Latex>
+        <Latex>{"$\\dfrac{\\alpha}{360\\degree}\\pi r^2$"}</Latex>
       </Assignment>
 
       <ChapterHeader>Kapitel 8.5</ChapterHeader>
 
       <Assignment
-        title='77. Definiera funktionerna $\arcsin x$, $\arccos x$ och $\arctan x$. Ange deras definitions- och värdemängder'
-        id='77'
+        title="77. Definiera funktionerna $\arcsin x$, $\arccos x$ och $\arctan x$. Ange deras definitions- och värdemängder"
+        id="77"
       >
         <Latex>
           {`Arcusfunktionerna är inversfunktioner till de trigonometreiska funktionerna. 
@@ -380,25 +400,25 @@ const Rehearsal = () => {
       </Assignment>
 
       <Assignment
-        title='78. Rita graferna till funktionerna arcsin x, arccos x och arctan x.'
-        id='78'
+        title="78. Rita graferna till funktionerna arcsin x, arccos x och arctan x."
+        id="78"
       >
-        Hänvisar till{' '}
+        Hänvisar till{" "}
         <a
-          href='https://www.geogebra.org/calculator'
-          rel='noopener noreferrer'
-          target='_blank'
+          href="https://www.geogebra.org/calculator"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           GeoGebra
-        </a>{' '}
+        </a>{" "}
         för grafritning.
       </Assignment>
 
       <ChapterHeader>Kapitel 9</ChapterHeader>
 
       <Assignment
-        id='79'
-        title='79. Låt $α > 0$ och $a > 1$. Arrangera funktionerna $x^\alpha$, $\ln x$ och $a^x$ storleksordning för stora värden på $x$. Precisera svaret i form av gränsvärden då $x \rightarrow \infin$.'
+        id="79"
+        title="79. Låt $α > 0$ och $a > 1$. Arrangera funktionerna $x^\alpha$, $\ln x$ och $a^x$ storleksordning för stora värden på $x$. Precisera svaret i form av gränsvärden då $x \rightarrow \infin$."
       >
         <Latex>
           Då $\alpha &gt; 0$ och $a &gt; 1$ gäller $a^x&gt;x^\alpha&gt;\ln x$ då
@@ -411,13 +431,13 @@ const Rehearsal = () => {
         polynom, som växer fortare än logaritmer.
       </Assignment>
 
-      <Assignment title='80. Definiera talet $e$.' id='80'>
+      <Assignment author="Oliver" title="80. Definiera talet $e$." id="80">
         <Latex>{`$e=${ltx.limInf}(1+\\frac1x)^x$`}</Latex>
       </Assignment>
 
       <Assignment
-        title='81. Definiera innebörden av uttrycket ”funktionen f är kontinuerlig i punkten a”.'
-        id='81'
+        title="81. Definiera innebörden av uttrycket ”funktionen f är kontinuerlig i punkten a”."
+        id="81"
       >
         <Latex>{`Funktionen $f$ är kontinuerlig i punkten $a$ om $${ltx.limA}f(x)=f(a)$`}</Latex>
         <Divider />
@@ -428,8 +448,8 @@ const Rehearsal = () => {
       </Assignment>
 
       <Assignment
-        title='82. Ange några egenskaper hos kontinuerliga funktioner på slutna, begränsade intervall.'
-        id='82'
+        title="82. Ange några egenskaper hos kontinuerliga funktioner på slutna, begränsade intervall."
+        id="82"
       >
         De antar alla värden mellan sina ändpunkter minst en gång (sats 9.8) och
         de antar ett största och minsta värde på intervallet (sats 9.9)
@@ -440,7 +460,7 @@ const Rehearsal = () => {
       $\\newline(\\dfrac{e^x-1}{x})\\rightarrow$ då $x\\rightarrow\\plusmn\\infin$ , 
       och $\\dfrac{a^x}{x^a}\\rightarrow\\infin$ då $x\\rightarrow\\infin\\newline$
       lär dig härleda (9.20), (9.23), (9.24) och (9.25).`}
-        id='83'
+        id="83"
       >
         <b>Standardgränsvärderna:</b>
         <Divider />

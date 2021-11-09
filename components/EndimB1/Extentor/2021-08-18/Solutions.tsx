@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Latex from 'react-latex-next';
-import Assignment from 'components/Assignment';
-import { ltx, breakLine, newLine } from 'lib/latexHelpers';
+import React from "react";
+import styled from "styled-components";
+import Latex from "react-latex-next";
+import Assignment from "components/Assignment";
+import { ltx, breakLine, newLine } from "lib/latexHelpers";
 
 const Container = styled.div``;
 
@@ -24,7 +24,7 @@ const Solutions = () => {
       </p>
       <Assignment
         title={`1. a) Beräkna $\\dfrac{\\frac23-\\frac12}{2-\\frac13}$`}
-        id='1a'
+        id="1a"
       >
         <Latex>{`$
         \\dfrac{\\frac{2}{3}-\\frac{1}{2}}{2-\\frac{1}{3}}=
@@ -36,7 +36,7 @@ const Solutions = () => {
       </Assignment>
       <Assignment
         title={`1. b) Låt $\\ell$ vara linjen som går genom punkterna $(-1, 1)$ och $(3, -1)$ Ange linjens ekvation i formen $y=kx+m$`}
-        id='1b'
+        id="1b"
       >
         <Latex>{`$
         \\text{Tvåpunktsformeln: } y - y_1 = \\dfrac{y_2-y_1}{x_2-x_1}(x-x_1):${newLine}
@@ -46,13 +46,17 @@ const Solutions = () => {
       </Assignment>
       <Assignment
         title={`1. c) Ange alla vinklar $\\alpha$ mellan 0 och 360 grader som uppfyller $\\sin\\alpha=-\\frac{\\sqrt{2}}{2}$.`}
-        id='1c'
+        id="1c"
       >
         <Latex>{`$
         255\\degree \\text{ och } 315 \\degree
         $`}</Latex>
       </Assignment>
-      <Assignment title={`1. d) Lös ekvationen $x^3 = 2x^2 + 3x$.`} id='1d'>
+      <Assignment
+        author="Oliver"
+        title={`1. d) Lös ekvationen $x^3 = 2x^2 + 3x$.`}
+        id="1d"
+      >
         <Latex>{`$
         x^3=2x^2+3x${ltx.iss}x^3-(2x^2+3x)=0${ltx.iss}x(x^2-2x-3)=0${breakLine}
         \\text{Dela upp i fall:}${breakLine}
@@ -61,7 +65,11 @@ const Solutions = () => {
         \\text{Svar: }x_1=3,x_2=-1,x_3=0
         $`}</Latex>
       </Assignment>
-      <Assignment title='1. e) Lös olikheten $\dfrac{x+2}{1-x} > 0$' id='1e'>
+      <Assignment
+        author="Oliver"
+        title="1. e) Lös olikheten $\dfrac{x+2}{1-x} > 0$"
+        id="1e"
+      >
         <Latex>{`$
         x\\neq1${newLine}
         \\text{Dela upp i fall:}${breakLine}
@@ -72,7 +80,11 @@ const Solutions = () => {
         \\text{Svar: } -2<x<1
         $`}</Latex>
       </Assignment>
-      <Assignment title='1. f) Lös ekvationen $\ln(1-x)-\ln(x+3)=\ln1$' id='1f'>
+      <Assignment
+        author="Oliver"
+        title="1. f) Lös ekvationen $\ln(1-x)-\ln(x+3)=\ln1$"
+        id="1f"
+      >
         <Latex>{`$
         \\ln(1-x)-\\ln(x+3)=\\ln1${ltx.iss}\\ln(1-x)-\\ln(x+3)=0${ltx.iss}${breakLine}
         \\ln(1-x)=\\ln(x+3)${ltx.iss}1-x=x+3${ltx.iss}x=-1
@@ -81,7 +93,7 @@ const Solutions = () => {
       <h4>Uppgift 2</h4>
       <Assignment
         title={`2. a) Beräkna $${ltx.limInf}\\dfrac{(x+1)^2+2x \\sin x}{x^3e^{-x}-2x^2}$`}
-        id='2a'
+        id="2a"
       >
         <Latex>{`$
         ${ltx.limInf}\\dfrac{(x+1)^2+2x \\sin x}{x^3e^{-x}-2x^2}=${newLine}
@@ -100,7 +112,7 @@ const Solutions = () => {
         0, & x=\\frac{pi}{2}
         \\end{cases}
         $`}
-        id='2b'
+        id="2b"
       >
         <Latex>{`
         Villkoret för att $f(x)$ är kontinuerlig är att $\\lim\\limits_{x\\rightarrow\\frac{\\pi}{2}} \\dfrac{e^{\\cos x}-1}{x-\\frac{\\pi}{2}}=0$ så vi undersöker gränsvärderna:
@@ -114,12 +126,20 @@ const Solutions = () => {
       </Assignment>
       <h4>Uppgift 3</h4>
       <p>Lös ekvationerna:</p>
-      <Assignment id='3a' title={`3. a) $\\tan x\\cdot\\tan2x=1$`}>
+      <Assignment
+        author="Oliver"
+        id="3a"
+        title={`3. a) $\\tan x\\cdot\\tan2x=1$`}
+      >
         <Latex>{`$
         x=\\plusmn\\dfrac{\\pi}{6}+\\pi k, k\\text{ heltal}
         $`}</Latex>
       </Assignment>
-      <Assignment id='3b' title={`3. b) $\\ln(1-e^x) + \\ln(1+e^x)=x$`}>
+      <Assignment
+        author="Oliver"
+        id="3b"
+        title={`3. b) $\\ln(1-e^x) + \\ln(1+e^x)=x$`}
+      >
         <Latex>{`$
         \\ln(1-e^x) + \\ln(1+e^x)=x${ltx.iss}${newLine}
         \\ln((1-e^x)(1+e^x))=x${ltx.iss}${newLine}

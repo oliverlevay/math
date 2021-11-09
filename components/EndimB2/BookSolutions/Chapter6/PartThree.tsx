@@ -14,7 +14,7 @@ const Solutions = () => {
     <Container>
       <h3>Polynomekvationer</h3>
       <p>6.37 Lös ekvationerna:</p>
-      <Assignment title={`a) $z^2=5+12i$`} id="6.37a">
+      <Assignment author="Oliver" title={`a) $z^2=5+12i$`} id="6.37a">
         <Latex>{`
         Sätt $z=x+yi${breakLine}$
         $z^2=(x+yi)^2=x^2+wxy+(yi)^2=x^2-y^2+2xyi${newLine}
@@ -45,7 +45,7 @@ const Solutions = () => {
         $
         `}</Latex>
       </Assignment>
-      <Assignment title={`b) $z^2-(2+2i)z-5-10i=0$`} id="6.37b">
+      <Assignment author="Oliver" title={`b) $z^2-(2+2i)z-5-10i=0$`} id="6.37b">
         <Latex>{`
         Förenkla vänsterledet$${breakLine}
         z^2-(2+2i)z-5-10i=(z-(1+i))^2-2i-5-10i=(z-1-i)^2-5-12i${ltx.iss}${breakLine}
@@ -64,7 +64,7 @@ const Solutions = () => {
       </Assignment>
 
       <p>6.38 Lös ekvationerna:</p>
-      <Assignment title={`a) $z^2=-i$`} id="6.38a">
+      <Assignment author="Oliver" title={`a) $z^2=-i$`} id="6.38a">
         <Latex>{`
         Sätt $z=x+yi${breakLine}
         z^2=x^2+2xyi-y^2${newLine}
@@ -98,7 +98,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.40 Lös ekvationen $(2+i)z^2+(1-7i)z-5=0$`}</Latex>
       </p>
-      <Assignment title="Lösning" id="6.40">
+      <Assignment author="Oliver" title="Lösning" id="6.40">
         <Latex>{`
         Dela alla termerna med $2-i$ för att få $z^2$ ensamt.$${breakLine}
         z^2+\\frac{1-7i}{2+1}z-\\frac{5}{2+i}=0 ${ltx.iss}
@@ -156,7 +156,7 @@ const Solutions = () => {
         6.41 Lös följande ekvationer och rita ut rötterna i det komplexa
         talplanet:
       </p>
-      <Assignment title={`a) $z^3=i$`} id="6.41a">
+      <Assignment author="Oliver" title={`a) $z^3=i$`} id="6.41a">
         <Latex>{`
         Låt $z=re^{i\\theta}$ och skriv om högerledet till polär form.$${newLine}
 
@@ -185,7 +185,7 @@ const Solutions = () => {
           />
         </div>
       </Assignment>
-      <Assignment title={`b) $z^3=1+i$`} id="6.41b">
+      <Assignment author="Oliver" title={`b) $z^3=1+i$`} id="6.41b">
         <Latex>{`
         Låt $z=re^{i\\theta}$ och skriv om högerledet till polär form.$${newLine}
 
@@ -214,7 +214,7 @@ const Solutions = () => {
           />
         </div>
       </Assignment>
-      <Assignment title={`c) $z^4=16$`} id="6.41c">
+      <Assignment author="Oliver" title={`c) $z^4=16$`} id="6.41c">
         <Latex>{`
         Låt $z=re^{i\\theta}$ och skriv om högerledet till polär form. ($r$ kan endast vara positiv eftersom det är ett avstånd)$${newLine}
 
@@ -244,7 +244,7 @@ const Solutions = () => {
           />
         </div>
       </Assignment>
-      <Assignment title={`d) $z^3=i\\sqrt{3}-1$`} id="6.41d">
+      <Assignment author="Oliver" title={`d) $z^3=i\\sqrt{3}-1$`} id="6.41d">
         <Latex>{`
         Låt $z=re^{i\\theta}$ och skriv om högerledet till polär form.$${newLine}
 
@@ -273,7 +273,7 @@ const Solutions = () => {
           />
         </div>
       </Assignment>
-      <Assignment title={`e) $z^5=4i$`} id="6.41e">
+      <Assignment author="Oliver" title={`e) $z^5=4i$`} id="6.41e">
         <Latex>{`
         Låt $z=re^{i\\theta}$ och skriv om högerledet till polär form.$${newLine}
 
@@ -304,7 +304,7 @@ const Solutions = () => {
           />
         </div>
       </Assignment>
-      <Assignment title={`f) $z^4=-1$`} id="6.41f">
+      <Assignment author="Oliver" title={`f) $z^4=-1$`} id="6.41f">
         <Latex>{`
         Låt $z=re^{i\\theta}$ och skriv om högerledet till polär form. ($r$ kan endast vara positiv eftersom det är ett avstånd)$${newLine}
 
@@ -342,7 +342,7 @@ const Solutions = () => {
         får faktorn $x-1$. Faktorisera polynomet för detta $a$-värde.
         `}</Latex>
       </div>
-      <Assignment title="Lösning" id="6.44">
+      <Assignment author="Oliver" title="Lösning" id="6.44">
         <Latex>{`
         Ansätter lösning med $x-1$ som faktor (kan lösas med polynomdivision också):$${breakLine}
         x^3-2x^2-19x+a=${breakLine}
@@ -382,7 +382,7 @@ const Solutions = () => {
         har rötterna $z=2+i$ och $z=-1-2i$. Lös ekvationen fullständigt.
         `}</Latex>
       </div>
-      <Assignment title="Lösning" id="6.45">
+      <Assignment author="Oliver" title="Lösning" id="6.45">
         <Latex>{`
         Polynomet har reella koefficienter.$${breakLine}$ 
         Förutom nollställerna $2+i$ och $-1-2i$ är då även konjugaten $2-i$ och $-1+2i$ nollställen.$${breakLine}$
@@ -394,7 +394,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.49 Ekvationen $z^4-z^3+7z^2-9z-18=0$ har en rent imaginär rot. Lös ekvationen.`}</Latex>
       </p>
-      <Assignment title="Lösning" id="6.49">
+      <Assignment author="Oliver" title="Lösning" id="6.49">
         <Latex>{`
         Vi ansätter en rent imaginär rot $z=bi$ och sätter in i ekvationen$${newLine}
         (bi)^4-(bi)^3+7(bi)^2-9bi-18=0${ltx.iss}${breakLine}        
@@ -418,7 +418,7 @@ const Solutions = () => {
       <p>
         <Latex>{`6.53 Faktorisera polynomet $p(x)=x^5-x^4+4x-4$ i realla faktorer av så låg grad som möjligt`}</Latex>
       </p>
-      <Assignment title="Lösning" id="6.53">
+      <Assignment author="Oliver" title="Lösning" id="6.53">
         <Latex>{`
         Gissa en rot $p(1) = 0$. Använd polynomdivision. $${breakLine}
         \\quad p(x)=(x-1)(x^{4}+4)${newLine}

@@ -32,7 +32,7 @@ const Solutions = () => {
       <p>
         <Latex>{`12.1 $\\quad$Ange alla primitiva funktioner till:`}</Latex>
       </p>
-      <Assignment title={`a) $x^4$`} id="12.1a">
+      <Assignment author="Oliver" title={`a) $x^4$`} id="12.1a">
         <Latex>{`$
         \\displaystyle
         \\int{x^\\alpha dx}=\\dfrac{x^{\\alpha+1}}{\\alpha+1}+C\\quad(\\alpha\\neq -1)${newLine}
@@ -40,56 +40,64 @@ const Solutions = () => {
         \\int x^4 dx=\\dfrac{x^{4+1}}{4+1}+C=\\dfrac{x^5}{5}+C=\\frac{1}{5}x^5+C
         ${newLine}\\textbf{Svar: } \\frac{1}{5}x^5+C$`}</Latex>
       </Assignment>
-      <Assignment title={`b) $\\dfrac1x$`} id="12.1b">
+      <Assignment author="Oliver" title={`b) $\\dfrac1x$`} id="12.1b">
         <Latex>{`$
         $Se sida 282 i läroboken$${newLine}
         \\displaystyle
         \\int{\\dfrac{1}{x}dx}=\\ln |x|+C
         ${newLine}\\textbf{Svar: } \\ln |x|+C$`}</Latex>
       </Assignment>
-      <Assignment title={`c) $e^x$`} id="12.1c">
+      <Assignment author="Oliver" title={`c) $e^x$`} id="12.1c">
         <Latex>{`$
         \\displaystyle
         \\int{e^xdx}=e^x+C
         ${newLine}\\textbf{Svar: } e^x+C$`}</Latex>
       </Assignment>
-      <Assignment title={`d) $\\cos x$`} id="12.1d">
+      <Assignment author="Oliver" title={`d) $\\cos x$`} id="12.1d">
         <Latex>{`$
         \\displaystyle
         \\int\\cos x dx=\\sin x+C
         ${newLine}\\textbf{Svar: } \\sin x+C$`}</Latex>
       </Assignment>
-      <Assignment title={`e) $\\sin x$`} id="12.1e">
+      <Assignment author="Oliver" title={`e) $\\sin x$`} id="12.1e">
         <Latex>{`$
         \\displaystyle
         \\int\\sin x dx=-\\cos x+C
         ${newLine}\\textbf{Svar: } -\\cos x+C$`}</Latex>
       </Assignment>
-      <Assignment title={`f) $\\dfrac{1}{cos^2x}$`} id="12.1f">
+      <Assignment author="Oliver" title={`f) $\\dfrac{1}{cos^2x}$`} id="12.1f">
         <Latex>{`$
         \\displaystyle
         \\int\\dfrac{1}{cos^2x}dx=\\tan x+C
         ${newLine}\\textbf{Svar: } \\tan x+C$`}</Latex>
       </Assignment>
-      <Assignment title={`g) $\\dfrac{1}{sin^2x}$`} id="12.1g">
+      <Assignment author="Oliver" title={`g) $\\dfrac{1}{sin^2x}$`} id="12.1g">
         <Latex>{`$
         \\displaystyle
         \\int\\dfrac{1}{sin^2x}dx=-$cot $ x+C
         ${newLine}\\textbf{Svar: } -$cot $ x+C$`}</Latex>
       </Assignment>
-      <Assignment title={`h) $\\dfrac{1}{1+x^2}$`} id="12.1h">
+      <Assignment author="Oliver" title={`h) $\\dfrac{1}{1+x^2}$`} id="12.1h">
         <Latex>{`$
         \\displaystyle
         \\int\\dfrac{1}{1+x^2}dx=\\arctan x+C
         ${newLine}\\textbf{Svar: } \\arctan x+C$`}</Latex>
       </Assignment>
-      <Assignment title={`i) $\\dfrac{1}{\\sqrt{1-x^2}}$`} id="12.1i">
+      <Assignment
+        author="Oliver"
+        title={`i) $\\dfrac{1}{\\sqrt{1-x^2}}$`}
+        id="12.1i"
+      >
         <Latex>{`$
         \\displaystyle
         \\int\\dfrac{1}{\\sqrt{1-x^2}}dx=\\arcsin x+C
         ${newLine}\\textbf{Svar: } \\arcsin x+C$`}</Latex>
       </Assignment>
-      <Assignment title={`j) $\\dfrac{1}{\\sqrt{x^2+\\alpha}}$`} id="12.1j">
+      <Assignment
+        author="Oliver"
+        title={`j) $\\dfrac{1}{\\sqrt{x^2+\\alpha}}$`}
+        id="12.1j"
+      >
         <Latex>{`$
         $Se sida 282 i läroboken$${newLine}
         \\displaystyle
@@ -100,7 +108,7 @@ const Solutions = () => {
       <p>
         <Latex>{`12.2 $\\quad$ Bestäm en primitiv funktion till:`}</Latex>
       </p>
-      <Assignment title={`a) $x^3$`} id="12.2a">
+      <Assignment author="Oliver" title={`a) $x^3$`} id="12.2a">
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${newLine}
         \\displaystyle
@@ -109,7 +117,7 @@ const Solutions = () => {
         \\int x^3 dx=\\dfrac{x^{3+1}}{3+1}=\\dfrac{x^4}{4}${newLine}
         ${newLine}\\textbf{Svar: } \\dfrac{x^4}{4}$`}</Latex>
       </Assignment>
-      <Assignment title={`b) $\\dfrac{1}{x^3}$`} id="12.2b">
+      <Assignment author="Oliver" title={`b) $\\dfrac{1}{x^3}$`} id="12.2b">
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${newLine}
         \\dfrac{1}{x^3}=x^{-3}${newLine}
@@ -123,7 +131,7 @@ const Solutions = () => {
         -\\dfrac{1}{2x^2}
         ${newLine}\\textbf{Svar: } -\\dfrac{1}{2x^2}$`}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\sqrt{x}$`} id="12.2c">
+      <Assignment author="Oliver" title={`c) $\\sqrt{x}$`} id="12.2c">
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${newLine}
         \\sqrt{x}=x^\\frac{1}{2}${newLine}
@@ -137,7 +145,7 @@ const Solutions = () => {
         \\dfrac{2}{3}x\\sqrt{x}
         ${newLine}\\textbf{Svar: } \\dfrac{2}{3}x\\sqrt{x}$`}</Latex>
       </Assignment>
-      <Assignment title={`d) $x\\sqrt{x}$`} id="12.2d">
+      <Assignment author="Oliver" title={`d) $x\\sqrt{x}$`} id="12.2d">
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${newLine}
         x\\sqrt{x}=x^\\frac{3}{2}${newLine}
@@ -151,7 +159,11 @@ const Solutions = () => {
         \\dfrac{2}{5}x^2\\sqrt{x}
         ${newLine}\\textbf{Svar: } \\dfrac{2}{5}x^2\\sqrt{x}$`}</Latex>
       </Assignment>
-      <Assignment title={`e) $\\dfrac{1}{\\sqrt{x}}$`} id="12.2e">
+      <Assignment
+        author="Oliver"
+        title={`e) $\\dfrac{1}{\\sqrt{x}}$`}
+        id="12.2e"
+      >
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${newLine}
         \\dfrac{1}{\\sqrt{x}}=\\dfrac{1}{x^{\\frac{1}{2}}}=x^{-\\frac{1}{2}}${newLine}
@@ -164,7 +176,11 @@ const Solutions = () => {
         2\\sqrt{x}
         ${newLine}\\textbf{Svar: } 2\\sqrt{x}$`}</Latex>
       </Assignment>
-      <Assignment title={`f) $\\dfrac{1}{x\\sqrt{x}}$`} id="12.2f">
+      <Assignment
+        author="Oliver"
+        title={`f) $\\dfrac{1}{x\\sqrt{x}}$`}
+        id="12.2f"
+      >
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${newLine}
         \\dfrac{1}{x\\sqrt{x}}=\\dfrac{1}{x^{\\frac{3}{2}}}=x^{-\\frac{3}{2}}${newLine}
@@ -182,7 +198,7 @@ const Solutions = () => {
       <p>
         <Latex>{`12.3 $\\quad$ Bestäm en primitiv funktion till:`}</Latex>
       </p>
-      <Assignment title={`d) $\\dfrac{2}{x+1}$`} id="12.3d">
+      <Assignment author="Oliver" title={`d) $\\dfrac{2}{x+1}$`} id="12.3d">
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${newLine}
         \\displaystyle\\int{2\\cdot\\dfrac{1}{x+1}dx}=
@@ -195,7 +211,7 @@ const Solutions = () => {
         =2\\ln |x+1|${newLine}
         ${breakLine}\\textbf{Svar: } 2\\ln |x+1|$`}</Latex>
       </Assignment>
-      <Assignment title={`e) $\\dfrac{1}{2x+1}$`} id="12.3e">
+      <Assignment author="Oliver" title={`e) $\\dfrac{1}{2x+1}$`} id="12.3e">
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${newLine}
         \\displaystyle\\int{\\dfrac{1}{2x+1}dx}
@@ -208,7 +224,11 @@ const Solutions = () => {
         =\\frac{1}{2}\\ln|t|=\\frac{1}{2}\\ln|2x+1|${newLine}
         ${breakLine}\\textbf{Svar: } \\frac{1}{2}\\ln|2x+1|$`}</Latex>
       </Assignment>
-      <Assignment title={`l) $\\dfrac{2}{(1-3x)^2}$`} id="12.3l">
+      <Assignment
+        author="Oliver"
+        title={`l) $\\dfrac{2}{(1-3x)^2}$`}
+        id="12.3l"
+      >
         <Latex>{`$
         $Eftersom vi endast söker $\\textbf{en}$ primitiv funktion kan vi utelämna $C$$${breakLine}
         \\displaystyle\\int{\\dfrac{2}{(1-3x)^2}dx}
@@ -225,7 +245,7 @@ const Solutions = () => {
       <p>
         <Latex>{`12.5 $\\quad$ Bestäm en primitiv funktion till:`}</Latex>
       </p>
-      <Assignment title={`a) $\\sin 2x$`} id="12.5a">
+      <Assignment author="Oliver" title={`a) $\\sin 2x$`} id="12.5a">
         <Latex>{`$
         \\displaystyle\\int{\\sin 2xdx}
         =\\begin{bmatrix}
@@ -236,7 +256,7 @@ const Solutions = () => {
         
         ${newLine}\\textbf{Svar: } -\\frac12\\cos2x$`}</Latex>
       </Assignment>
-      <Assignment title={`b) $\\sin \\frac{x}{3}$`} id="12.5b">
+      <Assignment author="Oliver" title={`b) $\\sin \\frac{x}{3}$`} id="12.5b">
         <Latex>{`$
         \\displaystyle\\int\\sin \\frac{x}{3}dx
         =\\begin{bmatrix}
@@ -249,7 +269,11 @@ const Solutions = () => {
         
         ${newLine}\\textbf{Svar: } -3\\cos\\frac{x}{3}$`}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\sin (2x+\\frac\\pi3)$`} id="12.5b">
+      <Assignment
+        author="Oliver"
+        title={`c) $\\sin (2x+\\frac\\pi3)$`}
+        id="12.5b"
+      >
         <Latex>{`$
         \\displaystyle\\int\\sin (2x+\\frac\\pi3)dx
         =\\begin{bmatrix}
@@ -269,7 +293,7 @@ const Solutions = () => {
       {/**
        * ???? Jag fattar inte den här lösningen
        */}
-      <Assignment title={`Lösning`} id="12.6">
+      <Assignment author="Oliver" title={`Lösning`} id="12.6">
         <Latex>{`
         Nej, deriverar vi $\\dfrac{e^{x^2}}{2x}$ använder vi "kvotregeln:
         $${newLine}
@@ -309,7 +333,7 @@ const Solutions = () => {
       <p>
         <Latex>{`12.8 Bestäm en primitiv funktion till:`}</Latex>
       </p>
-      <Assignment title={`a) $e^{x^2}\\cdot x$`} id="12.8a">
+      <Assignment author="Oliver" title={`a) $e^{x^2}\\cdot x$`} id="12.8a">
         <Latex>{`$
         \\displaystyle
         \\int e^{x^2}x dx
@@ -323,7 +347,11 @@ const Solutions = () => {
         \\frac12e^{x^2}
         ${newLine}\\textbf{Svar: } \\frac12e^{x^2}$`}</Latex>
       </Assignment>
-      <Assignment title={`b) $\\dfrac{x}{3}e^{x^2} x$`} id="12.8b">
+      <Assignment
+        author="Oliver"
+        title={`b) $\\dfrac{x}{3}e^{x^2} x$`}
+        id="12.8b"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{x}{3}e^{x^2} dx
@@ -337,7 +365,7 @@ const Solutions = () => {
         \\frac16e^{x^2}
         ${newLine}\\textbf{Svar: } \\frac16e^{x^2}$`}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\cos x^2\\cdot 2x$`} id="12.8c">
+      <Assignment author="Oliver" title={`c) $\\cos x^2\\cdot 2x$`} id="12.8c">
         <Latex>{`$
         \\displaystyle
         \\int \\cos x^2\\cdot 2x dx
@@ -350,7 +378,7 @@ const Solutions = () => {
         \\sin x^2
         ${newLine}\\textbf{Svar: } \\sin x^2$`}</Latex>
       </Assignment>
-      <Assignment title={`d) $x\\cos x^2$`} id="12.8d">
+      <Assignment author="Oliver" title={`d) $x\\cos x^2$`} id="12.8d">
         <Latex>{`$
         \\displaystyle
         \\int x\\cos x^2 dx
@@ -364,7 +392,7 @@ const Solutions = () => {
         \\frac12\\sin x^2
         ${newLine}\\textbf{Svar: } \\frac12\\sin x^2$`}</Latex>
       </Assignment>
-      <Assignment title={`e) $x^2\\cos x^3$`} id="12.8e">
+      <Assignment author="Oliver" title={`e) $x^2\\cos x^3$`} id="12.8e">
         <Latex>{`$
         \\displaystyle
         \\int x^2\\cos x^3 dx
@@ -378,7 +406,7 @@ const Solutions = () => {
         \\frac13\\sin x^3
         ${newLine}\\textbf{Svar: } \\frac13\\sin x^3$`}</Latex>
       </Assignment>
-      <Assignment title={`f) $x^2\\sin x^3$`} id="12.8f">
+      <Assignment author="Oliver" title={`f) $x^2\\sin x^3$`} id="12.8f">
         <Latex>{`$
         \\displaystyle
         \\int x^2\\sin x^3 dx
@@ -392,7 +420,11 @@ const Solutions = () => {
         -\\frac13\\cos x^3
         ${newLine}\\textbf{Svar: } -\\frac13\\cos x^3$`}</Latex>
       </Assignment>
-      <Assignment title={`g) $\\dfrac{1}{x^2}\\cos(\\dfrac1x)$`} id="12.8g">
+      <Assignment
+        author="Oliver"
+        title={`g) $\\dfrac{1}{x^2}\\cos(\\dfrac1x)$`}
+        id="12.8g"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{1}{x^2}\\cos(\\dfrac1x) dx
@@ -405,7 +437,7 @@ const Solutions = () => {
         -\\sin x^2
         ${newLine}\\textbf{Svar: } -\\sin x^2$`}</Latex>
       </Assignment>
-      <Assignment title={`h) $2x(x^2+5)^8$`} id="12.8h">
+      <Assignment author="Oliver" title={`h) $2x(x^2+5)^8$`} id="12.8h">
         <Latex>{`$
         \\displaystyle
         \\int 2x(x^2+5)^8 dx
@@ -422,7 +454,7 @@ const Solutions = () => {
       <p>
         <Latex>{`12.9 Bestäm en primitiv funktion till:`}</Latex>
       </p>
-      <Assignment title={`a) $\\sin^2 x\\cos x$`} id="12.9a">
+      <Assignment author="Oliver" title={`a) $\\sin^2 x\\cos x$`} id="12.9a">
         <Latex>{`$
         \\displaystyle
         \\int \\sin^2 x\\cos x dx
@@ -435,7 +467,7 @@ const Solutions = () => {
         \\frac{1}{3}\\sin^3 x
         ${newLine}\\textbf{Svar: } \\frac{1}{3}\\sin^3 x$`}</Latex>
       </Assignment>
-      <Assignment title={`b) $\\cos x\\sin^3 x$`} id="12.9b">
+      <Assignment author="Oliver" title={`b) $\\cos x\\sin^3 x$`} id="12.9b">
         <Latex>{`$
         \\displaystyle
         \\int \\cos x\\sin^3 x dx
@@ -448,7 +480,7 @@ const Solutions = () => {
         \\frac{1}{4}\\sin^4 x
         ${newLine}\\textbf{Svar: } \\frac{1}{4}\\sin^4 x$`}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\sin x\\cos x$`} id="12.9c">
+      <Assignment author="Oliver" title={`c) $\\sin x\\cos x$`} id="12.9c">
         <Latex>{`$
         \\displaystyle
         \\int \\cos x\\sin x\\,dx
@@ -461,7 +493,11 @@ const Solutions = () => {
         \\frac{1}{2}\\sin^2 x
         ${newLine}\\textbf{Svar: } \\frac{1}{2}\\sin^2 x$`}</Latex>
       </Assignment>
-      <Assignment title={`d) $\\cos x\\dfrac{1}{\\sin^2 x}$`} id="12.9d">
+      <Assignment
+        author="Oliver"
+        title={`d) $\\cos x\\dfrac{1}{\\sin^2 x}$`}
+        id="12.9d"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\cos x\\dfrac{1}{\\sin^2 x}\\,dx
@@ -475,7 +511,11 @@ const Solutions = () => {
         -\\frac{1}{\\sin x}
         ${newLine}\\textbf{Svar: } -\\frac{1}{\\sin x}$`}</Latex>
       </Assignment>
-      <Assignment title={`e) $\\cos x\\dfrac{1}{\\sin x}$`} id="12.9e">
+      <Assignment
+        author="Oliver"
+        title={`e) $\\cos x\\dfrac{1}{\\sin x}$`}
+        id="12.9e"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\cos x\\dfrac{1}{\\sin x}\\,dx
@@ -488,7 +528,11 @@ const Solutions = () => {
         \\ln|\\sin x|
         ${newLine}\\textbf{Svar: } \\ln|\\sin x|$`}</Latex>
       </Assignment>
-      <Assignment title={`f) $\\dfrac{\\cos x}{\\sin x}$`} id="12.9f">
+      <Assignment
+        author="Oliver"
+        title={`f) $\\dfrac{\\cos x}{\\sin x}$`}
+        id="12.9f"
+      >
         <Latex>{`$
         \\dfrac{\\cos x}{\\sin x}=\\cos x\\dfrac{1}{\\sin x}${newLine}
         \\displaystyle
@@ -502,7 +546,11 @@ const Solutions = () => {
         \\ln|\\sin x|
         ${newLine}\\textbf{Svar: } \\ln|\\sin x|$`}</Latex>
       </Assignment>
-      <Assignment title={`g) $\\dfrac{\\sin x}{\\cos x}$`} id="12.9g">
+      <Assignment
+        author="Oliver"
+        title={`g) $\\dfrac{\\sin x}{\\cos x}$`}
+        id="12.9g"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{\\sin x}{\\cos x}\\,dx
@@ -515,7 +563,7 @@ const Solutions = () => {
         -\\ln|\\cos x|
         ${newLine}\\textbf{Svar: } -\\ln|\\cos x|$`}</Latex>
       </Assignment>
-      <Assignment title={`h) $\\tan x$`} id="12.9h">
+      <Assignment author="Oliver" title={`h) $\\tan x$`} id="12.9h">
         <Latex>{`$
         \\tan x=\\dfrac{\\sin x}{\\cos x}${newLine}
         \\displaystyle
@@ -533,7 +581,7 @@ const Solutions = () => {
       <p>
         <Latex>{`12.10 Bestäm en primitiv funktion till:`}</Latex>
       </p>
-      <Assignment title={`a) $\\dfrac{1}{x^2+1}2x$`} id="12.9a">
+      <Assignment author="Oliver" title={`a) $\\dfrac{1}{x^2+1}2x$`} id="12.9a">
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{1}{x^2+1}2x\\,dx
@@ -547,7 +595,7 @@ const Solutions = () => {
         Här behövs inget absolutbelopp eftersom $x^2+1$ endast kan vara positivt$
         ${newLine}\\textbf{Svar: } \\ln(x^2+1)$`}</Latex>
       </Assignment>
-      <Assignment title={`b) $\\dfrac{2x}{x^2+1}$`} id="12.9b">
+      <Assignment author="Oliver" title={`b) $\\dfrac{2x}{x^2+1}$`} id="12.9b">
         <Latex>{`$
         \\dfrac{2x}{x^2+1}=\\dfrac{1}{x^2+1}2x${newLine}
         \\displaystyle
@@ -562,7 +610,7 @@ const Solutions = () => {
         Här behövs inget absolutbelopp eftersom $x^2+1$ endast kan vara positivt$
         ${newLine}\\textbf{Svar: } \\ln(x^2+1)$`}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\dfrac{x}{x^2+1}$`} id="12.9c">
+      <Assignment author="Oliver" title={`c) $\\dfrac{x}{x^2+1}$`} id="12.9c">
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{x}{x^2+1}2x\\,dx
@@ -576,7 +624,11 @@ const Solutions = () => {
         Här behövs inget absolutbelopp eftersom $x^2+1$ endast kan vara positivt$
         ${newLine}\\textbf{Svar: } \\frac{1}{2}\\ln(x^2+1)$`}</Latex>
       </Assignment>
-      <Assignment title={`d) $\\dfrac{3x^2}{x^3+1}$`} id="12.9d">
+      <Assignment
+        author="Oliver"
+        title={`d) $\\dfrac{3x^2}{x^3+1}$`}
+        id="12.9d"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{3x^2}{x^3+1}\\,dx
@@ -589,7 +641,7 @@ const Solutions = () => {
         \\ln|x^3+1|
         ${newLine}\\textbf{Svar: } \\ln|x^3+1|$`}</Latex>
       </Assignment>
-      <Assignment title={`e) $\\dfrac{x^2}{x^3+1}$`} id="12.9e">
+      <Assignment author="Oliver" title={`e) $\\dfrac{x^2}{x^3+1}$`} id="12.9e">
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{x^2}{x^3+1}\\,dx
@@ -602,7 +654,7 @@ const Solutions = () => {
         \\frac{1}{3}\\ln|x^3+1|
         ${newLine}\\textbf{Svar: } \\frac{1}{3}\\ln|x^3+1|$`}</Latex>
       </Assignment>
-      <Assignment title={`f) $\\dfrac{e^x}{e^x+1}$`} id="12.9f">
+      <Assignment author="Oliver" title={`f) $\\dfrac{e^x}{e^x+1}$`} id="12.9f">
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{e^x}{e^x+1}\\,dx
@@ -615,7 +667,11 @@ const Solutions = () => {
         \\ln(e^x+1)
         ${newLine}\\textbf{Svar: } \\ln(e^x+1)$`}</Latex>
       </Assignment>
-      <Assignment title={`g) $\\dfrac{e^x-e^{-x}}{e^x+e^{-x}}$`} id="12.9g">
+      <Assignment
+        author="Oliver"
+        title={`g) $\\dfrac{e^x-e^{-x}}{e^x+e^{-x}}$`}
+        id="12.9g"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{e^x-e^{-x}}{e^x+e^{-x}}\\,dx
@@ -628,7 +684,7 @@ const Solutions = () => {
         \\ln(e^x+e^{-x})
         ${newLine}\\textbf{Svar: } \\ln(e^x+1)$`}</Latex>
       </Assignment>
-      <Assignment title={`h) $\\dfrac{e^x+1}{e^x}$`} id="12.9h">
+      <Assignment author="Oliver" title={`h) $\\dfrac{e^x+1}{e^x}$`} id="12.9h">
         <p>
           Om du har en lösning till denna uppgift med variabelbyte, maila gärna
           mig på{" "}
@@ -649,7 +705,11 @@ const Solutions = () => {
       <p>
         <Latex>{`12.11 Bestäm en primitiv funktion till:`}</Latex>
       </p>
-      <Assignment title={`a) $\\dfrac{1}{x}(\\ln x)^2$`} id="12.10a">
+      <Assignment
+        author="Oliver"
+        title={`a) $\\dfrac{1}{x}(\\ln x)^2$`}
+        id="12.10a"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{1}{x}(\\ln x)^2\\,dx
@@ -662,7 +722,11 @@ const Solutions = () => {
         \\frac{1}{3}(\\ln x)^3
         ${newLine}\\textbf{Svar: } \\frac{1}{3}(\\ln x)^3$`}</Latex>
       </Assignment>
-      <Assignment title={`b) $\\dfrac{1}{x}(\\ln x)$`} id="12.10b">
+      <Assignment
+        author="Oliver"
+        title={`b) $\\dfrac{1}{x}(\\ln x)$`}
+        id="12.10b"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{1}{x}(\\ln x)\\,dx
@@ -675,7 +739,11 @@ const Solutions = () => {
         \\frac{1}{2}(\\ln x)^2
         ${newLine}\\textbf{Svar: } \\frac{1}{2}(\\ln x)^2$`}</Latex>
       </Assignment>
-      <Assignment title={`c) $\\dfrac{(\\ln x)^2}{x}$`} id="12.10c">
+      <Assignment
+        author="Oliver"
+        title={`c) $\\dfrac{(\\ln x)^2}{x}$`}
+        id="12.10c"
+      >
         <Latex>{`$
         \\dfrac{(\\ln x)^2}{x}=\\dfrac{1}{x}(\\ln x)^2${newLine}
         \\displaystyle
@@ -689,7 +757,7 @@ const Solutions = () => {
         \\frac{1}{3}(\\ln x)^3
         ${newLine}\\textbf{Svar: } \\frac{1}{3}(\\ln x)^3$`}</Latex>
       </Assignment>
-      <Assignment title={`d) $\\dfrac{\\ln x}{x}$`} id="12.10d">
+      <Assignment author="Oliver" title={`d) $\\dfrac{\\ln x}{x}$`} id="12.10d">
         <Latex>{`$
         \\dfrac{\\ln x}{x}=\\dfrac{1}{x}(\\ln x)${newLine}
         \\displaystyle
@@ -703,7 +771,11 @@ const Solutions = () => {
         \\frac{1}{2}(\\ln x)^2
         ${newLine}\\textbf{Svar: } \\frac{1}{2}(\\ln x)^2$`}</Latex>
       </Assignment>
-      <Assignment title={`e) $\\dfrac{1}{x}\\sin(\\ln x)$`} id="12.10e">
+      <Assignment
+        author="Oliver"
+        title={`e) $\\dfrac{1}{x}\\sin(\\ln x)$`}
+        id="12.10e"
+      >
         <Latex>{`$
         \\displaystyle
         \\int \\dfrac{1}{x}\\sin(\\ln x)\\,dx
@@ -732,7 +804,11 @@ const Solutions = () => {
         \\ln|\\ln x|
         ${newLine}\\textbf{Svar: } \\ln|\\ln x|$`}</Latex>
       </Assignment>
-      <Assignment title={`g) $\\dfrac{1}{x\\ln x}$`} id="12.10g">
+      <Assignment
+        author="Oliver"
+        title={`g) $\\dfrac{1}{x\\ln x}$`}
+        id="12.10g"
+      >
         <Latex>{`$
         \\dfrac{1}{x\\ln x}=\\dfrac{1}{x}\\cdot\\dfrac{1}{\\ln x}${newLine}
         \\displaystyle
@@ -746,7 +822,11 @@ const Solutions = () => {
         \\ln|\\ln x|
         ${newLine}\\textbf{Svar: } \\ln|\\ln x|$`}</Latex>
       </Assignment>
-      <Assignment title={`h) $\\dfrac{\\sin(\\ln x)}{x}$`} id="12.10h">
+      <Assignment
+        author="Oliver"
+        title={`h) $\\dfrac{\\sin(\\ln x)}{x}$`}
+        id="12.10h"
+      >
         <Latex>{`$
         \\dfrac{\\sin(\\ln x)}{x}=\\dfrac{1}{x}\\sin(\\ln x)${newLine}
         \\displaystyle
@@ -764,7 +844,7 @@ const Solutions = () => {
       <p>
         <Latex>{`12.13 Bestäm $\\int e^x(e^x+5)^8 dx$ genom att utföra variabelbytet $t=e^x+5$`}</Latex>
       </p>
-      <Assignment title={`Lösning`} id="12.6">
+      <Assignment author="Oliver" title={`Lösning`} id="12.6">
         <Latex>{`$
         \\displaystyle
         \\int e^x(e^x+5)^8 dx=
@@ -813,6 +893,144 @@ const Solutions = () => {
         \\dfrac{t^{-1/3}}{-1/3}+C=\\dfrac{3}{t^{1/3}}+C=3t^{-1/3}+C=3\\cos^{-1/3} x+C
         
         ${newLine}\\textbf{Svar: } 3\\cos^{-1/3} x+C$`}</Latex>
+      </Assignment>
+
+      <p>
+        <Latex>{`12.15 Bestäm med hjälp av ett lämpligt variabelbyte samtliga primitiver till:`}</Latex>
+      </p>
+      <Assignment author="Hanxuan" title={`c) $x\\sqrt{7x^2+5}$`} id="12.15c">
+        <Latex>{`$
+        \\displaystyle\\int{x\\sqrt{7x^2+5}dx}
+        =\\begin{bmatrix}
+        t=7x^2 +5 \\\\
+        dt=14xdx \\Rightarrow xdx = \\frac{dt}{14}
+        \\end{bmatrix}=
+        \\int\\sqrt{t} \\frac{dt}{14}=\\frac{1}{14}\\cdot\\int\\sqrt{t}dt=
+        \\frac{1}{14}\\cdot\\frac{t^\\frac{3}{2}}{\\frac{3}{2}} + C =
+        \\frac{t^\\frac{3}{2}}{21}+ C =
+        \\frac{(7x^2 +5)^\\frac{3}{2}}{21}+ C  \\\\~\\\\
+        \\textbf {Svar:}\\frac{(7x^2 +5)^\\frac{3}{2}}{21}+ C$`}</Latex>
+      </Assignment>
+      <Assignment
+        author="Hanxuan"
+        title={`d) $\\dfrac{x}{\\sqrt{x^2+5}}$`}
+        id="12.15d"
+      >
+        <Latex>{`$
+        \\displaystyle\\int{\\frac{x}{\\sqrt{x^2+5}}dx}
+        =\\begin{bmatrix}
+        t=x^2 +5 \\\\
+        dt=2xdx, xdx=\\frac{dt}{2}
+        \\end{bmatrix}=
+        \\int\\frac{1}{\\sqrt{t}}\\cdot\\frac{dt}{2}=\\frac{1}{2}\\cdot\\int\\frac{1}{\\sqrt{t}}dt=
+        \\frac{1}{2}\\cdot\\frac{t^\\frac{1}{2}}{\\frac{1}{2}} + C=
+        \\sqrt{t}+ C=
+        \\sqrt{x^2+5}+ C \\\\~\\\\
+        \\textbf {Svar:}\\sqrt{x^2+5}+ C$`}</Latex>
+      </Assignment>
+      <Assignment
+        author="Oliver"
+        title={`e) Går det att lösa ovanstående deluppgifter "direkt" utan variabelbyte?`}
+        id="12.15e"
+      >
+        <Latex>{`
+        Ja, eftersom alla funtioner är av typen $f(g(x))g'(x)$ (så när som
+          på en konstant faktor) så går det att skriva upp de primitiva funktionerna direkt.
+        `}</Latex>
+      </Assignment>
+
+      <p>
+        <Latex>{`12.16 Bestäm med hjälp av ett lämpligt variabelbyte samtliga primitiver till:`}</Latex>
+      </p>
+      <Assignment
+        author="Hanxuan"
+        title={`a) $\\dfrac{1}{e^x+e^{-x}}$`}
+        id="12.16a"
+      >
+        <Latex>{`$
+        \\displaystyle\\int{\\frac{1}{e^x+e^{-x}}dx}=
+        \\int{\\frac{1}{\\frac{e^{2x}+1}{e^x}}dx}=
+        \\int\\frac{e^x}{e^{2x}+1}
+        =\\begin{bmatrix}
+        t=e^x \\\\
+        dt=e^xdx\\Rightarrow \\frac{dt}{e^x}=
+        \\frac{dt}{t} =dx
+        \\end{bmatrix}=\\int\\frac{t}{t^{2}+1}\\cdot\\frac{dt}{t}=\\int\\frac{1}{t^{2}+1}dt=
+        \\arctan t+C=
+        \\arctan(e^x) + C
+        \\\\~\\\\
+        \\textbf {Svar: } \\arctan(e^x) + C$`}</Latex>
+      </Assignment>
+      <Assignment author="Hanxuan" title={`b) $x\\sqrt{x+1}$`} id="12.16b">
+        <Latex>{`$
+        \\displaystyle\\int{x\\sqrt{x+1}dx}=
+        \\begin{bmatrix}
+        t=\\sqrt{x+1}\\Rightarrow x=
+        t^2-1 \\\\
+        dx=2tdt
+        \\end{bmatrix}=
+
+        \\int(t^2+1)(t)2tdt =
+        \\int2t^4-2t^2dt = \\\\~\\\\
+
+        =\\frac{2t^5}{5}-\\frac{2t^3}{3}+C=
+        \\frac{6t^5-10t^3}{15}+C =
+        \\frac{6{\\sqrt{x+1}}^5-10{\\sqrt{x+1}}^3}{15}+C
+        \\\\~\\\\
+        \\textbf {Svar: } \\frac{6{\\sqrt{x+1}}^5-10{\\sqrt{x+1}}^3}{15}+C$`}</Latex>
+      </Assignment>
+      <Assignment
+        author="Hanxuan"
+        title={`c) $\\dfrac{x}{\\sqrt{2x+5}}$`}
+        id="12.16c"
+      >
+        <Latex>{`$
+        \\displaystyle\\int{\\frac{x}{\\sqrt{2x+5}}}dx
+        =
+        \\begin{bmatrix}
+        t=
+        \\sqrt{2x+5}\\Rightarrow x=
+        \\frac{t^2-5}{2} \\\\
+        dx=
+        \\frac{2t}{2}dt\\Rightarrow dx=
+        tdt
+        \\end{bmatrix}=
+        \\int\\frac{\\frac{t^2-5}{2}}{t}tdt=
+        \\int\\frac{t^2-5}{2}dt= \\\\~\\\\
+
+        =\\frac{t^3}{6}-\\frac{5t}{2}+C=
+        \\frac{t^3-15t}{6}+C=
+        \\frac{{\\sqrt{2x+5}}^3-15(\\sqrt{2x+5})}{6}+C
+
+        \\\\~\\\\
+        \\textbf {Svar: } \\frac{{\\sqrt{2x+5}}^3-15(\\sqrt{2x+5})}{6}+C
+        $`}</Latex>
+      </Assignment>
+      <Assignment
+        author="Hanxuan"
+        title={`d) $\\dfrac{1}{x+x^\\frac{1}{3}}$`}
+        id="12.16d"
+      >
+        <Latex>{`$
+        \\displaystyle\\int{\\frac{1}{x+x^\\frac{1}{3}}}dx
+        =
+        \\begin{bmatrix}
+        t=
+        x^\\frac{1}{3}\\Leftrightarrow x=
+        t^3 \\\\
+        dx=
+        3t^2dt
+        \\end{bmatrix}=
+
+        \\int\\frac{1}{t^3+t}3t^2dt =
+        3\\int\\frac{t}{t^2+1}dt =
+        \\\\~\\\\
+        =\\frac{3}{2}\\int\\frac{2t}{t^2+1}dt=
+        \\frac{3}{2}ln|t^2+1|+C=
+        \\frac{3\\ln|x^\\frac{2}{3}+1|}{2}+C 
+        \\\\~\\\\
+        \\textbf {Svar: } \\frac{3\\ln|x^\\frac{2}{3}+1|}{2}+C
+        $`}</Latex>
       </Assignment>
     </Container>
   );

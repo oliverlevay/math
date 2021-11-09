@@ -15,6 +15,7 @@ import copyToClipBoard from "lib/copyToClipboard";
 type Props = {
   title: string;
   id: string;
+  author?: string;
 };
 
 const Anchor = styled.a`
@@ -24,7 +25,7 @@ const Anchor = styled.a`
   top: -20rem;
 `;
 
-const Assignment: FC<Props> = ({ title, id, children }) => {
+const Assignment: FC<Props> = ({ title, id, author, children }) => {
   const router = useRouter();
   const { id: selectedId } = router.query;
   const [expanded, setExpanded] = useState(false);
@@ -41,6 +42,7 @@ const Assignment: FC<Props> = ({ title, id, children }) => {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           onClick={() => setExpanded((state) => !state)}
+          title={author ? `Författare: ${author}` : ""}
         >
           <Latex>{title}</Latex>
         </AccordionSummary>
