@@ -12,7 +12,7 @@ const Solutions = () => {
   return (
     <Container>
       <p>
-        För lösningar jag inte har gjort än får kan ni kolla på{" "}
+        För lösningar jag inte har gjort än kan ni kolla på{" "}
         <a
           href="/assets/Losning_till_forelasning_4.pdf"
           rel="noopener noreferrer"
