@@ -46,7 +46,7 @@ const Assignment: FC<Props> = ({ title, id, children }) => {
         </AccordionSummary>
         <AccordionDetails>
           <Stack spacing={5}>
-            <div>{children}</div>
+            {expanded && <div>{children}</div>}
             <Tooltip
               open={copiedToClipboard}
               disableFocusListener

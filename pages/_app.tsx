@@ -70,10 +70,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <NextNProgress
-          color={colors.activeSoft}
-          options={{ showSpinner: false }}
-        />
+        <NextNProgress options={{ showSpinner: false }} />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
