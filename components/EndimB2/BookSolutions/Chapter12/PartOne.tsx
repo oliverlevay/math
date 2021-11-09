@@ -931,7 +931,7 @@ const Solutions = () => {
       >
         <Latex>{`$
         \\displaystyle\\int{\\frac{1}{e^x+e^{-x}}dx}=
-        \\int{\\frac{1}{\\frac{e^{2x}+1}{e^x}}dx}=
+        \\int{\\frac{1}{\\frac{e^{2x}+e^0}{e^x}}dx}=
         \\int\\frac{e^x}{e^{2x}+1}
         =\\begin{bmatrix}
         t=e^x \\\\
