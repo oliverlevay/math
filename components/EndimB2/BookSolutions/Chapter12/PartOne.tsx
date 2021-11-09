@@ -12,24 +12,6 @@ const Solutions = () => {
   return (
     <Container>
       <p>
-        För lösningar jag inte har gjort än kan ni kolla på{" "}
-        <a
-          href="/assets/Losning_till_forelasning_4.pdf"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Hanxuans lösningar (PDF)
-        </a>{" "}
-        eller{" "}
-        <a
-          href="/assets/U12-endim.pdf"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          de här lösningarna jag hittade på tekniskfysik.org (PDF)
-        </a>
-      </p>
-      <p>
         <Latex>{`12.1 $\\quad$Ange alla primitiva funktioner till:`}</Latex>
       </p>
       <Assignment author="Oliver" title={`a) $x^4$`} id="12.1a">

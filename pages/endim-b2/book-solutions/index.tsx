@@ -68,10 +68,7 @@ export default function Home() {
               variant="contained"
               style={{ width: "fit-content", textTransform: "none" }}
             >
-              12.1, 2, 3del, 5abc, 6, 7, 8, 9, 10, 11, 13, 14,
-              <span style={{ color: colors.activeHard, marginLeft: "0.25rem" }}>
-                15cde, 16
-              </span>
+              12.1, 2, 3del, 5abc, 6, 7, 8, 9, 10, 11, 13, 14, 15cde, 16
             </Button>
           </Link>
         </Stack>
