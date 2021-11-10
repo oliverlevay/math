@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Latex from "react-latex-next";
 import Assignment from "components/Assignment";
-import { newLine, breakLine } from "lib/latexHelpers";
 
 const Container = styled.div`
   width: 100%;
