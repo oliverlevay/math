@@ -3,7 +3,6 @@ import Head from "next/head";
 
 import Layout from "layout";
 import { Title } from "components";
-import PartOne from "components/EndimB2/BookSolutions/Chapter12/PartOne";
 import PartTwo from "components/EndimB2/BookSolutions/Chapter12/PartTwo";
 
 const Container = styled.div`
@@ -12,7 +11,7 @@ const Container = styled.div`
   width: 100%;
   padding-bottom: 30rem;
 `;
-export default function Chapter12() {
+export default function Chapter6PartTwo() {
   return (
     <Layout course="endimB2">
       <Head>
@@ -21,7 +20,6 @@ export default function Chapter12() {
       <Container>
         <Title>Lösningar till uppgifter i boken</Title>
         <h2>Kapitel 12. Primitiva Funktioner</h2>
-        <PartOne />
         <PartTwo />
       </Container>
     </Layout>

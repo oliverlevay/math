@@ -998,7 +998,7 @@ const Solutions = () => {
         =
         \\begin{bmatrix}
         t=
-        x^\\frac{1}{3}\\Leftrightarrow x=
+        x^\\frac{1}{3}\\Rightarrow x=
         t^3 \\\\
         dx=
         3t^2dt

@@ -23,7 +23,7 @@ export default function Home() {
       <Container>
         <Title>Lösningar till uppgifter i boken</Title>
         <p>
-          Lösningar som inte finns än är{" "}
+          Lösningar som inte finns än (men är på väg) är{" "}
           <span style={{ color: colors.activeHard }}>markerade med rött</span>
         </p>
         <h2>Kapitel 6. Komplexa tal</h2>
@@ -69,6 +69,19 @@ export default function Home() {
               style={{ width: "fit-content", textTransform: "none" }}
             >
               12.1, 2, 3del, 5abc, 6, 7, 8, 9, 10, 11, 13, 14, 15cde, 16
+            </Button>
+          </Link>
+          <Link href={routes.endimB2.bookSolutions.chapter12.partTwo} passHref>
+            <Button
+              variant="contained"
+              style={{ width: "fit-content", textTransform: "none" }}
+            >
+              <p style={{ margin: 0 }}>
+                12.17abcd
+                <span style={{ color: colors.activeHard }}>
+                  fg, 18b, 19, 20, 21b, 32, 33a, 34bd, 35abdf
+                </span>
+              </p>
             </Button>
           </Link>
         </Stack>
