@@ -80,18 +80,60 @@ const Solutions = () => {
         \\textbf {Svar: } x\\arctan x - \\frac{1}{2}\\ln (1+x)^2+C
         $`}</Latex>
       </Assignment>
-      {/*       <Assignment author="Oliver" title={`e) $x \\arctan x$`} id="12.17e">
-        <Latex>{`$
-        $`}</Latex>
-      </Assignment>
       <Assignment author="Oliver" title={`f) $\\ln(x+1)$`} id="12.17f">
         <Latex>{`$
+        \\displaystyle
+        \\int \\ln (x+1)\\,dx=
+        \\begin{bmatrix}
+        t=x+1 \\\\
+        dx=1dt
+        \\end{bmatrix}
+        =\\int 1\\cdot\\ln t\\,dt=
+        t\\cdot\\ln(t)-\\int t\\cdot \\frac{1}{t}\\,dt=
+        \\\\~\\\\
+        (x+1)\\ln(x+1)-(x+1)+C=
+        (x+1)\\ln(x+1)-x-1+C=
+        (x+1)\\ln(x+1)-x+C
+        \\\\~\\\\
+        \\textbf {Svar: } (x+1)\\ln(x+1)-x+C
         $`}</Latex>
       </Assignment>
       <Assignment author="Oliver" title={`g) $\\ln^2x$`} id="12.17g">
         <Latex>{`$
+        \\displaystyle
+        \\int 1 \\cdot \\ln^2 x\\,dx=
+        x(\\ln x)^2-\\int\\frac{2\\ln x}{x}dx=
+        x(\\ln x)^2-\\int 2\\ln x\\,dx=
+        x(\\ln x)^2-(x\\cdot2x\\ln x-\\int x\\cdot\\frac{2}{x})=
+
+        \\\\~\\\\
+        =x(\\ln x)^2-2x\\ln x+2x+C
+        \\\\~\\\\
+        \\textbf {Svar: } x(\\ln x)^2-2x\\ln x+2x+C
         $`}</Latex>
-      </Assignment> */}
+      </Assignment>
+
+      <p>
+        12.18 Bestäm med hjälp av partialintegration samtliga primitiver till{" "}
+      </p>
+      <Assignment author="Oliver" title={`b) $e^{2x}\\sin 3x$`} id="12.18b">
+        <Latex>{`$
+        \\displaystyle
+        F(x)=\\int e^{2x}\\sin 3x=
+        \\frac{1}{2}e^{2x}\\sin 3x-\\int \\frac{1}{2}e^{2x}\\cdot3\\cos 3x\\,dx=
+        \\frac{1}{2}e^{2x}\\sin 3x-(\\frac{1}{4}e^{2x}\\cdot3\\cos 3x-\\int \\frac{1}{4}e^{2x}\\cdot(-9\\sin 3x))=
+        \\\\~\\\\
+        F(x)=\\frac{1}{2}e^{2x}\\sin 3x-\\frac{1}{4}e^{2x}\\cdot3\\cos 3x-\\frac{9}{4}\\int e^{2x}\\sin 3x \\Leftrightarrow
+        \\frac{1}{4}e^{2x} 2\\sin 3x-\\frac{1}{4}e^{2x}3 \\cos 3x=\\frac{13}{4}F(x) \\Leftrightarrow
+        \\\\~\\\\
+        13F(x)=e^{2x} 2\\sin 3x-e^{2x}3 \\cos 3x\\Leftrightarrow F(x)=\\frac{1}{13}e^{2x}(2\\sin 3x-3\\cos 3x)
+        \\\\~\\\\
+        \\textbf {Svar: } \\frac{1}{13}e^{2x}(2\\sin 3x-3\\cos 3x)
+        $`}</Latex>
+      </Assignment>
+      {/*       <p>
+        <Latex>{`12.19 Bestämma alla primitiva funktioner till $12.16$ b) och c) med hjälp av partialintegration`}</Latex>
+      </p> */}
     </Container>
   );
 };

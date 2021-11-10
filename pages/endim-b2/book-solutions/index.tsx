@@ -77,9 +77,10 @@ export default function Home() {
               style={{ width: "fit-content", textTransform: "none" }}
             >
               <p style={{ margin: 0 }}>
-                12.17abcd
+                12.17abcdfg, 18b,
                 <span style={{ color: colors.activeHard }}>
-                  fg, 18b, 19, 20, 21b, 32, 33a, 34bd, 35abdf
+                  {" "}
+                  19, 20, 21b, 32, 33a, 34bd, 35abdf
                 </span>
               </p>
             </Button>
