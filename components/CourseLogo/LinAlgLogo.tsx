@@ -53,7 +53,7 @@ const StudentLitteraturLogoContainer = styled.div`
   transform-origin: left;
 `;
 
-const LinAlgLogo = ({ title }: { title: string }) => {
+const LinAlgLogo = () => {
   return (
     <Container>
       <Sidebar>
@@ -68,7 +68,7 @@ const LinAlgLogo = ({ title }: { title: string }) => {
       </Sidebar>
 
       <CopyContainer>
-        <CourseTitle>Linjär Algebra {title}</CourseTitle>
+        <CourseTitle>Linjär Algebra</CourseTitle>
         <CourseAuthors>Jonas Månsson & Patrik Nordbeck</CourseAuthors>
       </CopyContainer>
     </Container>
