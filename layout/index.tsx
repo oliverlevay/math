@@ -126,6 +126,35 @@ const menus = {
       },
     ],
   },
+  linalg: {
+    title: "Linalg",
+    items: [
+      {
+        label: "Alla kurser",
+        route: routes.home,
+      },
+      {
+        label: "Hem",
+        route: routes.linalg.home,
+      },
+      /* {
+        label: "Länkar",
+        route: routes.endimB1.links,
+      },
+      {
+        label: "Instuderingsfrågor",
+        route: routes.endimB1.rehearsal,
+      },
+      {
+        label: "Extentor",
+        route: routes.endimB1.extentor.home,
+      },
+      {
+        label: "Ny lösning",
+        route: routes.endimB1.newSolution,
+      }, */
+    ],
+  }
 };
 
 type Props = {

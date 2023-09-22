@@ -11,4 +11,8 @@ export const colors = {
     darkBlue: "#003269",
     lightBlue: "#00468A",
   },
+  linalg: {
+    lightGreen: "#225942",
+    darkGreen: "#154430",
+  },
 };

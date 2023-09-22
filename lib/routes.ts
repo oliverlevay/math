@@ -1,5 +1,14 @@
 export const routes = {
   home: "/",
+  linalg: {
+    home: "/linalg",
+    bookSolutions: {
+      home: "/linalg/book-solutions",
+      chapter1: {
+        home: "/linalg/book-solutions/chapter1",
+      },
+    },
+  },
   endimB1: {
     home: "/endim-b1",
     get links() {

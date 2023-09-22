@@ -4,6 +4,7 @@ import EndimLogo from "components/CourseLogo/EndimLogo";
 import styled from "styled-components";
 import { Title } from "components";
 import { routes } from "lib/routes";
+import LinAlgLogo from "components/CourseLogo/LinAlgLogo";
 
 const Container = styled.div`
   display: flex;
@@ -38,6 +39,10 @@ export default function Home() {
           <Margin1Rem />
           <Link href={routes.endimB2.home}>
             <EndimLogo title={"B2"} />
+          </Link>
+          <Margin1Rem />
+          <Link href={routes.linalg.home}>
+            <LinAlgLogo/>
           </Link>
         </CourseContainer>
       </CourseList>
